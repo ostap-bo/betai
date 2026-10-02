@@ -1,0 +1,74 @@
+# ─────────────────────────────────────────────────────────────
+#  BetAI — конфігурація платформи
+#  Ключі API НЕ зберігаються тут: вони в GitHub Secrets / .env
+# ─────────────────────────────────────────────────────────────
+
+# Ліги для аналізу.
+#   odds_key       — ключ спорту в The Odds API
+#   api_football_id — ID ліги в API-Football (для травм і H2H)
+#   history_code   — код ліги на football-data.co.uk (історія для моделі)
+leagues:
+  - name: "Англія — Прем'єр-ліга"
+    odds_key: soccer_epl
+    api_football_id: 39
+    history_code: E0
+  - name: "Іспанія — Ла Ліга"
+    odds_key: soccer_spain_la_liga
+    api_football_id: 140
+    history_code: SP1
+  - name: "Італія — Серія A"
+    odds_key: soccer_italy_serie_a
+    api_football_id: 135
+    history_code: I1
+  - name: "Німеччина — Бундесліга"
+    odds_key: soccer_germany_bundesliga
+    api_football_id: 78
+    history_code: D1
+  # - name: "Франція — Ліга 1"
+  #   odds_key: soccer_france_ligue_one
+  #   api_football_id: 61
+  #   history_code: F1
+
+# Скільки годин наперед дивитися на матчі
+lookahead_hours: 72
+
+odds:
+  regions: eu            # eu, uk, us, au (кожен регіон = +1 кредит The Odds API)
+  markets: [h2h, totals] # 1X2 та тотали
+  totals_line: 2.5
+
+model:
+  history_seasons: 3       # скільки сезонів історії тягнути
+  decay_half_life_days: 240 # вага старіших матчів експоненційно спадає
+  market_weight: 0.6       # частка "ринку" у базовій ймовірності (ринок точний!)
+  max_goals: 10
+
+ai:
+  enabled: true
+  model: claude-sonnet-5-5   # можна змінити на claude-opus-5-5 для глибшого аналізу
+  max_matches: 12            # максимум матчів на запуск, які аналізує AI (контроль витрат)
+  web_search: true           # Claude сам шукає свіжі новини, травми, склади
+  web_search_tool: web_search_20250305
+  web_search_max_uses: 3
+  max_tokens: 4000
+  language: uk               # мова пояснень у дашборді
+
+picks:
+  min_edge: 0.03         # мінімальний value (3%)
+  min_odds: 1.40
+  max_odds: 5.00
+  min_confidence: 5      # 1..10 — впевненість AI
+  kelly_fraction: 0.25   # частковий Келлі (консервативно)
+  max_stake_pct: 0.03    # максимум 3% банку на ставку
+  max_picks_per_run: 8
+
+bankroll:
+  units: 100             # умовний банк у юнітах для статистики
+
+news:
+  max_age_hours: 72
+  feeds:
+    - https://feeds.bbci.co.uk/sport/football/rss.xml
+    - https://www.theguardian.com/football/rss
+    - https://www.skysports.com/rss/12040
+    - https://www.espn.com/espn/rss/soccer/news

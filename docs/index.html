@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>BetAI — Футбольна аналітика</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='44' fill='%2316a34a'/><text x='50' y='66' font-size='46' text-anchor='middle' fill='white' font-family='Arial' font-weight='700'>AI</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap top-inner">
+      <div class="brand">
+        <span class="logo">AI</span>
+        <div>
+          <h1>BetAI</h1>
+          <p class="muted small" id="updated">Завантаження…</p>
+        </div>
+      </div>
+      <div class="badges" id="badges"></div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div id="demo-banner" class="banner" hidden>
+      <strong>Демо-режим.</strong> Дані синтетичні. Додайте API-ключі в GitHub Secrets, щоб отримувати реальні рекомендації.
+    </div>
+
+    <section class="kpis" id="kpis"></section>
+
+    <section class="card chart-card">
+      <div class="card-head">
+        <h2>Прибуток у юнітах</h2>
+        <span class="muted small" id="curve-note"></span>
+      </div>
+      <div id="curve"></div>
+    </section>
+
+    <nav class="tabs" role="tablist">
+      <button role="tab" data-tab="picks" aria-selected="true">Рекомендації <span class="count" id="c-picks"></span></button>
+      <button role="tab" data-tab="matches" aria-selected="false">Усі матчі <span class="count" id="c-matches"></span></button>
+      <button role="tab" data-tab="history" aria-selected="false">Історія <span class="count" id="c-history"></span></button>
+      <button role="tab" data-tab="stats" aria-selected="false">Статистика</button>
+    </nav>
+
+    <section id="tab-picks" class="tab"></section>
+    <section id="tab-matches" class="tab" hidden></section>
+    <section id="tab-history" class="tab" hidden></section>
+    <section id="tab-stats" class="tab" hidden></section>
+  </main>
+
+  <footer class="wrap foot muted small">
+    <p><strong>18+.</strong> Рекомендації — це аналітика, а не гарантія. Ставки пов'язані з ризиком втрати коштів.
+      Ставте лише ту суму, яку готові втратити, встановлюйте ліміти та робіть перерви.</p>
+    <p>Модель: Пуассон (Діксон–Коулз) + ринковий консенсус + AI-аналіз Claude. Value = ймовірність × коефіцієнт − 1.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
