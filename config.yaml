@@ -3,36 +3,79 @@
 #  Ключі API НЕ зберігаються тут: вони в GitHub Secrets / .env
 # ─────────────────────────────────────────────────────────────
 
-# Ліги для аналізу.
-#   odds_key       — ключ спорту в The Odds API
-#   api_football_id — ID ліги в API-Football (для травм і H2H)
-#   history_code   — код ліги на football-data.co.uk (історія для моделі)
+# Ліги та турніри для аналізу (порядок = пріоритет, якщо закінчуються кредити).
+#   odds_key        — ключ у The Odds API (коефіцієнти). Немає → лише AI-прогноз без коефіцієнтів
+#   espn            — код ESPN (розклад і результати, безкоштовно)
+#   history_code    — код football-data.co.uk (історія для статистичної моделі)
+#   api_football_id — ID в API-Football (травми, H2H; необов'язково)
+#   priority: true  — AI аналізує ці матчі в першу чергу
 leagues:
+  # ── Україна ──
+  - name: "Україна — УПЛ"
+    espn: ukr.1
+    api_football_id: 333
+    priority: true
+  # ── Збірні ──
+  - name: "Ліга націй УЄФА"
+    odds_key: soccer_uefa_nations_league
+    espn: uefa.nations
+    priority: true
+  - name: "Відбір ЧС — Європа"
+    odds_key: soccer_fifa_world_cup_qualifiers_europe
+    espn: fifa.worldq.uefa
+    priority: true
+  - name: "Відбір Євро"
+    odds_key: soccer_uefa_euro_qualification
+    espn: uefa.euroq
+    priority: true
+  - name: "Товариські матчі збірних"
+    espn: fifa.friendly
+  # ── Єврокубки ──
+  - name: "Ліга чемпіонів"
+    odds_key: soccer_uefa_champs_league
+    espn: uefa.champions
+    api_football_id: 2
+    priority: true
+  - name: "Ліга Європи"
+    odds_key: soccer_uefa_europa_league
+    espn: uefa.europa
+    api_football_id: 3
+  - name: "Ліга конференцій"
+    odds_key: soccer_uefa_europa_conference_league
+    espn: uefa.europa.conf
+    api_football_id: 848
+  # ── Топ-5 ліг ──
   - name: "Англія — Прем'єр-ліга"
     odds_key: soccer_epl
+    espn: eng.1
     api_football_id: 39
     history_code: E0
   - name: "Іспанія — Ла Ліга"
     odds_key: soccer_spain_la_liga
+    espn: esp.1
     api_football_id: 140
     history_code: SP1
   - name: "Італія — Серія A"
     odds_key: soccer_italy_serie_a
+    espn: ita.1
     api_football_id: 135
     history_code: I1
   - name: "Німеччина — Бундесліга"
     odds_key: soccer_germany_bundesliga
+    espn: ger.1
     api_football_id: 78
     history_code: D1
-  # - name: "Франція — Ліга 1"
-  #   odds_key: soccer_france_ligue_one
-  #   api_football_id: 61
-  #   history_code: F1
+  - name: "Франція — Ліга 1"
+    odds_key: soccer_france_ligue_one
+    espn: fra.1
+    api_football_id: 61
+    history_code: F1
 
 # Скільки годин наперед дивитися на матчі
-lookahead_hours: 72
+lookahead_hours: 48   # платформа запускається щодня, тож 2 дні достатньо
 
 odds:
+  min_credits_left: 25   # не витрачати кредити The Odds API нижче цього залишку
   regions: eu            # eu, uk, us, au (кожен регіон = +1 кредит The Odds API)
   markets: [h2h, totals] # 1X2 та тотали
   totals_line: 2.5
@@ -50,7 +93,7 @@ ai:
   gemini_model: gemini-2.5-flash
   gemini_pause_sec: 7        # пауза між запитами (ліміти безкоштовного плану)
   model: claude-sonnet-5-5   # використовується, якщо provider: claude
-  max_matches: 12            # максимум матчів на запуск, які аналізує AI
+  max_matches: 20            # максимум матчів на запуск, які аналізує AI
   web_search: true           # AI сам шукає свіжі новини, травми, склади
   web_search_tool: web_search_20250305
   web_search_max_uses: 3
@@ -64,7 +107,7 @@ picks:
   min_confidence: 5      # 1..10 — впевненість AI
   kelly_fraction: 0.25   # частковий Келлі (консервативно)
   max_stake_pct: 0.03    # максимум 3% банку на ставку
-  max_picks_per_run: 8
+  max_picks_per_run: 10
 
 bankroll:
   units: 100             # умовний банк у юнітах для статистики

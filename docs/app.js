@@ -127,10 +127,15 @@
     const open = picks.filter((p) => p.status === "pending" && new Date(p.commence_time) > now - 2 * 3600e3)
       .sort((a, b) => a.commence_time.localeCompare(b.commence_time));
     const evById = Object.fromEntries(events.map((e) => [e.id, e]));
-    $("#c-picks").textContent = open.length;
+    const preds = events.filter((e) => e.prediction && new Date(e.commence_time) > now);
+    $("#c-picks").textContent = open.length + preds.length;
+    const predHtml = preds.length ? `<h2 class="section-title">Прогнози без коефіцієнтів</h2>
+      <p class="small muted section-sub">Для цих турнірів безкоштовне джерело не дає коефіцієнтів. AI оцінив ймовірності —
+        ставка має сенс, лише якщо твій букмекер дає коефіцієнт <strong>не нижче мінімального</strong>.</p>
+      <div class="grid">${preds.map(predCard).join("")}</div>` : "";
     if (!open.length) {
       $("#tab-picks").innerHTML = `<div class="card empty-state">Зараз немає ставок з достатнім value.
-        Це нормально: платформа пропускає матчі, де перевага не підтверджена.</div>`;
+        Це нормально: платформа пропускає матчі, де перевага не підтверджена.</div>${predHtml}`;
       return;
     }
     $("#tab-picks").innerHTML = `<div class="grid">${open.map((p) => {
@@ -153,7 +158,27 @@
         ${p.clv != null ? `<div class="small muted">CLV зараз: <span class="num ${cls(p.clv)}">${pct(p.clv)}</span></div>` : ""}
         ${ev ? details(ev) : ""}
       </article>`;
-    }).join("")}</div>`;
+    }).join("")}</div>${predHtml}`;
+  }
+
+  function predCard(ev) {
+    const pr = ev.prediction;
+    return `<article class="card pick">
+      <div class="pick-top"><span>${esc(ev.league_name)}</span><span>${kickoff(ev.commence_time)}</span></div>
+      <div class="teams">${esc(ev.home)}<span class="vs">—</span>${esc(ev.away)}</div>
+      <div class="bet pred">
+        <div><div class="sel">${esc(pr.label)}</div><div class="small muted">ймовірність ${pct(pr.prob)}</div></div>
+        <div><div class="price num">≥ ${pr.min_odds ?? "—"}</div><div class="book">мін. коефіцієнт</div></div>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="label">Справедливий коеф.</div><div class="v num">${pr.fair_odds ?? "—"}</div></div>
+        <div class="metric"><div class="label">Тип</div><div class="v">AI-прогноз</div></div>
+        <div class="metric"><div class="label">Впевненість</div><div class="v num">${pr.confidence ?? "—"}/10</div>${confBar(pr.confidence)}</div>
+      </div>
+      ${ev.ai?.summary ? `<p class="reason">${esc(ev.ai.summary)}</p>` : ""}
+      ${pr.reasoning ? `<p class="reason muted">${esc(pr.reasoning)}</p>` : ""}
+      ${details(ev)}
+    </article>`;
   }
 
   /* ── Усі матчі ───────────────────────────────────────── */
@@ -163,6 +188,7 @@
     $("#tab-matches").innerHTML = `<div class="card">${events.map((ev) => {
       const best = (ev.final_candidates || [])[0];
       const verdict = ev.verdict === "bet" ? `<span class="verdict bet">Ставка</span>` :
+        ev.verdict === "predict" ? `<span class="verdict bet">Прогноз: ${esc(ev.prediction?.label)} (мін. коеф. ${ev.prediction?.min_odds ?? "—"})</span>` :
         ev.ai ? `<span class="verdict skip">Пропуск</span>` : `<span class="verdict skip">Без AI</span>`;
       return `<div class="match-row">
         <div class="match-line">
@@ -215,6 +241,12 @@
         <h2>Останній запуск</h2>
         <p class="small">${aiInfo}</p>
         <p class="small muted">Фільтри: value ≥ ${pct(st.min_edge, 0)}, коефіцієнт ${st.min_odds}–${st.max_odds}, впевненість ≥ ${st.min_confidence}/10 · новин зібрано: ${latest.news_count ?? 0} · тривалість: ${latest.duration_sec ?? "—"} с</p>
+        ${latest.odds_credits_left != null ? `<p class="small">Залишок кредитів The Odds API цього місяця: <strong class="num">${latest.odds_credits_left}</strong> з 500</p>` : ""}
+        ${(latest.sources || []).length ? `<div class="table-wrap"><table class="data">
+          <thead><tr><th>Турнір</th><th class="r">Матчів</th><th>Джерело</th><th>Примітка</th></tr></thead>
+          <tbody>${latest.sources.map((x) => `<tr><td>${esc(x.league)}</td><td class="r num">${x.events}</td>
+            <td class="small muted">${esc(x.source || "—")}</td><td class="small ${x.note ? "neg" : "muted"}">${esc(x.note || "")}</td></tr>`).join("")}</tbody>
+        </table></div>` : ""}
         <p class="small muted">CLV (closing line value) показує, чи кращий наш коефіцієнт за пізніший ринковий. Стабільно позитивний CLV — найнадійніша ознака реальної переваги, навіть коли результати на короткій дистанції коливаються.</p>
       </div>`;
   }

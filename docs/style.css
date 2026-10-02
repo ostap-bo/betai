@@ -154,3 +154,8 @@ table.data tr:last-child td { border-bottom: none; }
 
 .foot { padding-top: 8px; padding-bottom: 32px; border-top: 1px solid var(--border); }
 .foot p { margin: 8px 0; }
+
+.section-title { margin: 24px 0 4px; }
+.section-sub { margin: 0 0 12px; }
+.bet.pred { background: var(--blue-soft); }
+.bet.pred .sel { color: var(--blue); }

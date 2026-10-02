@@ -108,6 +108,9 @@ class ClaudeAnalyst:
             "Проаналізуй футбольний матч і знайди value-ставку (або поясни, чому її немає).\n"
             + ("Спершу знайди в інтернеті свіжі новини: травми, дискваліфікації, ймовірні склади, "
                "заяви тренерів, ротацію.\n" if self.web_search else "")
+            + ("УВАГА: коефіцієнтів букмекерів для цього матчу немає. Оціни ймовірності самостійно "
+               "(на основі сили команд, форми, новин) і в recommendation вкажи найімовірніший варіант.\n"
+               if not ctx.get("base_probabilities") else "")
             + "\nДані:\n```json\n" + json.dumps(ctx, ensure_ascii=False, indent=1, default=str) + "\n```\n\n"
             + OUTPUT_SPEC.replace("{line}", str(line))
         )
@@ -205,6 +208,11 @@ def parse_json(text: str) -> dict[str, Any] | None:
 def sanitize_probs(ai: dict[str, Any], base: dict[str, float]) -> dict[str, float]:
     """Обмежує зсув від бази та нормалізує групи — захист від галюцинацій."""
     out: dict[str, float] = {}
+    if not base:  # коефіцієнтів немає — приймаємо оцінку AI, лише нормалізуємо
+        base = {k: 0.5 for k in ("home", "draw", "away", "over", "under")}
+        shift = 1.0
+    else:
+        shift = MAX_SHIFT
     for k, b in base.items():
         try:
             v = float(ai.get(k, b))
@@ -212,7 +220,7 @@ def sanitize_probs(ai: dict[str, Any], base: dict[str, float]) -> dict[str, floa
             v = b
         if v > 1:  # раптом повернув у відсотках
             v /= 100
-        out[k] = min(max(v, b - MAX_SHIFT, 0.01), b + MAX_SHIFT, 0.99)
+        out[k] = min(max(v, b - shift, 0.01), b + shift, 0.99)
     for group in (("home", "draw", "away"), ("over", "under")):
         s = sum(out[g] for g in group if g in out)
         if s:

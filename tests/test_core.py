@@ -150,3 +150,69 @@ def test_demo_pipeline(tmp_path, monkeypatch):
     for p in store["picks"]:
         if p["status"] == "pending":
             assert p["edge"] >= 0.03
+
+
+def test_gemini_analyst(monkeypatch):
+    sent = []
+    reply = {"summary": "s", "probabilities": {"home": 0.5, "draw": 0.25, "away": 0.25, "over": 0.5, "under": 0.5},
+             "recommendation": {"market": "totals", "side": "over", "confidence": 6, "reasoning": "r"}}
+
+    class Resp:
+        status_code, text = 200, ""
+
+        def json(self):
+            return {"candidates": [{"content": {"parts": [{"text": "```json\n" + json.dumps(reply) + "\n```"}]},
+                                    "groundingMetadata": {"webSearchQueries": ["q1"],
+                                                          "groundingChunks": [{"web": {"uri": "https://bbc.com/x"}}]}}],
+                    "usageMetadata": {"promptTokenCount": 100, "candidatesTokenCount": 50}}
+
+    def fake_post(url, params, json, timeout):  # noqa: A002
+        sent.append((url, params, json))
+        return Resp()
+
+    monkeypatch.setattr(analyst.requests, "post", fake_post)
+    a = analyst.make_analyst("gemini", {"gemini": "g"}, {"gemini_pause_sec": 0})
+    base = {"home": 0.5, "draw": 0.25, "away": 0.25, "over": 0.5, "under": 0.5}
+    res = a.analyse({"base_probabilities": base})
+    assert "gemini-2.5-flash:generateContent" in sent[0][0]
+    assert sent[0][2]["tools"] == [{"google_search": {}}]
+    assert res["sources"] == ["https://bbc.com/x"] and a.usage["web_searches"] == 1
+
+
+def test_provider_selection(monkeypatch):
+    monkeypatch.delenv("GEMINI_API_KEY", raising=False)
+    monkeypatch.delenv("AI_PROVIDER", raising=False)
+    monkeypatch.setenv("ANTHROPIC_API_KEY", "a")
+    assert load_settings().ai_provider == "claude"
+    monkeypatch.setenv("GEMINI_API_KEY", "g")
+    cfg = load_settings()
+    assert cfg.ai_provider == "gemini" and cfg.ai_enabled
+
+
+# ── ESPN і прогнози без коефіцієнтів ───────────────────────
+def test_espn_scoreboard_and_results(monkeypatch):
+    from datetime import timedelta
+    from betai.sources import espn
+    from betai.utils import utcnow
+    kick = utcnow() - timedelta(hours=4)
+    data = {"events": [{"id": "1", "date": kick.strftime("%Y-%m-%dT%H:%MZ"),
+                        "status": {"type": {"state": "post", "completed": True}},
+                        "competitions": [{"competitors": [
+                            {"homeAway": "home", "team": {"displayName": "Shakhtar Donetsk"}, "score": "2"},
+                            {"homeAway": "away", "team": {"displayName": "Dynamo Kyiv"}, "score": "2"}]}]}]}
+    monkeypatch.setattr(espn, "http_get", lambda *a, **k: type("R", (), {"json": lambda s: data})())
+    picks = [{"event_id": "e", "home": "Shakhtar Donetsk", "away": "Dynamo Kyiv",
+              "commence_time": kick.strftime("%Y-%m-%dT%H:%M:%SZ")}]
+    assert espn.results_for(picks, "ukr.1") == {"e": {"home_score": 2, "away_score": 2}}
+
+
+def test_prediction_without_odds():
+    ai = {"probabilities": {"home": 0.5, "draw": 0.3, "away": 0.2, "over": 0.5, "under": 0.5},
+          "recommendation": {"market": "h2h", "side": "home", "confidence": 6}}
+    pr = pipeline.make_prediction(ai, 0.05)
+    assert pr["label"] == "П1" and pr["fair_odds"] == 2.0 and pr["min_odds"] == 2.1
+
+
+def test_sanitize_without_base():
+    out = analyst.sanitize_probs({"home": 0.6, "draw": 0.25, "away": 0.25, "over": 0.4, "under": 0.6}, {})
+    assert out["home"] + out["draw"] + out["away"] == pytest.approx(1.0, abs=1e-3)

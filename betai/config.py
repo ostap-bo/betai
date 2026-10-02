@@ -38,7 +38,15 @@ class Settings:
     # зручні аксесори
     @property
     def leagues(self) -> list[dict[str, Any]]:
-        return self.raw.get("leagues", [])
+        out = []
+        for lg in self.raw.get("leagues", []) or []:
+            lg = dict(lg)
+            lg.setdefault("id", lg.get("odds_key") or f"espn:{lg.get('espn')}")
+            out.append(lg)
+        return out
+
+    def league_by_id(self, league_id: str) -> dict[str, Any] | None:
+        return next((lg for lg in self.leagues if lg["id"] == league_id or lg.get("odds_key") == league_id), None)
 
     def section(self, name: str) -> dict[str, Any]:
         return self.raw.get(name, {}) or {}

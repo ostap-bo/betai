@@ -10,7 +10,7 @@ from typing import Any
 from .ai.analyst import make_analyst
 from .config import DOCS_DATA_DIR, Settings
 from .model import poisson, value
-from .sources import demo, history, news, odds
+from .sources import demo, espn, history, news, odds
 from .sources.fixtures import ApiFootball, enrich_with_api_football
 from .tracker import pick_id, settle, stale_pending, stats, update_clv
 from .utils import parse_dt, read_json, utcnow, write_json
@@ -22,48 +22,98 @@ LATEST_PATH = DOCS_DATA_DIR / "latest.json"
 
 
 # ─── 1. Розрахунок минулих ставок ───────────────────────────────────────────
-def settle_picks(cfg: Settings, picks: list[dict[str, Any]]) -> None:
-    if cfg.demo or not cfg.odds_api_key:
+def settle_picks(cfg: Settings, picks: list[dict[str, Any]], credits: dict[str, Any]) -> None:
+    """Розраховує ставки: спершу безкоштовно через ESPN, потім (за потреби) через The Odds API."""
+    if cfg.demo:
         return
     now = utcnow()
-    leagues = {p["league"] for p in picks
-               if p["status"] == "pending" and parse_dt(p["commence_time"]) + timedelta(hours=2) < now}
-    for lg in leagues:
-        try:
-            n = settle(picks, odds.fetch_scores(cfg.odds_api_key, lg, days_from=3))
-            log.info("Розраховано %d ставок у %s", n, lg)
-        except Exception as exc:  # noqa: BLE001
-            log.warning("Не вдалося отримати результати %s: %s", lg, exc)
+    due = [p for p in picks if p["status"] == "pending"
+           and parse_dt(p["commence_time"]) + timedelta(hours=2.5) < now]
+    by_league: dict[str, list[dict[str, Any]]] = {}
+    for p in due:
+        by_league.setdefault(p["league"], []).append(p)
+
+    for lg_id, lg_picks in by_league.items():
+        lg = cfg.league_by_id(lg_id) or {}
+        code = lg.get("espn") or lg_picks[0].get("espn")
+        n = 0
+        if code:
+            try:
+                n = settle(lg_picks, espn.results_for(lg_picks, code))
+            except Exception as exc:  # noqa: BLE001
+                log.warning("ESPN-результати для %s недоступні: %s", lg_id, exc)
+        left = [p for p in lg_picks if p["status"] == "pending"]
+        odds_key = lg.get("odds_key")
+        if left and odds_key and cfg.odds_api_key and credits_ok(cfg, credits):
+            try:
+                n += settle(left, odds.fetch_scores(cfg.odds_api_key, odds_key, days_from=3))
+            except Exception as exc:  # noqa: BLE001
+                log.warning("Не вдалося отримати результати %s: %s", lg_id, exc)
+        log.info("Розраховано %d ставок у %s", n, lg_id)
     stale_pending(picks)
 
 
+def credits_ok(cfg: Settings, credits: dict[str, Any]) -> bool:
+    left = credits.get("remaining")
+    return left is None or left > int(cfg.section("odds").get("min_credits_left", 25))
+
+
 # ─── 2. Збір даних та модель ────────────────────────────────────────────────
-def collect(cfg: Settings) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
-    """Повертає (події з контекстом, новини)."""
+def collect(cfg: Settings, credits: dict[str, Any]) -> tuple[list[dict[str, Any]], list[dict[str, Any]], list]:
+    """Повертає (події з контекстом, новини, статус джерел по лігах)."""
     ocfg, mcfg = cfg.section("odds"), cfg.section("model")
     line = float(ocfg.get("totals_line", 2.5))
+    hours = int(cfg.raw.get("lookahead_hours", 48))
     all_events: list[dict[str, Any]] = []
+    status: list[dict[str, Any]] = []
+
+    if not cfg.demo and not cfg.odds_api_key:
+        raise SystemExit("ODDS_API_KEY не задано. Додайте ключ або запустіть з --demo.")
 
     for league in cfg.leagues:
+        st = {"league": league["name"], "events": 0, "source": None, "note": None}
+        status.append(st)
+        hist = None
         if cfg.demo:
-            events, hist = demo.demo_events(league, seed=zlib.crc32(league["odds_key"].encode()) % 1000), demo.demo_history()
-        else:
-            if not cfg.odds_api_key:
-                raise SystemExit("ODDS_API_KEY не задано. Додайте ключ або запустіть з --demo.")
-            try:
-                events = odds.fetch_odds(cfg.odds_api_key, league, regions=ocfg.get("regions", "eu"),
-                                         markets=ocfg.get("markets"), totals_line=line,
-                                         lookahead_hours=int(cfg.raw.get("lookahead_hours", 72)))
-            except Exception as exc:  # noqa: BLE001
-                log.error("Коефіцієнти для %s недоступні: %s", league["name"], exc)
+            if not league.get("odds_key"):
                 continue
-            hist = history.load_history(league["history_code"], int(mcfg.get("history_seasons", 3)))
+            events = demo.demo_events(league, seed=zlib.crc32(league["odds_key"].encode()) % 1000)
+            hist, st["source"] = demo.demo_history(), "demo"
+        else:
+            events = []
+            if league.get("odds_key"):
+                if credits_ok(cfg, credits):
+                    try:
+                        events, left = odds.fetch_odds(cfg.odds_api_key, league, regions=ocfg.get("regions", "eu"),
+                                                       markets=ocfg.get("markets"), totals_line=line,
+                                                       lookahead_hours=hours)
+                        if left is not None:
+                            credits["remaining"] = left
+                        st["source"] = "The Odds API"
+                    except Exception as exc:  # noqa: BLE001
+                        log.error("Коефіцієнти для %s недоступні: %s", league["name"], exc)
+                        st["note"] = f"коефіцієнти недоступні: {str(exc)[:120]}"
+                else:
+                    st["note"] = "пропущено: закінчуються кредити The Odds API"
+            if not events and league.get("espn") and not league.get("odds_key"):
+                try:
+                    events = espn.upcoming(league["espn"], league, hours)
+                    st["source"] = "ESPN (без коефіцієнтів)"
+                except Exception as exc:  # noqa: BLE001
+                    log.warning("ESPN %s недоступний: %s", league["espn"], exc)
+                    st["note"] = f"розклад недоступний: {str(exc)[:120]}"
+            if events and league.get("history_code"):
+                hist = history.load_history(league["history_code"], int(mcfg.get("history_seasons", 3)))
 
-        ratings = poisson.fit_ratings(hist, half_life_days=float(mcfg.get("decay_half_life_days", 240)))
+        ratings = poisson.fit_ratings(hist, half_life_days=float(mcfg.get("decay_half_life_days", 240))) \
+            if hist is not None else poisson.TeamRatings()
         for ev in events:
+            ev["espn"] = league.get("espn")
+            ev["priority"] = bool(league.get("priority"))
             build_context(ev, hist, ratings, mcfg, line)
+        st["events"] = len(events)
         all_events.extend(events)
-        if cfg.demo:
+        if cfg.demo and events:
             break  # у демо достатньо однієї ліги
 
     if cfg.demo:
@@ -73,7 +123,7 @@ def collect(cfg: Settings) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
         news_items = news.fetch_news(ncfg.get("feeds", []), int(ncfg.get("max_age_hours", 72)))
     for ev in all_events:
         ev["news"] = news.news_for_match(news_items, ev["home"], ev["away"])
-    return all_events, news_items
+    return all_events, news_items, status
 
 
 def build_context(ev: dict[str, Any], hist, ratings: poisson.TeamRatings,
@@ -88,7 +138,7 @@ def build_context(ev: dict[str, Any], hist, ratings: poisson.TeamRatings,
         ev["expected_goals"] = {"home": round(xg[0], 2), "away": round(xg[1], 2)}
         ev["likely_scores"] = poisson.top_scores(m)
     hname, aname = ratings.resolve(ev["home"]), ratings.resolve(ev["away"])
-    if hname and aname:
+    if hname and aname and hist is not None:
         ev["form"] = {"home": history.team_form(hist, hname), "away": history.team_form(hist, aname)}
         ev["h2h"] = history.head_to_head(hist, hname, aname)
 
@@ -139,16 +189,20 @@ def run_ai(cfg: Settings, events: list[dict[str, Any]]) -> dict[str, Any]:
     acfg = cfg.section("ai")
     usage: dict[str, Any] = {"mode": "off"}
     now = utcnow()
-    horizon = now + timedelta(hours=int(cfg.raw.get("lookahead_hours", 72)))
+    horizon = now + timedelta(hours=int(cfg.raw.get("lookahead_hours", 48)))
     pool = [e for e in events if now < parse_dt(e["commence_time"]) <= horizon]
-    # пріоритет — матчі з найбільшим базовим edge
-    pool.sort(key=lambda e: e["candidates"][0]["edge"] if e["candidates"] else -1, reverse=True)
-    selected = pool[: int(acfg.get("max_matches", 12))]
+
+    # черга: спершу пріоритетні турніри, далі — матчі з найбільшим базовим edge
+    def rank(e: dict[str, Any]) -> tuple:
+        edge = e["candidates"][0]["edge"] if e["candidates"] else 0.0
+        return (not e.get("priority"), -edge)
+    pool.sort(key=rank)
+    selected = pool[: int(acfg.get("max_matches", 20))]
 
     # API-Football: травми та H2H тільки для відібраних матчів (економія ліміту)
     if cfg.api_football_key and not cfg.demo:
         client, cache = ApiFootball(cfg.api_football_key), {}
-        ids = {lg["odds_key"]: lg.get("api_football_id") for lg in cfg.leagues}
+        ids = {lg["id"]: lg.get("api_football_id") for lg in cfg.leagues}
         for lg_key, lg_id in ids.items():
             if lg_id:
                 enrich_with_api_football(client, lg_id, [e for e in selected if e["league"] == lg_key], cache)
@@ -188,6 +242,12 @@ def select_picks(cfg: Settings, events: list[dict[str, Any]]) -> list[dict[str, 
 
     for ev in events:
         ai = ev.get("ai")
+        if not ev["odds"]:  # немає коефіцієнтів (УПЛ, товариські) — лише AI-прогноз
+            ev["verdict"] = "predict" if ai else "skip"
+            if ai:
+                ev["final_probs"] = ai["probabilities"]
+                ev["prediction"] = make_prediction(ai, min_edge)
+            continue
         if ai:
             ev["final_probs"] = ai["probabilities"]
             rec = ai.get("recommendation") or {}
@@ -217,7 +277,7 @@ def select_picks(cfg: Settings, events: list[dict[str, Any]]) -> list[dict[str, 
         ev["stake"] = stake
         out.append({
             "id": pick_id(ev["id"], choice["market"], choice["side"]),
-            "event_id": ev["id"], "league": ev["league"], "league_name": ev["league_name"],
+            "event_id": ev["id"], "league": ev["league"], "league_name": ev["league_name"], "espn": ev.get("espn"),
             "commence_time": ev["commence_time"], "home": ev["home"], "away": ev["away"],
             "market": choice["market"], "side": choice["side"], "label": choice["label"],
             "label_market": "1X2" if choice["market"] == "h2h" else "Тотал",
@@ -233,6 +293,27 @@ def select_picks(cfg: Settings, events: list[dict[str, Any]]) -> list[dict[str, 
     return out[: int(pc.get("max_picks_per_run", 8))]
 
 
+def make_prediction(ai: dict[str, Any], min_edge: float) -> dict[str, Any] | None:
+    """Прогноз без коефіцієнтів: найімовірніший варіант + мінімальний коефіцієнт для value."""
+    rec = ai.get("recommendation") or {}
+    probs = ai.get("probabilities") or {}
+    side = rec.get("side")
+    if side not in probs:
+        side = max(("home", "draw", "away"), key=lambda k: probs.get(k, 0))
+    market = "totals" if side in ("over", "under") else "h2h"
+    p = probs[side]
+    fair = 1 / p if p else None
+    return {
+        "market": market, "side": side,
+        "label": value.SELECTIONS[(market, side)].format(line=2.5),
+        "prob": round(p, 4),
+        "fair_odds": round(fair, 2) if fair else None,
+        "min_odds": round(fair * (1 + min_edge), 2) if fair else None,
+        "confidence": rec.get("confidence"),
+        "reasoning": rec.get("reasoning"),
+    }
+
+
 # ─── 5. Оркестрація ─────────────────────────────────────────────────────────
 def run(cfg: Settings) -> dict[str, Any]:
     started = utcnow()
@@ -243,8 +324,9 @@ def run(cfg: Settings) -> dict[str, Any]:
     else:
         picks = [p for p in picks if not p.get("demo")]  # демо-дані не змішуємо з реальними
 
-    settle_picks(cfg, picks)
-    events, news_items = collect(cfg)
+    credits: dict[str, Any] = {"remaining": None}
+    settle_picks(cfg, picks, credits)
+    events, news_items, sources = collect(cfg, credits)
     log.info("Зібрано %d подій", len(events))
     usage = run_ai(cfg, events)
     new_picks = select_picks(cfg, events)
@@ -264,6 +346,8 @@ def run(cfg: Settings) -> dict[str, Any]:
         "ai": usage,
         "settings": {k: cfg.section("picks").get(k) for k in ("min_edge", "min_odds", "max_odds", "min_confidence")},
         "news_count": len(news_items),
+        "odds_credits_left": credits.get("remaining"),
+        "sources": sources,
         "events": [slim(e) for e in events],
     }
     write_json(LATEST_PATH, latest)
@@ -273,7 +357,7 @@ def run(cfg: Settings) -> dict[str, Any]:
 def slim(ev: dict[str, Any]) -> dict[str, Any]:
     keep = ("id", "league_name", "commence_time", "home", "away", "odds", "expected_goals", "likely_scores",
             "form", "h2h", "injuries", "news", "model_probs", "market_probs", "base_probs", "final_probs",
-            "final_candidates", "ai", "ai_error", "verdict", "stake", "venue")
+            "final_candidates", "ai", "ai_error", "verdict", "stake", "venue", "prediction", "priority")
     return {k: ev[k] for k in keep if k in ev}
 
 

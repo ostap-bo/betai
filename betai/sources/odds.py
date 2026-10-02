@@ -50,7 +50,7 @@ def normalise_event(ev: dict[str, Any], league: dict[str, Any], totals_line: flo
 
     return {
         "id": ev["id"],
-        "league": league["odds_key"],
+        "league": league.get("id", league["odds_key"]),
         "league_name": league["name"],
         "commence_time": ev["commence_time"],
         "home": home,
@@ -62,7 +62,8 @@ def normalise_event(ev: dict[str, Any], league: dict[str, Any], totals_line: flo
 
 def fetch_odds(api_key: str, league: dict[str, Any], *, regions: str = "eu",
                markets: list[str] | None = None, lookahead_hours: int = 72,
-               totals_line: float = 2.5) -> list[dict[str, Any]]:
+               totals_line: float = 2.5) -> tuple[list[dict[str, Any]], int | None]:
+    """Повертає (події, залишок кредитів). Порожня відповідь кредитів не витрачає."""
     markets = markets or ["h2h", "totals"]
     now = utcnow()
     params = {
@@ -75,11 +76,18 @@ def fetch_odds(api_key: str, league: dict[str, Any], *, regions: str = "eu",
         "commenceTimeTo": (now + timedelta(hours=lookahead_hours)).strftime("%Y-%m-%dT%H:%M:%SZ"),
     }
     resp = http_get(f"{BASE}/sports/{league['odds_key']}/odds", params=params)
-    remaining = resp.headers.get("x-requests-remaining")
+    remaining = _int(resp.headers.get("x-requests-remaining"))
     log.info("The Odds API [%s]: %d подій, залишок кредитів: %s",
              league["odds_key"], len(resp.json()), remaining)
     events = [normalise_event(e, league, totals_line) for e in resp.json()]
-    return [e for e in events if "h2h" in e["odds"] and parse_dt(e["commence_time"]) > now]
+    return [e for e in events if "h2h" in e["odds"] and parse_dt(e["commence_time"]) > now], remaining
+
+
+def _int(v: Any) -> int | None:
+    try:
+        return int(float(v))
+    except (TypeError, ValueError):
+        return None
 
 
 def fetch_scores(api_key: str, sport_key: str, days_from: int = 3) -> dict[str, dict[str, Any]]:
