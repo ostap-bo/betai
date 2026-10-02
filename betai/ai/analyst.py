@@ -50,6 +50,8 @@ OUTPUT_SPEC = """Поверни ЛИШЕ JSON у блоці ```json з тако�
 
 
 class ClaudeAnalyst:
+    provider = "Claude"
+
     def __init__(self, api_key: str, cfg: dict[str, Any]):
         self.api_key = api_key
         self.model = cfg.get("model", "claude-sonnet-5-5")
@@ -112,9 +114,77 @@ class ClaudeAnalyst:
         text = self._call(prompt)
         result = parse_json(text)
         if result is None:
-            raise ValueError("Claude повернув відповідь без коректного JSON")
+            raise ValueError(f"{self.provider} повернув відповідь без коректного JSON")
         result["probabilities"] = sanitize_probs(result.get("probabilities", {}), ctx["base_probabilities"])
         return result
+
+
+class GeminiAnalyst(ClaudeAnalyst):
+    """Google Gemini — має безкоштовний рівень (Google AI Studio), включно з Google Search."""
+
+    provider = "Gemini"
+    URL = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
+
+    def __init__(self, api_key: str, cfg: dict[str, Any]):
+        super().__init__(api_key, cfg)
+        self.model = cfg.get("gemini_model", "gemini-2.5-flash")
+        self.pause = float(cfg.get("gemini_pause_sec", 7))  # безкоштовний ліміт запитів/хв
+        self._last = 0.0
+
+    def _call(self, user_prompt: str) -> str:
+        payload: dict[str, Any] = {
+            "systemInstruction": {"parts": [{"text": SYSTEM_PROMPT}]},
+            "contents": [{"role": "user", "parts": [{"text": user_prompt}]}],
+            "generationConfig": {"maxOutputTokens": self.max_tokens, "temperature": 0.3},
+        }
+        if self.web_search:
+            payload["tools"] = [{"google_search": {}}]
+
+        for attempt in range(4):
+            wait = self.pause - (time.time() - self._last)
+            if wait > 0:
+                time.sleep(wait)
+            self._last = time.time()
+            resp = requests.post(self.URL.format(model=self.model), params={"key": self.api_key},
+                                 json=payload, timeout=180)
+            if resp.status_code in (429, 500, 502, 503) and attempt < 3:
+                time.sleep(20 * (attempt + 1))  # перевищено безкоштовний ліміт — чекаємо
+                continue
+            if resp.status_code >= 400:
+                raise RuntimeError(f"Gemini API {resp.status_code}: {resp.text[:500]}")
+            data = resp.json()
+            break
+        else:
+            raise RuntimeError("Gemini API: вичерпано спроби")
+
+        self.usage["calls"] += 1
+        u = data.get("usageMetadata", {})
+        self.usage["input_tokens"] += u.get("promptTokenCount", 0)
+        self.usage["output_tokens"] += u.get("candidatesTokenCount", 0)
+        cand = (data.get("candidates") or [{}])[0]
+        gm = cand.get("groundingMetadata") or {}
+        self.usage["web_searches"] += len(gm.get("webSearchQueries") or [])
+        text = "\n".join(p.get("text", "") for p in (cand.get("content") or {}).get("parts", []))
+        if not text:
+            raise RuntimeError(f"Gemini: порожня відповідь ({cand.get('finishReason')})")
+        self._sources = [c["web"]["uri"] for c in gm.get("groundingChunks", []) if c.get("web", {}).get("uri")]
+        return text
+
+    def analyse(self, ctx: dict[str, Any]) -> dict[str, Any]:
+        self._sources = []
+        result = super().analyse(ctx)
+        if not result.get("sources") and self._sources:
+            result["sources"] = self._sources[:5]
+        return result
+
+
+def make_analyst(provider: str, keys: dict[str, str | None], cfg: dict[str, Any]) -> ClaudeAnalyst | None:
+    provider = (provider or "gemini").lower()
+    if provider == "claude" and keys.get("claude"):
+        return ClaudeAnalyst(keys["claude"], cfg)
+    if provider == "gemini" and keys.get("gemini"):
+        return GeminiAnalyst(keys["gemini"], cfg)
+    return None
 
 
 def parse_json(text: str) -> dict[str, Any] | None:

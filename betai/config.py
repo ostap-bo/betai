@@ -31,6 +31,7 @@ class Settings:
     odds_api_key: str | None = None
     api_football_key: str | None = None
     anthropic_api_key: str | None = None
+    gemini_api_key: str | None = None
     demo: bool = False
     extra: dict[str, Any] = field(default_factory=dict)
 
@@ -43,8 +44,16 @@ class Settings:
         return self.raw.get(name, {}) or {}
 
     @property
+    def ai_provider(self) -> str:
+        return str(self.section("ai").get("provider", "gemini")).lower()
+
+    @property
+    def ai_keys(self) -> dict[str, str | None]:
+        return {"claude": self.anthropic_api_key, "gemini": self.gemini_api_key}
+
+    @property
     def ai_enabled(self) -> bool:
-        return bool(self.section("ai").get("enabled", True)) and bool(self.anthropic_api_key)
+        return bool(self.section("ai").get("enabled", True)) and bool(self.ai_keys.get(self.ai_provider))
 
 
 def load_settings(config_path: Path | None = None, demo: bool = False) -> Settings:
@@ -53,13 +62,19 @@ def load_settings(config_path: Path | None = None, demo: bool = False) -> Settin
     raw = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
 
     # Дозволяємо перевизначити модель Claude через змінну середовища
+    ai = raw.setdefault("ai", {})
     if os.getenv("ANTHROPIC_MODEL"):
-        raw.setdefault("ai", {})["model"] = os.environ["ANTHROPIC_MODEL"]
+        ai["model"] = os.environ["ANTHROPIC_MODEL"]
+    if os.getenv("AI_PROVIDER"):
+        ai["provider"] = os.environ["AI_PROVIDER"]
+    elif not os.getenv("GEMINI_API_KEY") and os.getenv("ANTHROPIC_API_KEY"):
+        ai["provider"] = "claude"  # є лише ключ Claude — використовуємо його
 
     return Settings(
         raw=raw,
         odds_api_key=os.getenv("ODDS_API_KEY") or None,
         api_football_key=os.getenv("API_FOOTBALL_KEY") or None,
         anthropic_api_key=os.getenv("ANTHROPIC_API_KEY") or None,
+        gemini_api_key=os.getenv("GEMINI_API_KEY") or None,
         demo=demo or os.getenv("BETAI_DEMO") == "1",
     )

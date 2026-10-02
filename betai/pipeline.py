@@ -7,7 +7,7 @@ import zlib
 from datetime import timedelta
 from typing import Any
 
-from .ai.analyst import ClaudeAnalyst
+from .ai.analyst import make_analyst
 from .config import DOCS_DATA_DIR, Settings
 from .model import poisson, value
 from .sources import demo, history, news, odds
@@ -129,7 +129,7 @@ def mock_ai(ev: dict[str, Any]) -> dict[str, Any]:
         "probabilities": probs,
         "recommendation": {"market": best["market"], "side": best["side"],
                            "confidence": rnd.randint(4, 8),
-                           "reasoning": "Демо-режим: рекомендація згенерована без Claude API."},
+                           "reasoning": "Демо-режим: рекомендація згенерована без AI."},
         "risks": ["Це демо-дані — не використовуйте для реальних ставок"],
         "sources": [],
     }
@@ -158,8 +158,9 @@ def run_ai(cfg: Settings, events: list[dict[str, Any]]) -> dict[str, Any]:
     if cfg.demo:
         usage["mode"] = "demo"
     elif cfg.ai_enabled:
-        analyst = ClaudeAnalyst(cfg.anthropic_api_key, acfg)
-        usage["mode"] = "claude"
+        analyst = make_analyst(cfg.ai_provider, cfg.ai_keys, acfg)
+        usage["mode"] = "ai"
+        usage["provider"] = analyst.provider
         usage["model"] = analyst.model
 
     for ev in selected:
@@ -167,7 +168,7 @@ def run_ai(cfg: Settings, events: list[dict[str, Any]]) -> dict[str, Any]:
             if cfg.demo:
                 ev["ai"] = mock_ai(ev)
             elif analyst:
-                log.info("Claude аналізує: %s — %s", ev["home"], ev["away"])
+                log.info("%s аналізує: %s — %s", analyst.provider, ev["home"], ev["away"])
                 ev["ai"] = analyst.analyse(ai_context(ev))
         except Exception as exc:  # noqa: BLE001
             log.error("AI-аналіз %s — %s не вдався: %s", ev["home"], ev["away"], exc)

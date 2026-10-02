@@ -45,9 +45,13 @@ model:
 
 ai:
   enabled: true
-  model: claude-sonnet-5-5   # можна змінити на claude-opus-5-5 для глибшого аналізу
-  max_matches: 12            # максимум матчів на запуск, які аналізує AI (контроль витрат)
-  web_search: true           # Claude сам шукає свіжі новини, травми, склади
+  # gemini — БЕЗКОШТОВНО (ключ з aistudio.google.com), claude — платно, але глибше
+  provider: gemini
+  gemini_model: gemini-2.5-flash
+  gemini_pause_sec: 7        # пауза між запитами (ліміти безкоштовного плану)
+  model: claude-sonnet-5-5   # використовується, якщо provider: claude
+  max_matches: 12            # максимум матчів на запуск, які аналізує AI
+  web_search: true           # AI сам шукає свіжі новини, травми, склади
   web_search_tool: web_search_20250305
   web_search_max_uses: 3
   max_tokens: 4000

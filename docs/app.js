@@ -206,9 +206,9 @@
 
   function renderStats(s, latest) {
     const ai = latest.ai || {};
-    const aiInfo = ai.mode === "claude"
-      ? `Модель: <span class="mono">${esc(ai.model)}</span> · викликів: ${ai.calls ?? 0} · токенів: ${(ai.input_tokens ?? 0) + (ai.output_tokens ?? 0)} · пошуків: ${ai.web_searches ?? 0}`
-      : ai.mode === "demo" ? "Демо-режим (без Claude API)" : "AI вимкнено — лише статистична модель";
+    const aiInfo = ai.mode === "ai" || ai.mode === "claude"
+      ? `${esc(ai.provider || "Claude")} · модель: <span class="mono">${esc(ai.model)}</span> · викликів: ${ai.calls ?? 0} · токенів: ${(ai.input_tokens ?? 0) + (ai.output_tokens ?? 0)} · пошуків: ${ai.web_searches ?? 0}`
+      : ai.mode === "demo" ? "Демо-режим (без AI)" : "AI вимкнено — лише статистична модель";
     const st = latest.settings || {};
     $("#tab-stats").innerHTML = `<div class="two">${breakdownTable("За ринком", s.by_market)}${breakdownTable("За лігою", s.by_league)}</div>
       <div class="card" style="margin-top:14px;padding:14px 16px">
@@ -242,7 +242,7 @@
       const ai = latest.ai || {};
       $("#badges").innerHTML = [
         latest.demo ? `<span class="badge warn">ДЕМО</span>` : "",
-        ai.mode === "claude" ? `<span class="badge ok">Claude · ${esc(ai.model)}</span>` : ai.mode === "off" ? `<span class="badge">AI вимкнено</span>` : "",
+        (ai.mode === "ai" || ai.mode === "claude") ? `<span class="badge ok">${esc(ai.provider || "Claude")} · ${esc(ai.model)}</span>` : ai.mode === "off" ? `<span class="badge">AI вимкнено</span>` : "",
         `<span class="badge">${latest.events.length} матчів</span>`,
       ].join("");
       renderKpis(store.stats);
