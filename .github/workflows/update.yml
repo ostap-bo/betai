@@ -1,0 +1,69 @@
+name: Update predictions
+
+on:
+  schedule:
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+    inputs:
+      demo:
+        description: "Запустити в демо-режимі (без API)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: betai-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Cache historical data
+        uses: actions/cache@v4
+        with:
+          path: data/cache
+          key: history-${{ github.run_id }}
+          restore-keys: history-
+
+      - name: Run BetAI pipeline
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          AI_PROVIDER: ${{ vars.AI_PROVIDER }}
+          ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL }}
+        run: |
+          if [ "${{ inputs.demo }}" = "true" ] || [ -z "$ODDS_API_KEY" ]; then
+            echo "::warning::ODDS_API_KEY не задано — демо-режим"
+            python -m betai run --demo
+          else
+            python -m betai run
+          fi
+
+      - name: Commit updated data
+        run: |
+          git config user.name "betai-bot"
+          git config user.email "betai-bot@users.noreply.github.com"
+          git add docs/data
+          if git diff --cached --quiet; then
+            echo "Без змін"
+          else
+            git commit -m "data: update predictions $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git pull --rebase --autostash
+            git push
+          fi
