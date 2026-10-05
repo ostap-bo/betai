@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-04T12:23:05.908856+00:00",
-  "duration_sec": 113.3,
+  "updated_at": "2026-10-05T14:39:40.067081+00:00",
+  "duration_sec": 127.8,
   "demo": false,
   "ai": {
     "mode": "ai",
@@ -17,8 +17,8 @@
     "max_odds": 5.0,
     "min_confidence": 5
   },
-  "news_count": 82,
-  "odds_credits_left": 494,
+  "news_count": 84,
+  "odds_credits_left": 492,
   "sources": [
     {
       "league": "Україна — УПЛ",
@@ -28,7 +28,7 @@
     },
     {
       "league": "Ліга націй УЄФА",
-      "events": 16,
+      "events": 18,
       "source": "The Odds API",
       "note": null
     },
@@ -101,1091 +101,6 @@
   ],
   "events": [
     {
-      "id": "af78df2c3dc0728fc53c675b62f18a98",
-      "league_name": "Ліга націй УЄФА",
-      "commence_time": "2026-10-04T13:00:00Z",
-      "home": "Azerbaijan",
-      "away": "Lithuania",
-      "odds": {
-        "h2h": {
-          "home": {
-            "best": 2.72,
-            "book": "Betfair",
-            "avg": 2.519,
-            "n": 15
-          },
-          "draw": {
-            "best": 3.05,
-            "book": "Betfair",
-            "avg": 2.906,
-            "n": 15
-          },
-          "away": {
-            "best": 3.21,
-            "book": "1xBet",
-            "avg": 3.046,
-            "n": 15
-          }
-        },
-        "totals": {
-          "line": 2.5,
-          "over": {
-            "best": 2.7,
-            "book": "William Hill",
-            "avg": 2.687,
-            "n": 3
-          },
-          "under": {
-            "best": 1.43,
-            "book": "Betsson",
-            "avg": 1.42,
-            "n": 3
-          }
-        }
-      },
-      "news": [],
-      "model_probs": {},
-      "market_probs": {
-        "home": 0.3712,
-        "draw": 0.3218,
-        "away": 0.307,
-        "over": 0.3458,
-        "under": 0.6542
-      },
-      "base_probs": {
-        "home": 0.3712,
-        "draw": 0.3218,
-        "away": 0.307,
-        "over": 0.3458,
-        "under": 0.6542
-      },
-      "final_probs": {
-        "home": 0.3712,
-        "draw": 0.3218,
-        "away": 0.307,
-        "over": 0.3458,
-        "under": 0.6542
-      },
-      "final_candidates": [
-        {
-          "market": "h2h",
-          "side": "home",
-          "label": "П1",
-          "price": 2.72,
-          "book": "Betfair",
-          "avg_price": 2.519,
-          "prob": 0.3712,
-          "edge": 0.0097
-        },
-        {
-          "market": "h2h",
-          "side": "away",
-          "label": "П2",
-          "price": 3.21,
-          "book": "1xBet",
-          "avg_price": 3.046,
-          "prob": 0.307,
-          "edge": -0.0145
-        },
-        {
-          "market": "h2h",
-          "side": "draw",
-          "label": "Нічия",
-          "price": 3.05,
-          "book": "Betfair",
-          "avg_price": 2.906,
-          "prob": 0.3218,
-          "edge": -0.0185
-        },
-        {
-          "market": "totals",
-          "side": "under",
-          "label": "ТМ 2.5",
-          "price": 1.43,
-          "book": "Betsson",
-          "avg_price": 1.42,
-          "prob": 0.6542,
-          "edge": -0.0645
-        },
-        {
-          "market": "totals",
-          "side": "over",
-          "label": "ТБ 2.5",
-          "price": 2.7,
-          "book": "William Hill",
-          "avg_price": 2.687,
-          "prob": 0.3458,
-          "edge": -0.0663
-        }
-      ],
-      "ai_error": "Gemini API 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev",
-      "verdict": "skip",
-      "priority": true
-    },
-    {
-      "id": "048b8e582376b00f3acbaaf879ec05ec",
-      "league_name": "Ліга націй УЄФА",
-      "commence_time": "2026-10-04T16:00:00Z",
-      "home": "Malta",
-      "away": "Andorra",
-      "odds": {
-        "h2h": {
-          "home": {
-            "best": 1.67,
-            "book": "1xBet",
-            "avg": 1.593,
-            "n": 15
-          },
-          "draw": {
-            "best": 3.6,
-            "book": "Betfair",
-            "avg": 3.403,
-            "n": 15
-          },
-          "away": {
-            "best": 8.0,
-            "book": "Betfair",
-            "avg": 6.805,
-            "n": 15
-          }
-        },
-        "totals": {
-          "line": 2.5,
-          "over": {
-            "best": 2.62,
-            "book": "Nordic Bet",
-            "avg": 2.613,
-            "n": 3
-          },
-          "under": {
-            "best": 1.44,
-            "book": "William Hill",
-            "avg": 1.433,
-            "n": 3
-          }
-        }
-      },
-      "news": [],
-      "model_probs": {},
-      "market_probs": {
-        "home": 0.5875,
-        "draw": 0.275,
-        "away": 0.1375,
-        "over": 0.3542,
-        "under": 0.6458
-      },
-      "base_probs": {
-        "home": 0.5875,
-        "draw": 0.275,
-        "away": 0.1375,
-        "over": 0.3542,
-        "under": 0.6458
-      },
-      "final_probs": {
-        "home": 0.5875,
-        "draw": 0.275,
-        "away": 0.1375,
-        "over": 0.3542,
-        "under": 0.6458
-      },
-      "final_candidates": [
-        {
-          "market": "h2h",
-          "side": "away",
-          "label": "П2",
-          "price": 8.0,
-          "book": "Betfair",
-          "avg_price": 6.805,
-          "prob": 0.1375,
-          "edge": 0.1
-        },
-        {
-          "market": "h2h",
-          "side": "draw",
-          "label": "Нічия",
-          "price": 3.6,
-          "book": "Betfair",
-          "avg_price": 3.403,
-          "prob": 0.275,
-          "edge": -0.01
-        },
-        {
-          "market": "h2h",
-          "side": "home",
-          "label": "П1",
-          "price": 1.67,
-          "book": "1xBet",
-          "avg_price": 1.593,
-          "prob": 0.5875,
-          "edge": -0.0189
-        },
-        {
-          "market": "totals",
-          "side": "under",
-          "label": "ТМ 2.5",
-          "price": 1.44,
-          "book": "William Hill",
-          "avg_price": 1.433,
-          "prob": 0.6458,
-          "edge": -0.07
-        },
-        {
-          "market": "totals",
-          "side": "over",
-          "label": "ТБ 2.5",
-          "price": 2.62,
-          "book": "Nordic Bet",
-          "avg_price": 2.613,
-          "prob": 0.3542,
-          "edge": -0.072
-        }
-      ],
-      "ai_error": "Gemini API 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev",
-      "verdict": "skip",
-      "priority": true
-    },
-    {
-      "id": "76c94aa8dba79a4f021b4eecbf422753",
-      "league_name": "Ліга націй УЄФА",
-      "commence_time": "2026-10-04T16:00:00Z",
-      "home": "Kosovo",
-      "away": "Austria",
-      "odds": {
-        "h2h": {
-          "home": {
-            "best": 4.0,
-            "book": "Betfair",
-            "avg": 3.728,
-            "n": 15
-          },
-          "draw": {
-            "best": 3.55,
-            "book": "Betfair",
-            "avg": 3.389,
-            "n": 15
-          },
-          "away": {
-            "best": 2.12,
-            "book": "Betfair",
-            "avg": 2.012,
-            "n": 15
-          }
-        },
-        "totals": {
-          "line": 2.5,
-          "over": {
-            "best": 2.1,
-            "book": "BetAnything",
-            "avg": 1.936,
-            "n": 9
-          },
-          "under": {
-            "best": 1.88,
-            "book": "Unibet (SE)",
-            "avg": 1.819,
-            "n": 9
-          }
-        }
-      },
-      "news": [],
-      "model_probs": {},
-      "market_probs": {
-        "home": 0.253,
-        "draw": 0.2783,
-        "away": 0.4687,
-        "over": 0.4844,
-        "under": 0.5156
-      },
-      "base_probs": {
-        "home": 0.253,
-        "draw": 0.2783,
-        "away": 0.4687,
-        "over": 0.4844,
-        "under": 0.5156
-      },
-      "final_probs": {
-        "home": 0.253,
-        "draw": 0.2783,
-        "away": 0.4687,
-        "over": 0.4844,
-        "under": 0.5156
-      },
-      "final_candidates": [
-        {
-          "market": "totals",
-          "side": "over",
-          "label": "ТБ 2.5",
-          "price": 2.1,
-          "book": "BetAnything",
-          "avg_price": 1.936,
-          "prob": 0.4844,
-          "edge": 0.0172
-        },
-        {
-          "market": "h2h",
-          "side": "home",
-          "label": "П1",
-          "price": 4.0,
-          "book": "Betfair",
-          "avg_price": 3.728,
-          "prob": 0.253,
-          "edge": 0.012
-        },
-        {
-          "market": "h2h",
-          "side": "away",
-          "label": "П2",
-          "price": 2.12,
-          "book": "Betfair",
-          "avg_price": 2.012,
-          "prob": 0.4687,
-          "edge": -0.0064
-        },
-        {
-          "market": "h2h",
-          "side": "draw",
-          "label": "Нічия",
-          "price": 3.55,
-          "book": "Betfair",
-          "avg_price": 3.389,
-          "prob": 0.2783,
-          "edge": -0.012
-        },
-        {
-          "market": "totals",
-          "side": "under",
-          "label": "ТМ 2.5",
-          "price": 1.88,
-          "book": "Unibet (SE)",
-          "avg_price": 1.819,
-          "prob": 0.5156,
-          "edge": -0.0307
-        }
-      ],
-      "ai_error": "Gemini API 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev",
-      "verdict": "skip",
-      "priority": true
-    },
-    {
-      "id": "18c29d24c37e4fa9c5c2a12218c87944",
-      "league_name": "Ліга націй УЄФА",
-      "commence_time": "2026-10-04T18:45:00Z",
-      "home": "Wales",
-      "away": "Denmark",
-      "odds": {
-        "h2h": {
-          "home": {
-            "best": 4.1,
-            "book": "Betfair",
-            "avg": 3.844,
-            "n": 18
-          },
-          "draw": {
-            "best": 3.7,
-            "book": "Betfair",
-            "avg": 3.537,
-            "n": 18
-          },
-          "away": {
-            "best": 2.04,
-            "book": "Betfair",
-            "avg": 1.969,
-            "n": 18
-          }
-        },
-        "totals": {
-          "line": 2.5,
-          "over": {
-            "best": 1.95,
-            "book": "Pinnacle",
-            "avg": 1.85,
-            "n": 11
-          },
-          "under": {
-            "best": 1.97,
-            "book": "1xBet",
-            "avg": 1.913,
-            "n": 11
-          }
-        }
-      },
-      "news": [
-        {
-          "title": "Wales aiming to prove they can thrive at top level",
-          "summary": "Captain Ben Davies says Wales will be driven by determination to prove they can live with challenges of Nations League A when they face Denmark in Cardiff.",
-          "link": "https://www.bbc.co.uk/sport/football/articles/cmy0er2yz02yo?at_medium=RSS&at_campaign=rss",
-          "published": "2026-10-04T03:40:55+00:00",
-          "source": "BBC Sport"
-        },
-        {
-          "title": "Group has 'exploded' after Wales win - Bellamy",
-          "summary": "Craig Bellamy says Wales' win over Norway has \"thrown a hand grenade\" into their Nations League group as they go in search of another victory against Denmark in Cardiff on Sunday.",
-          "link": "https://www.bbc.co.uk/sport/football/articles/cmkgewx77521o?at_medium=RSS&at_campaign=rss",
-          "published": "2026-10-03T16:11:50+00:00",
-          "source": "BBC Sport"
-        },
-        {
-          "title": "Why beating Denmark matters to Wales' Euro 2028 hopes",
-          "summary": "Avoiding finishing bottom of their Nations League group is a major aim for Wales following a win over Erling Haaland's Norway.",
-          "link": "https://www.bbc.co.uk/sport/football/articles/ck1wv77v9y3wo?at_medium=RSS&at_campaign=rss",
-          "published": "2026-10-03T09:09:04+00:00",
-          "source": "BBC Sport"
-        },
-        {
-          "title": "Wales come from behind to beat 10-man Norway",
-          "summary": "Watch the best of the action as Wales come from behind to beat Norway 2-1 in the Nations League.",
-          "link": "https://www.bbc.co.uk/sport/football/videos/ckwyzyx5qd49o?at_medium=RSS&at_campaign=rss",
-          "published": "2026-10-01T21:26:07+00:00",
-          "source": "BBC Sport"
-        },
-        {
-          "title": "Neco Williams fires revitalised Wales to fightback win against 10-man Norway",
-          "summary": "On a night when Erling Haaland moped around the pitch, dragging his hulking frame across the Cardiff turf, Wales registered a welcome victory over 10-man Norway and their first this year. Was this just one of those games where the game’s deadliest finisher was stuck on the fringes or was it a case of 115 things occupying his mind ? Either way, this defeat proved a humbling experience. “You’re just",
-          "link": "https://www.theguardian.com/football/2026/oct/01/wales-norway-nations-league-league-a-group-4-match-report",
-          "published": "2026-10-01T20:58:07+00:00",
-          "source": "Football | The Guardian"
-        }
-      ],
-      "model_probs": {},
-      "market_probs": {
-        "home": 0.2476,
-        "draw": 0.2691,
-        "away": 0.4833,
-        "over": 0.5084,
-        "under": 0.4916
-      },
-      "base_probs": {
-        "home": 0.2476,
-        "draw": 0.2691,
-        "away": 0.4833,
-        "over": 0.5084,
-        "under": 0.4916
-      },
-      "final_probs": {
-        "home": 0.2476,
-        "draw": 0.2691,
-        "away": 0.4833,
-        "over": 0.5084,
-        "under": 0.4916
-      },
-      "final_candidates": [
-        {
-          "market": "h2h",
-          "side": "home",
-          "label": "П1",
-          "price": 4.1,
-          "book": "Betfair",
-          "avg_price": 3.844,
-          "prob": 0.2476,
-          "edge": 0.0152
-        },
-        {
-          "market": "h2h",
-          "side": "draw",
-          "label": "Нічия",
-          "price": 3.7,
-          "book": "Betfair",
-          "avg_price": 3.537,
-          "prob": 0.2691,
-          "edge": -0.0043
-        },
-        {
-          "market": "totals",
-          "side": "over",
-          "label": "ТБ 2.5",
-          "price": 1.95,
-          "book": "Pinnacle",
-          "avg_price": 1.85,
-          "prob": 0.5084,
-          "edge": -0.0086
-        },
-        {
-          "market": "h2h",
-          "side": "away",
-          "label": "П2",
-          "price": 2.04,
-          "book": "Betfair",
-          "avg_price": 1.969,
-          "prob": 0.4833,
-          "edge": -0.0141
-        },
-        {
-          "market": "totals",
-          "side": "under",
-          "label": "ТМ 2.5",
-          "price": 1.97,
-          "book": "1xBet",
-          "avg_price": 1.913,
-          "prob": 0.4916,
-          "edge": -0.0315
-        }
-      ],
-      "ai_error": "Gemini API 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev",
-      "verdict": "skip",
-      "priority": true
-    },
-    {
-      "id": "4a0c0e7aa93708ae03af18db691f750f",
-      "league_name": "Ліга націй УЄФА",
-      "commence_time": "2026-10-04T18:45:00Z",
-      "home": "Greece",
-      "away": "Germany",
-      "odds": {
-        "h2h": {
-          "home": {
-            "best": 4.6,
-            "book": "Unibet (SE)",
-            "avg": 4.211,
-            "n": 18
-          },
-          "draw": {
-            "best": 4.1,
-            "book": "1xBet",
-            "avg": 3.874,
-            "n": 18
-          },
-          "away": {
-            "best": 1.88,
-            "book": "Betfair",
-            "avg": 1.797,
-            "n": 18
-          }
-        },
-        "totals": {
-          "line": 2.5,
-          "over": {
-            "best": 1.64,
-            "book": "1xBet",
-            "avg": 1.579,
-            "n": 8
-          },
-          "under": {
-            "best": 2.38,
-            "book": "1xBet",
-            "avg": 2.299,
-            "n": 8
-          }
-        }
-      },
-      "news": [
-        {
-          "title": "The Unpromotables: Germany's league champions who can't go up",
-          "summary": "German football is grappling with a sum that doesn't add up - four promotion spots for five league champions.",
-          "link": "https://www.bbc.co.uk/sport/football/articles/cmj4jr2vgx0ko?at_medium=RSS&at_campaign=rss",
-          "published": "2026-10-02T06:37:49+00:00",
-          "source": "BBC Sport"
-        }
-      ],
-      "model_probs": {},
-      "market_probs": {
-        "home": 0.2257,
-        "draw": 0.2454,
-        "away": 0.5289,
-        "over": 0.5928,
-        "under": 0.4072
-      },
-      "base_probs": {
-        "home": 0.2257,
-        "draw": 0.2454,
-        "away": 0.5289,
-        "over": 0.5928,
-        "under": 0.4072
-      },
-      "final_probs": {
-        "home": 0.2257,
-        "draw": 0.2454,
-        "away": 0.5289,
-        "over": 0.5928,
-        "under": 0.4072
-      },
-      "final_candidates": [
-        {
-          "market": "h2h",
-          "side": "home",
-          "label": "П1",
-          "price": 4.6,
-          "book": "Unibet (SE)",
-          "avg_price": 4.211,
-          "prob": 0.2257,
-          "edge": 0.0382
-        },
-        {
-          "market": "h2h",
-          "side": "draw",
-          "label": "Нічия",
-          "price": 4.1,
-          "book": "1xBet",
-          "avg_price": 3.874,
-          "prob": 0.2454,
-          "edge": 0.0061
-        },
-        {
-          "market": "h2h",
-          "side": "away",
-          "label": "П2",
-          "price": 1.88,
-          "book": "Betfair",
-          "avg_price": 1.797,
-          "prob": 0.5289,
-          "edge": -0.0057
-        },
-        {
-          "market": "totals",
-          "side": "over",
-          "label": "ТБ 2.5",
-          "price": 1.64,
-          "book": "1xBet",
-          "avg_price": 1.579,
-          "prob": 0.5928,
-          "edge": -0.0278
-        },
-        {
-          "market": "totals",
-          "side": "under",
-          "label": "ТМ 2.5",
-          "price": 2.38,
-          "book": "1xBet",
-          "avg_price": 2.299,
-          "prob": 0.4072,
-          "edge": -0.0309
-        }
-      ],
-      "ai_error": "Gemini API 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev",
-      "verdict": "skip",
-      "priority": true
-    },
-    {
-      "id": "1dc55d09f236eff7e5bc8e754d23e144",
-      "league_name": "Ліга націй УЄФА",
-      "commence_time": "2026-10-04T18:45:00Z",
-      "home": "Republic of Ireland",
-      "away": "Israel",
-      "odds": {
-        "h2h": {
-          "home": {
-            "best": 2.22,
-            "book": "Betfair",
-            "avg": 2.117,
-            "n": 11
-          },
-          "draw": {
-            "best": 3.55,
-            "book": "Betfair",
-            "avg": 3.401,
-            "n": 11
-          },
-          "away": {
-            "best": 3.65,
-            "book": "Betfair",
-            "avg": 3.385,
-            "n": 11
-          }
-        },
-        "totals": {
-          "line": 2.5,
-          "over": {
-            "best": 2.0,
-            "book": "1xBet",
-            "avg": 1.904,
-            "n": 5
-          },
-          "under": {
-            "best": 1.88,
-            "book": "1xBet",
-            "avg": 1.814,
-            "n": 5
-          }
-        }
-      },
-      "news": [
-        {
-          "title": "Modric ‘ashamed’ after 7-0 defeat by England; Republic of Ireland v Israel tensions build – matchday live",
-          "summary": "Latest news before Nations League fixtures Share your thoughts with us via email Harry Kane, now on 89 international goals from 124 games , says the Croatia performance has to be the blueprint for how England play. “Even when we were 1-0 up, we went for two, went for three, went for four, and that’s got to be our mentality. When you have a certain style of playing, you can’t just pick and choose w",
-          "link": "https://www.theguardian.com/football/live/2026/oct/04/buildup-to-republic-of-ireland-v-israel-wales-v-denmark-and-more-football-live",
-          "published": "2026-10-04T11:55:49+00:00",
-          "source": "Football | The Guardian"
-        },
-        {
-          "title": "Second Israel game won't be a friendly - Hallgrimsson",
-          "summary": "Republic of Ireland head coach Heimir Hallgrimsson admits Sunday's second game against Israel is \"not going to be a friendly\" following comments from the latter's camp after last week's match in Hungary.",
-          "link": "https://www.bbc.co.uk/sport/football/articles/cq77075x5xv7o?at_medium=RSS&at_campaign=rss",
-          "published": "2026-10-03T09:04:15+00:00",
-          "source": "BBC Sport"
-        },
-        {
-          "title": "Republic of Ireland news conference ends abruptly amid accusations",
-          "summary": "Republic of Ireland manager Heimir Hallgrimsson's pre-match news conference ends abruptly as accusations are levelled at his players.",
-          "link": "https://www.bbc.co.uk/sport/football/articles/cm78p5x6xqq7o?at_medium=RSS&at_campaign=rss",
-          "published": "2026-10-03T13:02:11+00:00",
-          "source": "BBC Sport"
-        }
-      ],
-      "model_probs": {},
-      "market_probs": {
-        "home": 0.4449,
-        "draw": 0.2769,
-        "away": 0.2782,
-        "over": 0.4879,
-        "under": 0.5121
-      },
-      "base_probs": {
-        "home": 0.4449,
-        "draw": 0.2769,
-        "away": 0.2782,
-        "over": 0.4879,
-        "under": 0.5121
-      },
-      "final_probs": {
-        "home": 0.4449,
-        "draw": 0.2769,
-        "away": 0.2782,
-        "over": 0.4879,
-        "under": 0.5121
-      },
-      "final_candidates": [
-        {
-          "market": "h2h",
-          "side": "away",
-          "label": "П2",
-          "price": 3.65,
-          "book": "Betfair",
-          "avg_price": 3.385,
-          "prob": 0.2782,
-          "edge": 0.0154
-        },
-        {
-          "market": "h2h",
-          "side": "home",
-          "label": "П1",
-          "price": 2.22,
-          "book": "Betfair",
-          "avg_price": 2.117,
-          "prob": 0.4449,
-          "edge": -0.0123
-        },
-        {
-          "market": "h2h",
-          "side": "draw",
-          "label": "Нічия",
-          "price": 3.55,
-          "book": "Betfair",
-          "avg_price": 3.401,
-          "prob": 0.2769,
-          "edge": -0.017
-        },
-        {
-          "market": "totals",
-          "side": "over",
-          "label": "ТБ 2.5",
-          "price": 2.0,
-          "book": "1xBet",
-          "avg_price": 1.904,
-          "prob": 0.4879,
-          "edge": -0.0242
-        },
-        {
-          "market": "totals",
-          "side": "under",
-          "label": "ТМ 2.5",
-          "price": 1.88,
-          "book": "1xBet",
-          "avg_price": 1.814,
-          "prob": 0.5121,
-          "edge": -0.0373
-        }
-      ],
-      "ai_error": "Gemini API 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev",
-      "verdict": "skip",
-      "priority": true
-    },
-    {
-      "id": "8de611cbeea26af7bae8f076d9237fd4",
-      "league_name": "Ліга націй УЄФА",
-      "commence_time": "2026-10-04T18:45:00Z",
-      "home": "Netherlands",
-      "away": "Serbia",
-      "odds": {
-        "h2h": {
-          "home": {
-            "best": 1.16,
-            "book": "BetOnline.ag",
-            "avg": 1.139,
-            "n": 18
-          },
-          "draw": {
-            "best": 9.8,
-            "book": "Matchbook",
-            "avg": 8.628,
-            "n": 18
-          },
-          "away": {
-            "best": 24.0,
-            "book": "Matchbook",
-            "avg": 18.052,
-            "n": 18
-          }
-        },
-        "totals": {
-          "line": 2.5,
-          "over": {
-            "best": 1.31,
-            "book": "Nordic Bet",
-            "avg": 1.307,
-            "n": 3
-          },
-          "under": {
-            "best": 3.35,
-            "book": "Nordic Bet",
-            "avg": 3.333,
-            "n": 3
-          }
-        }
-      },
-      "news": [],
-      "model_probs": {},
-      "market_probs": {
-        "home": 0.8367,
-        "draw": 0.1105,
-        "away": 0.0528,
-        "over": 0.7183,
-        "under": 0.2817
-      },
-      "base_probs": {
-        "home": 0.8367,
-        "draw": 0.1105,
-        "away": 0.0528,
-        "over": 0.7183,
-        "under": 0.2817
-      },
-      "final_probs": {
-        "home": 0.8367,
-        "draw": 0.1105,
-        "away": 0.0528,
-        "over": 0.7183,
-        "under": 0.2817
-      },
-      "final_candidates": [
-        {
-          "market": "h2h",
-          "side": "away",
-          "label": "П2",
-          "price": 24.0,
-          "book": "Matchbook",
-          "avg_price": 18.052,
-          "prob": 0.0528,
-          "edge": 0.2672
-        },
-        {
-          "market": "h2h",
-          "side": "draw",
-          "label": "Нічия",
-          "price": 9.8,
-          "book": "Matchbook",
-          "avg_price": 8.628,
-          "prob": 0.1105,
-          "edge": 0.0829
-        },
-        {
-          "market": "h2h",
-          "side": "home",
-          "label": "П1",
-          "price": 1.16,
-          "book": "BetOnline.ag",
-          "avg_price": 1.139,
-          "prob": 0.8367,
-          "edge": -0.0294
-        },
-        {
-          "market": "totals",
-          "side": "under",
-          "label": "ТМ 2.5",
-          "price": 3.35,
-          "book": "Nordic Bet",
-          "avg_price": 3.333,
-          "prob": 0.2817,
-          "edge": -0.0563
-        },
-        {
-          "market": "totals",
-          "side": "over",
-          "label": "ТБ 2.5",
-          "price": 1.31,
-          "book": "Nordic Bet",
-          "avg_price": 1.307,
-          "prob": 0.7183,
-          "edge": -0.059
-        }
-      ],
-      "ai_error": "Gemini API 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev",
-      "verdict": "skip",
-      "priority": true
-    },
-    {
-      "id": "a902c361d1a8c4fd596ffb93d71ab378",
-      "league_name": "Ліга націй УЄФА",
-      "commence_time": "2026-10-04T18:45:00Z",
-      "home": "Portugal",
-      "away": "Norway",
-      "odds": {
-        "h2h": {
-          "home": {
-            "best": 1.69,
-            "book": "Betfair",
-            "avg": 1.634,
-            "n": 18
-          },
-          "draw": {
-            "best": 4.7,
-            "book": "Betfair",
-            "avg": 4.404,
-            "n": 18
-          },
-          "away": {
-            "best": 5.1,
-            "book": "Unibet (SE)",
-            "avg": 4.694,
-            "n": 18
-          }
-        },
-        "totals": {
-          "line": 2.5,
-          "over": {
-            "best": 1.4,
-            "book": "William Hill",
-            "avg": 1.393,
-            "n": 3
-          },
-          "under": {
-            "best": 2.92,
-            "book": "Betsson",
-            "avg": 2.88,
-            "n": 3
-          }
-        }
-      },
-      "news": [
-        {
-          "title": "Ronaldo still 'greatest symbol' of Portugal -  Fernandes",
-          "summary": "Portugal midfielder Bruno Fernandes says Cristiano Ronaldo remains the country's greatest footballing figure despite leaving the squad this week after finding out he would not start a match.",
-          "link": "https://www.bbc.co.uk/sport/football/articles/ckq5nd1g14v4o?at_medium=RSS&at_campaign=rss",
-          "published": "2026-10-03T18:57:50+00:00",
-          "source": "BBC Sport"
-        },
-        {
-          "title": "Group has 'exploded' after Wales win - Bellamy",
-          "summary": "Craig Bellamy says Wales' win over Norway has \"thrown a hand grenade\" into their Nations League group as they go in search of another victory against Denmark in Cardiff on Sunday.",
-          "link": "https://www.bbc.co.uk/sport/football/articles/cmkgewx77521o?at_medium=RSS&at_campaign=rss",
-          "published": "2026-10-03T16:11:50+00:00",
-          "source": "BBC Sport"
-        },
-        {
-          "title": "Why beating Denmark matters to Wales' Euro 2028 hopes",
-          "summary": "Avoiding finishing bottom of their Nations League group is a major aim for Wales following a win over Erling Haaland's Norway.",
-          "link": "https://www.bbc.co.uk/sport/football/articles/ck1wv77v9y3wo?at_medium=RSS&at_campaign=rss",
-          "published": "2026-10-03T09:09:04+00:00",
-          "source": "BBC Sport"
-        },
-        {
-          "title": "Wales come from behind to beat 10-man Norway",
-          "summary": "Watch the best of the action as Wales come from behind to beat Norway 2-1 in the Nations League.",
-          "link": "https://www.bbc.co.uk/sport/football/videos/ckwyzyx5qd49o?at_medium=RSS&at_campaign=rss",
-          "published": "2026-10-01T21:26:07+00:00",
-          "source": "BBC Sport"
-        },
-        {
-          "title": "Neco Williams fires revitalised Wales to fightback win against 10-man Norway",
-          "summary": "On a night when Erling Haaland moped around the pitch, dragging his hulking frame across the Cardiff turf, Wales registered a welcome victory over 10-man Norway and their first this year. Was this just one of those games where the game’s deadliest finisher was stuck on the fringes or was it a case of 115 things occupying his mind ? Either way, this defeat proved a humbling experience. “You’re just",
-          "link": "https://www.theguardian.com/football/2026/oct/01/wales-norway-nations-league-league-a-group-4-match-report",
-          "published": "2026-10-01T20:58:07+00:00",
-          "source": "Football | The Guardian"
-        },
-        {
-          "title": "Cristiano Ronaldo’s Portugal walkout divides a nation as Jorge Jesus asserts control",
-          "summary": "Row sparked by head coach’s decision to leave the 41-year-old on the bench has left a great international career at risk of ending in acrimony The drama surrounding Cristiano Ronaldo and the national team has naturally become the biggest story here in Portugal. It led Wednesday evening’s news broadcasts and made the front page of virtually every major newspaper. For some, Ronaldo was right to walk",
-          "link": "https://www.theguardian.com/football/2026/oct/01/cristiano-ronaldos-portugal-walkout-divides-a-nation-as-jorge-jesus-asserts-control",
-          "published": "2026-10-01T15:04:11+00:00",
-          "source": "Football | The Guardian"
-        }
-      ],
-      "model_probs": {},
-      "market_probs": {
-        "home": 0.5817,
-        "draw": 0.2158,
-        "away": 0.2025,
-        "over": 0.674,
-        "under": 0.326
-      },
-      "base_probs": {
-        "home": 0.5817,
-        "draw": 0.2158,
-        "away": 0.2025,
-        "over": 0.674,
-        "under": 0.326
-      },
-      "final_probs": {
-        "home": 0.5817,
-        "draw": 0.2158,
-        "away": 0.2025,
-        "over": 0.674,
-        "under": 0.326
-      },
-      "final_candidates": [
-        {
-          "market": "h2h",
-          "side": "away",
-          "label": "П2",
-          "price": 5.1,
-          "book": "Unibet (SE)",
-          "avg_price": 4.694,
-          "prob": 0.2025,
-          "edge": 0.0328
-        },
-        {
-          "market": "h2h",
-          "side": "draw",
-          "label": "Нічия",
-          "price": 4.7,
-          "book": "Betfair",
-          "avg_price": 4.404,
-          "prob": 0.2158,
-          "edge": 0.0143
-        },
-        {
-          "market": "h2h",
-          "side": "home",
-          "label": "П1",
-          "price": 1.69,
-          "book": "Betfair",
-          "avg_price": 1.634,
-          "prob": 0.5817,
-          "edge": -0.0169
-        },
-        {
-          "market": "totals",
-          "side": "under",
-          "label": "ТМ 2.5",
-          "price": 2.92,
-          "book": "Betsson",
-          "avg_price": 2.88,
-          "prob": 0.326,
-          "edge": -0.0481
-        },
-        {
-          "market": "totals",
-          "side": "over",
-          "label": "ТБ 2.5",
-          "price": 1.4,
-          "book": "William Hill",
-          "avg_price": 1.393,
-          "prob": 0.674,
-          "edge": -0.0564
-        }
-      ],
-      "ai_error": "Gemini API 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev",
-      "verdict": "skip",
-      "priority": true
-    },
-    {
       "id": "d25e4cefbf1b47ae2ee43f7c70f0c1f2",
       "league_name": "Ліга націй УЄФА",
       "commence_time": "2026-10-05T16:00:00Z",
@@ -1194,36 +109,36 @@
       "odds": {
         "h2h": {
           "home": {
-            "best": 1.7,
-            "book": "LeoVegas (SE)",
-            "avg": 1.641,
-            "n": 14
+            "best": 1.59,
+            "book": "Betfair",
+            "avg": 1.535,
+            "n": 15
           },
           "draw": {
-            "best": 3.92,
+            "best": 4.15,
             "book": "1xBet",
-            "avg": 3.659,
-            "n": 14
+            "avg": 3.885,
+            "n": 15
           },
           "away": {
-            "best": 6.0,
+            "best": 7.6,
             "book": "Betfair",
-            "avg": 5.279,
-            "n": 14
+            "avg": 6.471,
+            "n": 15
           }
         },
         "totals": {
           "line": 2.5,
           "over": {
             "best": 2.12,
-            "book": "1xBet",
-            "avg": 2.04,
+            "book": "Betsson",
+            "avg": 2.072,
             "n": 8
           },
           "under": {
-            "best": 1.79,
+            "best": 1.8,
             "book": "1xBet",
-            "avg": 1.711,
+            "avg": 1.689,
             "n": 8
           }
         }
@@ -1231,76 +146,76 @@
       "news": [],
       "model_probs": {},
       "market_probs": {
-        "home": 0.5684,
-        "draw": 0.2549,
-        "away": 0.1767,
-        "over": 0.4561,
-        "under": 0.5439
+        "home": 0.6126,
+        "draw": 0.2421,
+        "away": 0.1453,
+        "over": 0.4491,
+        "under": 0.5509
       },
       "base_probs": {
-        "home": 0.5684,
-        "draw": 0.2549,
-        "away": 0.1767,
-        "over": 0.4561,
-        "under": 0.5439
+        "home": 0.6126,
+        "draw": 0.2421,
+        "away": 0.1453,
+        "over": 0.4491,
+        "under": 0.5509
       },
       "final_probs": {
-        "home": 0.5684,
-        "draw": 0.2549,
-        "away": 0.1767,
-        "over": 0.4561,
-        "under": 0.5439
+        "home": 0.6126,
+        "draw": 0.2421,
+        "away": 0.1453,
+        "over": 0.4491,
+        "under": 0.5509
       },
       "final_candidates": [
         {
           "market": "h2h",
           "side": "away",
           "label": "П2",
-          "price": 6.0,
+          "price": 7.6,
           "book": "Betfair",
-          "avg_price": 5.279,
-          "prob": 0.1767,
-          "edge": 0.0602
+          "avg_price": 6.471,
+          "prob": 0.1453,
+          "edge": 0.1043
         },
         {
           "market": "h2h",
           "side": "draw",
           "label": "Нічия",
-          "price": 3.92,
+          "price": 4.15,
           "book": "1xBet",
-          "avg_price": 3.659,
-          "prob": 0.2549,
-          "edge": -0.0008
+          "avg_price": 3.885,
+          "prob": 0.2421,
+          "edge": 0.0047
         },
         {
           "market": "totals",
           "side": "under",
           "label": "ТМ 2.5",
-          "price": 1.79,
+          "price": 1.8,
           "book": "1xBet",
-          "avg_price": 1.711,
-          "prob": 0.5439,
-          "edge": -0.0264
+          "avg_price": 1.689,
+          "prob": 0.5509,
+          "edge": -0.0084
+        },
+        {
+          "market": "h2h",
+          "side": "home",
+          "label": "П1",
+          "price": 1.59,
+          "book": "Betfair",
+          "avg_price": 1.535,
+          "prob": 0.6126,
+          "edge": -0.026
         },
         {
           "market": "totals",
           "side": "over",
           "label": "ТБ 2.5",
           "price": 2.12,
-          "book": "1xBet",
-          "avg_price": 2.04,
-          "prob": 0.4561,
-          "edge": -0.0331
-        },
-        {
-          "market": "h2h",
-          "side": "home",
-          "label": "П1",
-          "price": 1.7,
-          "book": "LeoVegas (SE)",
-          "avg_price": 1.641,
-          "prob": 0.5684,
-          "edge": -0.0337
+          "book": "Betsson",
+          "avg_price": 2.072,
+          "prob": 0.4491,
+          "edge": -0.0479
         }
       ],
       "ai_error": "Gemini API 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev",
@@ -1316,36 +231,36 @@
       "odds": {
         "h2h": {
           "home": {
-            "best": 1.57,
+            "best": 1.5,
             "book": "Betfair",
-            "avg": 1.513,
+            "avg": 1.447,
             "n": 15
           },
           "draw": {
-            "best": 4.6,
+            "best": 4.8,
             "book": "Betfair",
-            "avg": 4.19,
+            "avg": 4.506,
             "n": 15
           },
           "away": {
-            "best": 6.4,
+            "best": 7.6,
             "book": "Betfair",
-            "avg": 5.715,
+            "avg": 6.549,
             "n": 15
           }
         },
         "totals": {
           "line": 2.5,
           "over": {
-            "best": 1.77,
+            "best": 1.75,
             "book": "1xBet",
-            "avg": 1.695,
+            "avg": 1.673,
             "n": 8
           },
           "under": {
-            "best": 2.15,
-            "book": "1xBet",
-            "avg": 2.073,
+            "best": 2.2,
+            "book": "William Hill",
+            "avg": 2.103,
             "n": 8
           }
         }
@@ -1353,76 +268,76 @@
       "news": [],
       "model_probs": {},
       "market_probs": {
-        "home": 0.6151,
-        "draw": 0.2221,
-        "away": 0.1628,
-        "over": 0.5502,
-        "under": 0.4498
+        "home": 0.6485,
+        "draw": 0.2082,
+        "away": 0.1433,
+        "over": 0.5569,
+        "under": 0.4431
       },
       "base_probs": {
-        "home": 0.6151,
-        "draw": 0.2221,
-        "away": 0.1628,
-        "over": 0.5502,
-        "under": 0.4498
+        "home": 0.6485,
+        "draw": 0.2082,
+        "away": 0.1433,
+        "over": 0.5569,
+        "under": 0.4431
       },
       "final_probs": {
-        "home": 0.6151,
-        "draw": 0.2221,
-        "away": 0.1628,
-        "over": 0.5502,
-        "under": 0.4498
+        "home": 0.6485,
+        "draw": 0.2082,
+        "away": 0.1433,
+        "over": 0.5569,
+        "under": 0.4431
       },
       "final_candidates": [
         {
           "market": "h2h",
           "side": "away",
           "label": "П2",
-          "price": 6.4,
+          "price": 7.6,
           "book": "Betfair",
-          "avg_price": 5.715,
-          "prob": 0.1628,
-          "edge": 0.0419
+          "avg_price": 6.549,
+          "prob": 0.1433,
+          "edge": 0.0891
         },
         {
           "market": "h2h",
           "side": "draw",
           "label": "Нічия",
-          "price": 4.6,
+          "price": 4.8,
           "book": "Betfair",
-          "avg_price": 4.19,
-          "prob": 0.2221,
-          "edge": 0.0217
-        },
-        {
-          "market": "totals",
-          "side": "over",
-          "label": "ТБ 2.5",
-          "price": 1.77,
-          "book": "1xBet",
-          "avg_price": 1.695,
-          "prob": 0.5502,
-          "edge": -0.0261
+          "avg_price": 4.506,
+          "prob": 0.2082,
+          "edge": -0.0006
         },
         {
           "market": "totals",
           "side": "under",
           "label": "ТМ 2.5",
-          "price": 2.15,
+          "price": 2.2,
+          "book": "William Hill",
+          "avg_price": 2.103,
+          "prob": 0.4431,
+          "edge": -0.0252
+        },
+        {
+          "market": "totals",
+          "side": "over",
+          "label": "ТБ 2.5",
+          "price": 1.75,
           "book": "1xBet",
-          "avg_price": 2.073,
-          "prob": 0.4498,
-          "edge": -0.0329
+          "avg_price": 1.673,
+          "prob": 0.5569,
+          "edge": -0.0254
         },
         {
           "market": "h2h",
           "side": "home",
           "label": "П1",
-          "price": 1.57,
+          "price": 1.5,
           "book": "Betfair",
-          "avg_price": 1.513,
-          "prob": 0.6151,
-          "edge": -0.0343
+          "avg_price": 1.447,
+          "prob": 0.6485,
+          "edge": -0.0272
         }
       ],
       "ai_error": "Gemini API 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev",
@@ -1438,36 +353,36 @@
       "odds": {
         "h2h": {
           "home": {
-            "best": 1.57,
-            "book": "1xBet",
-            "avg": 1.526,
+            "best": 1.51,
+            "book": "Betfair",
+            "avg": 1.475,
             "n": 18
           },
           "draw": {
             "best": 5.0,
             "book": "Betfair",
-            "avg": 4.567,
+            "avg": 4.673,
             "n": 18
           },
           "away": {
-            "best": 6.0,
+            "best": 7.0,
             "book": "Betfair",
-            "avg": 5.441,
+            "avg": 6.228,
             "n": 18
           }
         },
         "totals": {
           "line": 2.5,
           "over": {
-            "best": 1.49,
+            "best": 1.52,
             "book": "Nordic Bet",
-            "avg": 1.473,
+            "avg": 1.513,
             "n": 3
           },
           "under": {
-            "best": 2.62,
-            "book": "William Hill",
-            "avg": 2.593,
+            "best": 2.42,
+            "book": "Nordic Bet",
+            "avg": 2.413,
             "n": 3
           }
         }
@@ -1475,36 +390,36 @@
       "news": [],
       "model_probs": {},
       "market_probs": {
-        "home": 0.6193,
-        "draw": 0.2069,
-        "away": 0.1737,
-        "over": 0.6377,
-        "under": 0.3623
+        "home": 0.6441,
+        "draw": 0.2033,
+        "away": 0.1526,
+        "over": 0.6146,
+        "under": 0.3854
       },
       "base_probs": {
-        "home": 0.6193,
-        "draw": 0.2069,
-        "away": 0.1737,
-        "over": 0.6377,
-        "under": 0.3623
+        "home": 0.6441,
+        "draw": 0.2033,
+        "away": 0.1526,
+        "over": 0.6146,
+        "under": 0.3854
       },
       "final_probs": {
-        "home": 0.6193,
-        "draw": 0.2069,
-        "away": 0.1737,
-        "over": 0.6377,
-        "under": 0.3623
+        "home": 0.6441,
+        "draw": 0.2033,
+        "away": 0.1526,
+        "over": 0.6146,
+        "under": 0.3854
       },
       "final_candidates": [
         {
           "market": "h2h",
           "side": "away",
           "label": "П2",
-          "price": 6.0,
+          "price": 7.0,
           "book": "Betfair",
-          "avg_price": 5.441,
-          "prob": 0.1737,
-          "edge": 0.0422
+          "avg_price": 6.228,
+          "prob": 0.1526,
+          "edge": 0.0682
         },
         {
           "market": "h2h",
@@ -1512,39 +427,39 @@
           "label": "Нічия",
           "price": 5.0,
           "book": "Betfair",
-          "avg_price": 4.567,
-          "prob": 0.2069,
-          "edge": 0.0345
+          "avg_price": 4.673,
+          "prob": 0.2033,
+          "edge": 0.0165
         },
         {
           "market": "h2h",
           "side": "home",
           "label": "П1",
-          "price": 1.57,
-          "book": "1xBet",
-          "avg_price": 1.526,
-          "prob": 0.6193,
-          "edge": -0.0277
+          "price": 1.51,
+          "book": "Betfair",
+          "avg_price": 1.475,
+          "prob": 0.6441,
+          "edge": -0.0274
         },
         {
           "market": "totals",
           "side": "over",
           "label": "ТБ 2.5",
-          "price": 1.49,
+          "price": 1.52,
           "book": "Nordic Bet",
-          "avg_price": 1.473,
-          "prob": 0.6377,
-          "edge": -0.0498
+          "avg_price": 1.513,
+          "prob": 0.6146,
+          "edge": -0.0658
         },
         {
           "market": "totals",
           "side": "under",
           "label": "ТМ 2.5",
-          "price": 2.62,
-          "book": "William Hill",
-          "avg_price": 2.593,
-          "prob": 0.3623,
-          "edge": -0.0508
+          "price": 2.42,
+          "book": "Nordic Bet",
+          "avg_price": 2.413,
+          "prob": 0.3854,
+          "edge": -0.0673
         }
       ],
       "ai_error": "Gemini API 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev",
@@ -1560,108 +475,73 @@
       "odds": {
         "h2h": {
           "home": {
-            "best": 3.25,
-            "book": "Unibet (SE)",
-            "avg": 2.981,
+            "best": 2.98,
+            "book": "Betfair",
+            "avg": 2.831,
             "n": 15
           },
           "draw": {
             "best": 3.5,
             "book": "Betfair",
-            "avg": 3.365,
+            "avg": 3.311,
             "n": 15
           },
           "away": {
-            "best": 2.44,
+            "best": 2.62,
             "book": "Betfair",
-            "avg": 2.311,
+            "avg": 2.475,
             "n": 15
           }
         },
         "totals": {
           "line": 2.5,
           "over": {
-            "best": 1.94,
-            "book": "1xBet",
-            "avg": 1.887,
+            "best": 2.0,
+            "book": "BetAnything",
+            "avg": 1.922,
             "n": 9
           },
           "under": {
-            "best": 1.98,
-            "book": "BetAnything",
-            "avg": 1.859,
+            "best": 1.94,
+            "book": "1xBet",
+            "avg": 1.826,
             "n": 9
           }
         }
       },
-      "news": [
-        {
-          "title": "Lewandowski, 38, hits hat-trick in 6-0 Poland win",
-          "summary": "Robert Lewandowski, 38, scores a hat-trick in the Nations League and Edin Dzeko plays his final game for Bosnia-Herzegovina.",
-          "link": "https://www.bbc.co.uk/sport/football/articles/c6vgxe0yxpn8o?at_medium=RSS&at_campaign=rss",
-          "published": "2026-10-03T07:37:38+00:00",
-          "source": "BBC Sport"
-        },
-        {
-          "title": "Giant Dzeko shirt unveiled in Sarajevo to mark retirement",
-          "summary": "A giant Edin Dzeko shirt is unveiled in Sarajevo to mark the Bosnia striker's retirement from international football.",
-          "link": "https://www.bbc.co.uk/sport/football/videos/cx8dzpj896edo?at_medium=RSS&at_campaign=rss",
-          "published": "2026-10-02T14:00:18+00:00",
-          "source": "BBC Sport"
-        }
-      ],
+      "news": [],
       "model_probs": {},
       "market_probs": {
-        "home": 0.3149,
-        "draw": 0.2789,
-        "away": 0.4062,
-        "over": 0.4963,
-        "under": 0.5037
+        "home": 0.3335,
+        "draw": 0.2851,
+        "away": 0.3814,
+        "over": 0.4872,
+        "under": 0.5128
       },
       "base_probs": {
-        "home": 0.3149,
-        "draw": 0.2789,
-        "away": 0.4062,
-        "over": 0.4963,
-        "under": 0.5037
+        "home": 0.3335,
+        "draw": 0.2851,
+        "away": 0.3814,
+        "over": 0.4872,
+        "under": 0.5128
       },
       "final_probs": {
-        "home": 0.3149,
-        "draw": 0.2789,
-        "away": 0.4062,
-        "over": 0.4963,
-        "under": 0.5037
+        "home": 0.3335,
+        "draw": 0.2851,
+        "away": 0.3814,
+        "over": 0.4872,
+        "under": 0.5128
       },
       "final_candidates": [
         {
           "market": "h2h",
-          "side": "home",
-          "label": "П1",
-          "price": 3.25,
-          "book": "Unibet (SE)",
-          "avg_price": 2.981,
-          "prob": 0.3149,
-          "edge": 0.0234
-        },
-        {
-          "market": "totals",
-          "side": "under",
-          "label": "ТМ 2.5",
-          "price": 1.98,
-          "book": "BetAnything",
-          "avg_price": 1.859,
-          "prob": 0.5037,
-          "edge": -0.0027
-        },
-        {
-          "market": "h2h",
           "side": "away",
           "label": "П2",
-          "price": 2.44,
+          "price": 2.62,
           "book": "Betfair",
-          "avg_price": 2.311,
-          "prob": 0.4062,
-          "edge": -0.0089
+          "avg_price": 2.475,
+          "prob": 0.3814,
+          "edge": -0.0007
         },
         {
           "market": "h2h",
@@ -1669,19 +549,39 @@
           "label": "Нічия",
           "price": 3.5,
           "book": "Betfair",
-          "avg_price": 3.365,
-          "prob": 0.2789,
-          "edge": -0.0239
+          "avg_price": 3.311,
+          "prob": 0.2851,
+          "edge": -0.0021
+        },
+        {
+          "market": "totals",
+          "side": "under",
+          "label": "ТМ 2.5",
+          "price": 1.94,
+          "book": "1xBet",
+          "avg_price": 1.826,
+          "prob": 0.5128,
+          "edge": -0.0052
+        },
+        {
+          "market": "h2h",
+          "side": "home",
+          "label": "П1",
+          "price": 2.98,
+          "book": "Betfair",
+          "avg_price": 2.831,
+          "prob": 0.3335,
+          "edge": -0.0062
         },
         {
           "market": "totals",
           "side": "over",
           "label": "ТБ 2.5",
-          "price": 1.94,
-          "book": "1xBet",
-          "avg_price": 1.887,
-          "prob": 0.4963,
-          "edge": -0.0372
+          "price": 2.0,
+          "book": "BetAnything",
+          "avg_price": 1.922,
+          "prob": 0.4872,
+          "edge": -0.0256
         }
       ],
       "ai_error": "Gemini API 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev",
@@ -1697,121 +597,121 @@
       "odds": {
         "h2h": {
           "home": {
-            "best": 2.55,
-            "book": "Unibet (SE)",
-            "avg": 2.422,
+            "best": 2.52,
+            "book": "Betfair",
+            "avg": 2.395,
             "n": 15
           },
           "draw": {
-            "best": 3.17,
-            "book": "1xBet",
-            "avg": 3.058,
+            "best": 3.05,
+            "book": "Betfair",
+            "avg": 2.935,
             "n": 15
           },
           "away": {
-            "best": 3.4,
+            "best": 3.5,
             "book": "Betfair",
-            "avg": 3.056,
+            "avg": 3.301,
             "n": 15
           }
         },
         "totals": {
           "line": 2.5,
           "over": {
-            "best": 2.53,
-            "book": "1xBet",
-            "avg": 2.414,
-            "n": 8
+            "best": 2.75,
+            "book": "Betsson",
+            "avg": 2.642,
+            "n": 6
           },
           "under": {
-            "best": 1.57,
-            "book": "1xBet",
-            "avg": 1.519,
-            "n": 8
+            "best": 1.47,
+            "book": "Unibet (SE)",
+            "avg": 1.433,
+            "n": 6
           }
         }
       },
       "news": [
         {
-          "title": "'Different' Morrison gives NI new option",
-          "summary": "Northern Ireland's Kieran Morrison hopes he has earned the trust of manager Michael O'Neill after impressing on his first international start.",
-          "link": "https://www.bbc.co.uk/sport/football/articles/c6n9rlvr57pgo?at_medium=RSS&at_campaign=rss",
-          "published": "2026-10-03T12:23:24+00:00",
+          "title": "The only side in Nations League yet to concede? Northern Ireland",
+          "summary": "With three clean sheets from three games in Uefa Nations League Group B2, Northern Ireland are the only team in this year's competition yet to concede a goal.",
+          "link": "https://www.bbc.co.uk/sport/football/articles/cw30elngz4y5o?at_medium=RSS&at_campaign=rss",
+          "published": "2026-10-05T07:07:15+00:00",
           "source": "BBC Sport"
         }
       ],
       "model_probs": {},
       "market_probs": {
-        "home": 0.3869,
-        "draw": 0.3064,
-        "away": 0.3066,
-        "over": 0.3862,
-        "under": 0.6138
+        "home": 0.3935,
+        "draw": 0.3211,
+        "away": 0.2855,
+        "over": 0.3517,
+        "under": 0.6483
       },
       "base_probs": {
-        "home": 0.3869,
-        "draw": 0.3064,
-        "away": 0.3066,
-        "over": 0.3862,
-        "under": 0.6138
+        "home": 0.3935,
+        "draw": 0.3211,
+        "away": 0.2855,
+        "over": 0.3517,
+        "under": 0.6483
       },
       "final_probs": {
-        "home": 0.3869,
-        "draw": 0.3064,
-        "away": 0.3066,
-        "over": 0.3862,
-        "under": 0.6138
+        "home": 0.3935,
+        "draw": 0.3211,
+        "away": 0.2855,
+        "over": 0.3517,
+        "under": 0.6483
       },
       "final_candidates": [
         {
           "market": "h2h",
           "side": "away",
           "label": "П2",
-          "price": 3.4,
+          "price": 3.5,
           "book": "Betfair",
-          "avg_price": 3.056,
-          "prob": 0.3066,
-          "edge": 0.0424
+          "avg_price": 3.301,
+          "prob": 0.2855,
+          "edge": -0.0008
         },
         {
           "market": "h2h",
           "side": "home",
           "label": "П1",
-          "price": 2.55,
-          "book": "Unibet (SE)",
-          "avg_price": 2.422,
-          "prob": 0.3869,
-          "edge": -0.0134
-        },
-        {
-          "market": "totals",
-          "side": "over",
-          "label": "ТБ 2.5",
-          "price": 2.53,
-          "book": "1xBet",
-          "avg_price": 2.414,
-          "prob": 0.3862,
-          "edge": -0.0229
+          "price": 2.52,
+          "book": "Betfair",
+          "avg_price": 2.395,
+          "prob": 0.3935,
+          "edge": -0.0084
         },
         {
           "market": "h2h",
           "side": "draw",
           "label": "Нічия",
-          "price": 3.17,
-          "book": "1xBet",
-          "avg_price": 3.058,
-          "prob": 0.3064,
-          "edge": -0.0287
+          "price": 3.05,
+          "book": "Betfair",
+          "avg_price": 2.935,
+          "prob": 0.3211,
+          "edge": -0.0206
+        },
+        {
+          "market": "totals",
+          "side": "over",
+          "label": "ТБ 2.5",
+          "price": 2.75,
+          "book": "Betsson",
+          "avg_price": 2.642,
+          "prob": 0.3517,
+          "edge": -0.0328
         },
         {
           "market": "totals",
           "side": "under",
           "label": "ТМ 2.5",
-          "price": 1.57,
-          "book": "1xBet",
-          "avg_price": 1.519,
-          "prob": 0.6138,
-          "edge": -0.0363
+          "price": 1.47,
+          "book": "Unibet (SE)",
+          "avg_price": 1.433,
+          "prob": 0.6483,
+          "edge": -0.047
         }
       ],
       "ai_error": "Gemini API 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev",
@@ -1827,121 +727,113 @@
       "odds": {
         "h2h": {
           "home": {
-            "best": 2.64,
+            "best": 2.8,
             "book": "Betfair",
-            "avg": 2.427,
-            "n": 14
+            "avg": 2.633,
+            "n": 15
           },
           "draw": {
-            "best": 3.5,
-            "book": "Unibet (SE)",
-            "avg": 3.241,
-            "n": 14
+            "best": 3.15,
+            "book": "Betfair",
+            "avg": 3.005,
+            "n": 15
           },
           "away": {
-            "best": 3.1,
-            "book": "Unibet (SE)",
-            "avg": 2.893,
-            "n": 14
+            "best": 3.05,
+            "book": "Betfair",
+            "avg": 2.865,
+            "n": 15
           }
         },
         "totals": {
           "line": 2.5,
           "over": {
-            "best": 2.16,
+            "best": 2.5,
             "book": "1xBet",
-            "avg": 2.036,
+            "avg": 2.379,
             "n": 8
           },
           "under": {
-            "best": 1.8,
-            "book": "Unibet (SE)",
-            "avg": 1.72,
+            "best": 1.58,
+            "book": "1xBet",
+            "avg": 1.531,
             "n": 8
           }
         }
       },
-      "news": [
-        {
-          "title": "Second Israel game won't be a friendly - Hallgrimsson",
-          "summary": "Republic of Ireland head coach Heimir Hallgrimsson admits Sunday's second game against Israel is \"not going to be a friendly\" following comments from the latter's camp after last week's match in Hungary.",
-          "link": "https://www.bbc.co.uk/sport/football/articles/cq77075x5xv7o?at_medium=RSS&at_campaign=rss",
-          "published": "2026-10-03T09:04:15+00:00",
-          "source": "BBC Sport"
-        }
-      ],
+      "news": [],
       "model_probs": {},
       "market_probs": {
-        "home": 0.3864,
-        "draw": 0.2894,
-        "away": 0.3242,
-        "over": 0.4579,
-        "under": 0.5421
+        "home": 0.3578,
+        "draw": 0.3135,
+        "away": 0.3288,
+        "over": 0.3916,
+        "under": 0.6084
       },
       "base_probs": {
-        "home": 0.3864,
-        "draw": 0.2894,
-        "away": 0.3242,
-        "over": 0.4579,
-        "under": 0.5421
+        "home": 0.3578,
+        "draw": 0.3135,
+        "away": 0.3288,
+        "over": 0.3916,
+        "under": 0.6084
       },
       "final_probs": {
-        "home": 0.3864,
-        "draw": 0.2894,
-        "away": 0.3242,
-        "over": 0.4579,
-        "under": 0.5421
+        "home": 0.3578,
+        "draw": 0.3135,
+        "away": 0.3288,
+        "over": 0.3916,
+        "under": 0.6084
       },
       "final_candidates": [
         {
           "market": "h2h",
+          "side": "away",
+          "label": "П2",
+          "price": 3.05,
+          "book": "Betfair",
+          "avg_price": 2.865,
+          "prob": 0.3288,
+          "edge": 0.0028
+        },
+        {
+          "market": "h2h",
           "side": "home",
           "label": "П1",
-          "price": 2.64,
+          "price": 2.8,
           "book": "Betfair",
-          "avg_price": 2.427,
-          "prob": 0.3864,
-          "edge": 0.0201
+          "avg_price": 2.633,
+          "prob": 0.3578,
+          "edge": 0.0018
         },
         {
           "market": "h2h",
           "side": "draw",
           "label": "Нічия",
-          "price": 3.5,
-          "book": "Unibet (SE)",
-          "avg_price": 3.241,
-          "prob": 0.2894,
-          "edge": 0.0129
-        },
-        {
-          "market": "h2h",
-          "side": "away",
-          "label": "П2",
-          "price": 3.1,
-          "book": "Unibet (SE)",
-          "avg_price": 2.893,
-          "prob": 0.3242,
-          "edge": 0.005
+          "price": 3.15,
+          "book": "Betfair",
+          "avg_price": 3.005,
+          "prob": 0.3135,
+          "edge": -0.0125
         },
         {
           "market": "totals",
           "side": "over",
           "label": "ТБ 2.5",
-          "price": 2.16,
+          "price": 2.5,
           "book": "1xBet",
-          "avg_price": 2.036,
-          "prob": 0.4579,
-          "edge": -0.0109
+          "avg_price": 2.379,
+          "prob": 0.3916,
+          "edge": -0.021
         },
         {
           "market": "totals",
           "side": "under",
           "label": "ТМ 2.5",
-          "price": 1.8,
-          "book": "Unibet (SE)",
-          "avg_price": 1.72,
-          "prob": 0.5421,
-          "edge": -0.0242
+          "price": 1.58,
+          "book": "1xBet",
+          "avg_price": 1.531,
+          "prob": 0.6084,
+          "edge": -0.0387
         }
       ],
       "ai_error": "Gemini API 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev",
@@ -1957,36 +849,36 @@
       "odds": {
         "h2h": {
           "home": {
-            "best": 1.47,
-            "book": "Unibet (SE)",
-            "avg": 1.436,
+            "best": 1.41,
+            "book": "Betfair",
+            "avg": 1.372,
             "n": 18
           },
           "draw": {
             "best": 5.5,
-            "book": "Matchbook",
-            "avg": 4.911,
+            "book": "Unibet (SE)",
+            "avg": 5.126,
             "n": 18
           },
           "away": {
-            "best": 7.0,
+            "best": 9.0,
             "book": "Betfair",
-            "avg": 6.319,
+            "avg": 7.759,
             "n": 18
           }
         },
         "totals": {
           "line": 2.5,
           "over": {
-            "best": 1.49,
-            "book": "Betsson",
-            "avg": 1.473,
+            "best": 1.53,
+            "book": "William Hill",
+            "avg": 1.523,
             "n": 3
           },
           "under": {
-            "best": 2.58,
+            "best": 2.42,
             "book": "Betsson",
-            "avg": 2.553,
+            "avg": 2.413,
             "n": 3
           }
         }
@@ -1994,76 +886,76 @@
       "news": [],
       "model_probs": {},
       "market_probs": {
-        "home": 0.658,
-        "draw": 0.1924,
-        "away": 0.1495,
-        "over": 0.6341,
-        "under": 0.3659
+        "home": 0.6923,
+        "draw": 0.1853,
+        "away": 0.1224,
+        "over": 0.6131,
+        "under": 0.3869
       },
       "base_probs": {
-        "home": 0.658,
-        "draw": 0.1924,
-        "away": 0.1495,
-        "over": 0.6341,
-        "under": 0.3659
+        "home": 0.6923,
+        "draw": 0.1853,
+        "away": 0.1224,
+        "over": 0.6131,
+        "under": 0.3869
       },
       "final_probs": {
-        "home": 0.658,
-        "draw": 0.1924,
-        "away": 0.1495,
-        "over": 0.6341,
-        "under": 0.3659
+        "home": 0.6923,
+        "draw": 0.1853,
+        "away": 0.1224,
+        "over": 0.6131,
+        "under": 0.3869
       },
       "final_candidates": [
+        {
+          "market": "h2h",
+          "side": "away",
+          "label": "П2",
+          "price": 9.0,
+          "book": "Betfair",
+          "avg_price": 7.759,
+          "prob": 0.1224,
+          "edge": 0.1016
+        },
         {
           "market": "h2h",
           "side": "draw",
           "label": "Нічия",
           "price": 5.5,
-          "book": "Matchbook",
-          "avg_price": 4.911,
-          "prob": 0.1924,
-          "edge": 0.0582
-        },
-        {
-          "market": "h2h",
-          "side": "away",
-          "label": "П2",
-          "price": 7.0,
-          "book": "Betfair",
-          "avg_price": 6.319,
-          "prob": 0.1495,
-          "edge": 0.0465
+          "book": "Unibet (SE)",
+          "avg_price": 5.126,
+          "prob": 0.1853,
+          "edge": 0.0192
         },
         {
           "market": "h2h",
           "side": "home",
           "label": "П1",
-          "price": 1.47,
-          "book": "Unibet (SE)",
-          "avg_price": 1.436,
-          "prob": 0.658,
-          "edge": -0.0327
+          "price": 1.41,
+          "book": "Betfair",
+          "avg_price": 1.372,
+          "prob": 0.6923,
+          "edge": -0.0239
         },
         {
           "market": "totals",
           "side": "over",
           "label": "ТБ 2.5",
-          "price": 1.49,
-          "book": "Betsson",
-          "avg_price": 1.473,
-          "prob": 0.6341,
-          "edge": -0.0552
+          "price": 1.53,
+          "book": "William Hill",
+          "avg_price": 1.523,
+          "prob": 0.6131,
+          "edge": -0.062
         },
         {
           "market": "totals",
           "side": "under",
           "label": "ТМ 2.5",
-          "price": 2.58,
+          "price": 2.42,
           "book": "Betsson",
-          "avg_price": 2.553,
-          "prob": 0.3659,
-          "edge": -0.056
+          "avg_price": 2.413,
+          "prob": 0.3869,
+          "edge": -0.0637
         }
       ],
       "ai_error": "Gemini API 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev",
@@ -2079,36 +971,158 @@
       "odds": {
         "h2h": {
           "home": {
-            "best": 4.7,
+            "best": 5.1,
             "book": "Betfair",
-            "avg": 4.191,
+            "avg": 4.536,
             "n": 15
           },
           "draw": {
-            "best": 4.2,
-            "book": "Winamax (DE)",
-            "avg": 3.945,
+            "best": 4.3,
+            "book": "Betfair",
+            "avg": 4.08,
             "n": 15
           },
           "away": {
-            "best": 1.81,
-            "book": "Unibet (SE)",
-            "avg": 1.744,
+            "best": 1.73,
+            "book": "Betfair",
+            "avg": 1.679,
             "n": 15
           }
         },
         "totals": {
           "line": 2.5,
           "over": {
-            "best": 1.69,
+            "best": 1.61,
             "book": "1xBet",
-            "avg": 1.591,
+            "avg": 1.55,
+            "n": 7
+          },
+          "under": {
+            "best": 2.45,
+            "book": "1xBet",
+            "avg": 2.344,
+            "n": 7
+          }
+        }
+      },
+      "news": [],
+      "model_probs": {},
+      "market_probs": {
+        "home": 0.2078,
+        "draw": 0.231,
+        "away": 0.5613,
+        "over": 0.602,
+        "under": 0.398
+      },
+      "base_probs": {
+        "home": 0.2078,
+        "draw": 0.231,
+        "away": 0.5613,
+        "over": 0.602,
+        "under": 0.398
+      },
+      "final_probs": {
+        "home": 0.2078,
+        "draw": 0.231,
+        "away": 0.5613,
+        "over": 0.602,
+        "under": 0.398
+      },
+      "final_candidates": [
+        {
+          "market": "h2h",
+          "side": "home",
+          "label": "П1",
+          "price": 5.1,
+          "book": "Betfair",
+          "avg_price": 4.536,
+          "prob": 0.2078,
+          "edge": 0.0598
+        },
+        {
+          "market": "h2h",
+          "side": "draw",
+          "label": "Нічия",
+          "price": 4.3,
+          "book": "Betfair",
+          "avg_price": 4.08,
+          "prob": 0.231,
+          "edge": -0.0067
+        },
+        {
+          "market": "totals",
+          "side": "under",
+          "label": "ТМ 2.5",
+          "price": 2.45,
+          "book": "1xBet",
+          "avg_price": 2.344,
+          "prob": 0.398,
+          "edge": -0.0249
+        },
+        {
+          "market": "h2h",
+          "side": "away",
+          "label": "П2",
+          "price": 1.73,
+          "book": "Betfair",
+          "avg_price": 1.679,
+          "prob": 0.5613,
+          "edge": -0.029
+        },
+        {
+          "market": "totals",
+          "side": "over",
+          "label": "ТБ 2.5",
+          "price": 1.61,
+          "book": "1xBet",
+          "avg_price": 1.55,
+          "prob": 0.602,
+          "edge": -0.0308
+        }
+      ],
+      "ai_error": "Gemini API 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev",
+      "verdict": "skip",
+      "priority": true
+    },
+    {
+      "id": "2b8ee7414d7336408e155d4f35599d8e",
+      "league_name": "Ліга націй УЄФА",
+      "commence_time": "2026-10-06T14:00:00Z",
+      "home": "Kazakhstan",
+      "away": "Faroe Islands",
+      "odds": {
+        "h2h": {
+          "home": {
+            "best": 2.48,
+            "book": "Betfair",
+            "avg": 2.339,
+            "n": 15
+          },
+          "draw": {
+            "best": 3.2,
+            "book": "Betfair",
+            "avg": 3.021,
+            "n": 15
+          },
+          "away": {
+            "best": 3.42,
+            "book": "1xBet",
+            "avg": 3.219,
+            "n": 15
+          }
+        },
+        "totals": {
+          "line": 2.5,
+          "over": {
+            "best": 2.53,
+            "book": "1xBet",
+            "avg": 2.38,
             "n": 8
           },
           "under": {
-            "best": 2.35,
-            "book": "Unibet (SE)",
-            "avg": 2.25,
+            "best": 1.57,
+            "book": "1xBet",
+            "avg": 1.528,
             "n": 8
           }
         }
@@ -2116,76 +1130,1360 @@
       "news": [],
       "model_probs": {},
       "market_probs": {
-        "home": 0.2239,
-        "draw": 0.2379,
-        "away": 0.5382,
-        "over": 0.5858,
-        "under": 0.4142
+        "home": 0.3999,
+        "draw": 0.3096,
+        "away": 0.2905,
+        "over": 0.391,
+        "under": 0.609
       },
       "base_probs": {
-        "home": 0.2239,
-        "draw": 0.2379,
-        "away": 0.5382,
-        "over": 0.5858,
-        "under": 0.4142
+        "home": 0.3999,
+        "draw": 0.3096,
+        "away": 0.2905,
+        "over": 0.391,
+        "under": 0.609
       },
       "final_probs": {
-        "home": 0.2239,
-        "draw": 0.2379,
-        "away": 0.5382,
-        "over": 0.5858,
-        "under": 0.4142
+        "home": 0.3999,
+        "draw": 0.3096,
+        "away": 0.2905,
+        "over": 0.391,
+        "under": 0.609
+      },
+      "final_candidates": [
+        {
+          "market": "h2h",
+          "side": "away",
+          "label": "П2",
+          "price": 3.42,
+          "book": "1xBet",
+          "avg_price": 3.219,
+          "prob": 0.2905,
+          "edge": -0.0065
+        },
+        {
+          "market": "h2h",
+          "side": "home",
+          "label": "П1",
+          "price": 2.48,
+          "book": "Betfair",
+          "avg_price": 2.339,
+          "prob": 0.3999,
+          "edge": -0.0082
+        },
+        {
+          "market": "h2h",
+          "side": "draw",
+          "label": "Нічия",
+          "price": 3.2,
+          "book": "Betfair",
+          "avg_price": 3.021,
+          "prob": 0.3096,
+          "edge": -0.0093
+        },
+        {
+          "market": "totals",
+          "side": "over",
+          "label": "ТБ 2.5",
+          "price": 2.53,
+          "book": "1xBet",
+          "avg_price": 2.38,
+          "prob": 0.391,
+          "edge": -0.0108
+        },
+        {
+          "market": "totals",
+          "side": "under",
+          "label": "ТМ 2.5",
+          "price": 1.57,
+          "book": "1xBet",
+          "avg_price": 1.528,
+          "prob": 0.609,
+          "edge": -0.0439
+        }
+      ],
+      "ai_error": "Gemini API 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev",
+      "verdict": "skip",
+      "priority": true
+    },
+    {
+      "id": "b482dc6936da27dfacadb83fdcaf898d",
+      "league_name": "Ліга націй УЄФА",
+      "commence_time": "2026-10-06T18:45:00Z",
+      "home": "Albania",
+      "away": "San Marino",
+      "odds": {
+        "h2h": {
+          "home": {
+            "best": 1.03,
+            "book": "Betfair",
+            "avg": 1.018,
+            "n": 12
+          },
+          "draw": {
+            "best": 36.0,
+            "book": "Betfair",
+            "avg": 18.542,
+            "n": 12
+          },
+          "away": {
+            "best": 85.0,
+            "book": "Betfair",
+            "avg": 49.0,
+            "n": 12
+          }
+        },
+        "totals": {
+          "line": 2.5,
+          "over": {
+            "best": 1.17,
+            "book": "William Hill",
+            "avg": 1.17,
+            "n": 1
+          },
+          "under": {
+            "best": 4.75,
+            "book": "William Hill",
+            "avg": 4.75,
+            "n": 1
+          }
+        }
+      },
+      "news": [],
+      "model_probs": {},
+      "market_probs": {
+        "home": 0.9296,
+        "draw": 0.051,
+        "away": 0.0193,
+        "over": 0.8024,
+        "under": 0.1976
+      },
+      "base_probs": {
+        "home": 0.9296,
+        "draw": 0.051,
+        "away": 0.0193,
+        "over": 0.8024,
+        "under": 0.1976
+      },
+      "final_probs": {
+        "home": 0.9296,
+        "draw": 0.051,
+        "away": 0.0193,
+        "over": 0.8024,
+        "under": 0.1976
+      },
+      "final_candidates": [
+        {
+          "market": "h2h",
+          "side": "draw",
+          "label": "Нічия",
+          "price": 36.0,
+          "book": "Betfair",
+          "avg_price": 18.542,
+          "prob": 0.051,
+          "edge": 0.836
+        },
+        {
+          "market": "h2h",
+          "side": "away",
+          "label": "П2",
+          "price": 85.0,
+          "book": "Betfair",
+          "avg_price": 49.0,
+          "prob": 0.0193,
+          "edge": 0.6405
+        },
+        {
+          "market": "h2h",
+          "side": "home",
+          "label": "П1",
+          "price": 1.03,
+          "book": "Betfair",
+          "avg_price": 1.018,
+          "prob": 0.9296,
+          "edge": -0.0425
+        },
+        {
+          "market": "totals",
+          "side": "over",
+          "label": "ТБ 2.5",
+          "price": 1.17,
+          "book": "William Hill",
+          "avg_price": 1.17,
+          "prob": 0.8024,
+          "edge": -0.0612
+        },
+        {
+          "market": "totals",
+          "side": "under",
+          "label": "ТМ 2.5",
+          "price": 4.75,
+          "book": "William Hill",
+          "avg_price": 4.75,
+          "prob": 0.1976,
+          "edge": -0.0614
+        }
+      ],
+      "ai_error": "Gemini API 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev",
+      "verdict": "skip",
+      "priority": true
+    },
+    {
+      "id": "47bd936e6a94ddd84a6ad08926d0379b",
+      "league_name": "Ліга націй УЄФА",
+      "commence_time": "2026-10-06T18:45:00Z",
+      "home": "Belarus",
+      "away": "Finland",
+      "odds": {
+        "h2h": {
+          "home": {
+            "best": 4.1,
+            "book": "Betfair",
+            "avg": 3.893,
+            "n": 14
+          },
+          "draw": {
+            "best": 3.5,
+            "book": "Betfair",
+            "avg": 3.335,
+            "n": 14
+          },
+          "away": {
+            "best": 2.06,
+            "book": "Betfair",
+            "avg": 1.951,
+            "n": 14
+          }
+        },
+        "totals": {
+          "line": 2.5,
+          "over": {
+            "best": 2.32,
+            "book": "1xBet",
+            "avg": 2.196,
+            "n": 8
+          },
+          "under": {
+            "best": 1.67,
+            "book": "1xBet",
+            "avg": 1.617,
+            "n": 8
+          }
+        }
+      },
+      "news": [],
+      "model_probs": {},
+      "market_probs": {
+        "home": 0.2402,
+        "draw": 0.2804,
+        "away": 0.4793,
+        "over": 0.4241,
+        "under": 0.5759
+      },
+      "base_probs": {
+        "home": 0.2402,
+        "draw": 0.2804,
+        "away": 0.4793,
+        "over": 0.4241,
+        "under": 0.5759
+      },
+      "final_probs": {
+        "home": 0.2402,
+        "draw": 0.2804,
+        "away": 0.4793,
+        "over": 0.4241,
+        "under": 0.5759
+      },
+      "final_candidates": [
+        {
+          "market": "h2h",
+          "side": "away",
+          "label": "П2",
+          "price": 2.06,
+          "book": "Betfair",
+          "avg_price": 1.951,
+          "prob": 0.4793,
+          "edge": -0.0126
+        },
+        {
+          "market": "h2h",
+          "side": "home",
+          "label": "П1",
+          "price": 4.1,
+          "book": "Betfair",
+          "avg_price": 3.893,
+          "prob": 0.2402,
+          "edge": -0.0152
+        },
+        {
+          "market": "totals",
+          "side": "over",
+          "label": "ТБ 2.5",
+          "price": 2.32,
+          "book": "1xBet",
+          "avg_price": 2.196,
+          "prob": 0.4241,
+          "edge": -0.0161
+        },
+        {
+          "market": "h2h",
+          "side": "draw",
+          "label": "Нічия",
+          "price": 3.5,
+          "book": "Betfair",
+          "avg_price": 3.335,
+          "prob": 0.2804,
+          "edge": -0.0186
+        },
+        {
+          "market": "totals",
+          "side": "under",
+          "label": "ТМ 2.5",
+          "price": 1.67,
+          "book": "1xBet",
+          "avg_price": 1.617,
+          "prob": 0.5759,
+          "edge": -0.0382
+        }
+      ],
+      "ai_error": "Gemini API 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev",
+      "verdict": "skip",
+      "priority": true
+    },
+    {
+      "id": "ed18949608b83e25d1556c5081e43ba8",
+      "league_name": "Ліга націй УЄФА",
+      "commence_time": "2026-10-06T18:45:00Z",
+      "home": "Luxembourg",
+      "away": "Bulgaria",
+      "odds": {
+        "h2h": {
+          "home": {
+            "best": 2.22,
+            "book": "Betfair",
+            "avg": 2.099,
+            "n": 14
+          },
+          "draw": {
+            "best": 3.45,
+            "book": "Betfair",
+            "avg": 3.236,
+            "n": 14
+          },
+          "away": {
+            "best": 3.75,
+            "book": "Betfair",
+            "avg": 3.508,
+            "n": 14
+          }
+        },
+        "totals": {
+          "line": 2.5,
+          "over": {
+            "best": 2.5,
+            "book": "1xBet",
+            "avg": 2.355,
+            "n": 8
+          },
+          "under": {
+            "best": 1.58,
+            "book": "1xBet",
+            "avg": 1.542,
+            "n": 8
+          }
+        }
+      },
+      "news": [],
+      "model_probs": {},
+      "market_probs": {
+        "home": 0.445,
+        "draw": 0.2887,
+        "away": 0.2663,
+        "over": 0.3957,
+        "under": 0.6043
+      },
+      "base_probs": {
+        "home": 0.445,
+        "draw": 0.2887,
+        "away": 0.2663,
+        "over": 0.3957,
+        "under": 0.6043
+      },
+      "final_probs": {
+        "home": 0.445,
+        "draw": 0.2887,
+        "away": 0.2663,
+        "over": 0.3957,
+        "under": 0.6043
+      },
+      "final_candidates": [
+        {
+          "market": "h2h",
+          "side": "away",
+          "label": "П2",
+          "price": 3.75,
+          "book": "Betfair",
+          "avg_price": 3.508,
+          "prob": 0.2663,
+          "edge": -0.0014
+        },
+        {
+          "market": "h2h",
+          "side": "draw",
+          "label": "Нічия",
+          "price": 3.45,
+          "book": "Betfair",
+          "avg_price": 3.236,
+          "prob": 0.2887,
+          "edge": -0.004
+        },
+        {
+          "market": "totals",
+          "side": "over",
+          "label": "ТБ 2.5",
+          "price": 2.5,
+          "book": "1xBet",
+          "avg_price": 2.355,
+          "prob": 0.3957,
+          "edge": -0.0108
+        },
+        {
+          "market": "h2h",
+          "side": "home",
+          "label": "П1",
+          "price": 2.22,
+          "book": "Betfair",
+          "avg_price": 2.099,
+          "prob": 0.445,
+          "edge": -0.0121
+        },
+        {
+          "market": "totals",
+          "side": "under",
+          "label": "ТМ 2.5",
+          "price": 1.58,
+          "book": "1xBet",
+          "avg_price": 1.542,
+          "prob": 0.6043,
+          "edge": -0.0452
+        }
+      ],
+      "ai_error": "Gemini API 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev",
+      "verdict": "skip",
+      "priority": true
+    },
+    {
+      "id": "5d9aac1a239e87ecc555aba2fe4426cf",
+      "league_name": "Ліга націй УЄФА",
+      "commence_time": "2026-10-06T18:45:00Z",
+      "home": "Croatia",
+      "away": "Spain",
+      "odds": {
+        "h2h": {
+          "home": {
+            "best": 12.5,
+            "book": "Betfair",
+            "avg": 9.858,
+            "n": 18
+          },
+          "draw": {
+            "best": 6.8,
+            "book": "Matchbook",
+            "avg": 6.033,
+            "n": 18
+          },
+          "away": {
+            "best": 1.3,
+            "book": "1xBet",
+            "avg": 1.268,
+            "n": 18
+          }
+        },
+        "totals": {
+          "line": 2.5,
+          "over": {
+            "best": 1.44,
+            "book": "Nordic Bet",
+            "avg": 1.427,
+            "n": 3
+          },
+          "under": {
+            "best": 2.75,
+            "book": "Nordic Bet",
+            "avg": 2.733,
+            "n": 3
+          }
+        }
+      },
+      "news": [
+        {
+          "title": "Bournemouth unhappy over Scott injury but Tuchel says England took ‘zero risk’",
+          "summary": "Midfielder may be out for two months with thigh injury Scott played in pain but Tuchel says he got ‘green light’ Thomas Tuchel insisted England took zero risk with Alex Scott after the midfielder’s withdrawal with a thigh injury left Bournemouth unhappy over his treatment. Scott excelled during the 7-0 win over Croatia in the Nations League on Saturday but will play no further part in this interna",
+          "link": "https://www.theguardian.com/football/2026/oct/05/alex-scott-injury-two-months-england-bournemouth",
+          "published": "2026-10-05T13:08:08+00:00",
+          "source": "Football | The Guardian"
+        },
+        {
+          "title": "England hammer Croatia and Manchester City get their appeal on | Football Weekly – video",
+          "summary": "Max Rushden is joined by Barry Glendenning , Jonathan Wilson and Robyn Cowen as England thrash Croatia 7 (seven) nil Continue reading...",
+          "link": "https://www.theguardian.com/football/video/2026/oct/05/england-hammer-croatia-and-manchester-city-get-their-appeal-on-football-weekly-video-podcast",
+          "published": "2026-10-05T12:38:56+00:00",
+          "source": "Football | The Guardian"
+        },
+        {
+          "title": "Czechia’s Santi Denia: ‘Anthony Gordon? What a player! He’s at the same level as Lamine Yamal’",
+          "summary": "After working with nearly all of Spain’s World Cup-winning squad in their formative years, the coach is also a huge fan of English football. He’s now pitting his wits against both At the end of a 2-0 defeat by England in Prague, the Czechia coach turned left, walked along the touchline, shook Thomas Tuchel’s hand and said something he thinks he had never said at full-time: “See you soon.” To which",
+          "link": "https://www.theguardian.com/football/2026/oct/05/santi-denia-anthony-gordon-lamine-yamal-england-czechia",
+          "published": "2026-10-05T07:00:51+00:00",
+          "source": "Football | The Guardian"
+        },
+        {
+          "title": "Clàudia Pina hits four as Barcelona score seven goals to demolish Real Madrid",
+          "summary": "Barcelona 7-0 Real Madrid Lead at the top stretched to five points Clàudia Pina smashed in four goals as Barcelona demolished Real Madrid 7-0 to secure a five-point lead at the top of Liga F on Sunday over their rivals. The 25-year-old Spain international was in lethal form in front of goal as a dominant Barça won the clásico battle with ease at the Camp Nou in front of over 40,000 fans, continuin",
+          "link": "https://www.theguardian.com/football/2026/oct/04/claudia-pina-hits-four-as-barcelona-demolish-real-madrid",
+          "published": "2026-10-04T22:28:38+00:00",
+          "source": "Football | The Guardian"
+        },
+        {
+          "title": "Let’s stop doubting Thomas Tuchel: England are impressive and Euro 2028 is the target | Barney Ronay",
+          "summary": "Coming third in the World Cup was really not a disaster, and Saturday’s rout of Croatia and building the team around Jude Bellingham are good signs Move fast and fix things. It has been a fine week so far for Thomas Tuchel as he attempts the cyclical task of soldering together not just an England team, but a way of looking like one, all the while being battered by the to-and-fro conflicting winds ",
+          "link": "https://www.theguardian.com/football/2026/oct/04/thomas-tuchel-england-croatia-nations-league-euro-2028",
+          "published": "2026-10-04T21:00:37+00:00",
+          "source": "Football | The Guardian"
+        },
+        {
+          "title": "Modric 'ashamed' of Croatia's 'catastrophic night'",
+          "summary": "Croatia captain Luka Modric says he was \"ashamed\" of his side's performance on a \"catastrophic night\" against England.",
+          "link": "https://www.bbc.co.uk/sport/football/articles/cwzrdm3lyk21o?at_medium=RSS&at_campaign=rss",
+          "published": "2026-10-04T10:35:47+00:00",
+          "source": "BBC Sport"
+        },
+        {
+          "title": "Lamine Yamal stars again as Spain see off Czechia and maintain perfect start",
+          "summary": "Lamine Yamal says he feels like Superman or Spider-Man sometimes, and Spain’s fans are starting to wonder if he just might be. There is something comic book hero about what the teenager is doing right now, some unexplained super power swelling inside him. For the third consecutive game he scored inside six minutes, curling in another outrageous goal as Spain completed their World Cup homecoming in",
+          "link": "https://www.theguardian.com/football/2026/oct/03/lamine-yamal-stars-again-as-spain-see-off-czechia-and-maintain-perfect-start",
+          "published": "2026-10-03T21:13:00+00:00",
+          "source": "Football | The Guardian"
+        }
+      ],
+      "model_probs": {},
+      "market_probs": {
+        "home": 0.0961,
+        "draw": 0.157,
+        "away": 0.7469,
+        "over": 0.657,
+        "under": 0.343
+      },
+      "base_probs": {
+        "home": 0.0961,
+        "draw": 0.157,
+        "away": 0.7469,
+        "over": 0.657,
+        "under": 0.343
+      },
+      "final_probs": {
+        "home": 0.0961,
+        "draw": 0.157,
+        "away": 0.7469,
+        "over": 0.657,
+        "under": 0.343
       },
       "final_candidates": [
         {
           "market": "h2h",
           "side": "home",
           "label": "П1",
-          "price": 4.7,
+          "price": 12.5,
           "book": "Betfair",
-          "avg_price": 4.191,
-          "prob": 0.2239,
-          "edge": 0.0523
+          "avg_price": 9.858,
+          "prob": 0.0961,
+          "edge": 0.2013
         },
         {
           "market": "h2h",
           "side": "draw",
           "label": "Нічия",
-          "price": 4.2,
-          "book": "Winamax (DE)",
-          "avg_price": 3.945,
-          "prob": 0.2379,
-          "edge": -0.0008
-        },
-        {
-          "market": "totals",
-          "side": "over",
-          "label": "ТБ 2.5",
-          "price": 1.69,
-          "book": "1xBet",
-          "avg_price": 1.591,
-          "prob": 0.5858,
-          "edge": -0.01
+          "price": 6.8,
+          "book": "Matchbook",
+          "avg_price": 6.033,
+          "prob": 0.157,
+          "edge": 0.0676
         },
         {
           "market": "h2h",
           "side": "away",
           "label": "П2",
-          "price": 1.81,
-          "book": "Unibet (SE)",
-          "avg_price": 1.744,
-          "prob": 0.5382,
-          "edge": -0.0259
+          "price": 1.3,
+          "book": "1xBet",
+          "avg_price": 1.268,
+          "prob": 0.7469,
+          "edge": -0.029
+        },
+        {
+          "market": "totals",
+          "side": "over",
+          "label": "ТБ 2.5",
+          "price": 1.44,
+          "book": "Nordic Bet",
+          "avg_price": 1.427,
+          "prob": 0.657,
+          "edge": -0.0539
         },
         {
           "market": "totals",
           "side": "under",
           "label": "ТМ 2.5",
-          "price": 2.35,
+          "price": 2.75,
+          "book": "Nordic Bet",
+          "avg_price": 2.733,
+          "prob": 0.343,
+          "edge": -0.0567
+        }
+      ],
+      "ai_error": "Gemini API 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev",
+      "verdict": "skip",
+      "priority": true
+    },
+    {
+      "id": "8012c0d9c6c0b99e57d9465837c5ae94",
+      "league_name": "Ліга націй УЄФА",
+      "commence_time": "2026-10-06T18:45:00Z",
+      "home": "England",
+      "away": "Czech Republic",
+      "odds": {
+        "h2h": {
+          "home": {
+            "best": 1.14,
+            "book": "1xBet",
+            "avg": 1.123,
+            "n": 18
+          },
+          "draw": {
+            "best": 10.0,
+            "book": "Betfair",
+            "avg": 8.731,
+            "n": 18
+          },
+          "away": {
+            "best": 30.0,
+            "book": "Betfair",
+            "avg": 20.859,
+            "n": 18
+          }
+        },
+        "totals": {
+          "line": 2.5,
+          "over": {
+            "best": 1.37,
+            "book": "Betsson",
+            "avg": 1.357,
+            "n": 3
+          },
+          "under": {
+            "best": 3.1,
+            "book": "William Hill",
+            "avg": 3.067,
+            "n": 3
+          }
+        }
+      },
+      "news": [
+        {
+          "title": "Czechia’s Santi Denia: ‘Anthony Gordon? What a player! He’s at the same level as Lamine Yamal’",
+          "summary": "After working with nearly all of Spain’s World Cup-winning squad in their formative years, the coach is also a huge fan of English football. He’s now pitting his wits against both At the end of a 2-0 defeat by England in Prague, the Czechia coach turned left, walked along the touchline, shook Thomas Tuchel’s hand and said something he thinks he had never said at full-time: “See you soon.” To which",
+          "link": "https://www.theguardian.com/football/2026/oct/05/santi-denia-anthony-gordon-lamine-yamal-england-czechia",
+          "published": "2026-10-05T07:00:51+00:00",
+          "source": "Football | The Guardian"
+        },
+        {
+          "title": "Bournemouth unhappy over Scott injury but Tuchel says England took ‘zero risk’",
+          "summary": "Midfielder may be out for two months with thigh injury Scott played in pain but Tuchel says he got ‘green light’ Thomas Tuchel insisted England took zero risk with Alex Scott after the midfielder’s withdrawal with a thigh injury left Bournemouth unhappy over his treatment. Scott excelled during the 7-0 win over Croatia in the Nations League on Saturday but will play no further part in this interna",
+          "link": "https://www.theguardian.com/football/2026/oct/05/alex-scott-injury-two-months-england-bournemouth",
+          "published": "2026-10-05T13:08:08+00:00",
+          "source": "Football | The Guardian"
+        },
+        {
+          "title": "England to play white-ball warm-up in Australia after pre-Ashes criticism",
+          "summary": "England will play a Western Australia XI in a 50-over warm-up game at the WACA ahead of their ODI series against Australia in November - having been criticised for not facing any local opposition prior to their Ashes humbling last winter.",
+          "link": "https://www.skysports.com/cricket/news/12040/13595346/england-to-play-warm-up-in-australia-before-november-series-after-criticism-for-lack-of-preparation-ahead-of-ashes",
+          "published": "2026-10-05T12:40:00+00:00",
+          "source": "SkySports | News"
+        },
+        {
+          "title": "Bournemouth unhappy after Scott injured with England",
+          "summary": "Bournemouth are unhappy with the way they believe England handled the injury to Alex Scott - which means he could now be out for up to eight weeks.",
+          "link": "https://www.bbc.co.uk/sport/football/articles/cqm2dyrg84ymo?at_medium=RSS&at_campaign=rss",
+          "published": "2026-10-05T12:38:58+00:00",
+          "source": "BBC Sport"
+        },
+        {
+          "title": "England hammer Croatia and Manchester City get their appeal on | Football Weekly – video",
+          "summary": "Max Rushden is joined by Barry Glendenning , Jonathan Wilson and Robyn Cowen as England thrash Croatia 7 (seven) nil Continue reading...",
+          "link": "https://www.theguardian.com/football/video/2026/oct/05/england-hammer-croatia-and-manchester-city-get-their-appeal-on-football-weekly-video-podcast",
+          "published": "2026-10-05T12:38:56+00:00",
+          "source": "Football | The Guardian"
+        },
+        {
+          "title": "McDermott explains Connor exclusion and England's World Cup game plan",
+          "summary": "Brian McDermott has consistently talked about England having a \"point of difference\" in the Rugby League World Cup but eyebrows were raised when the head coach opted to leave Jake Connor out of the squad again.",
+          "link": "https://www.skysports.com/rugby-league/news/12040/13595271/englands-rugby-league-world-cup-squad-brian-mcdermott-explains-jake-connor-exclusion-mikey-lewis-inclusion-and-game-plan",
+          "published": "2026-10-05T09:39:00+00:00",
+          "source": "SkySports | News"
+        },
+        {
+          "title": "Connor out, Lewis in - England's World Cup squad confirmed",
+          "summary": "Brian McDermott has named his 23-player England squad for the 2026 Rugby League World Cup, with Mikey Lewis selected ahead of Jake Connor.",
+          "link": "https://www.skysports.com/rugby-league/news/12040/13595250/rugby-league-world-cup-2026-england-coach-brian-mcdermott-names-23-player-squad-as-leeds-star-jake-connor-misses-out",
+          "published": "2026-10-05T09:00:00+00:00",
+          "source": "SkySports | News"
+        },
+        {
+          "title": "Let’s stop doubting Thomas Tuchel: England are impressive and Euro 2028 is the target | Barney Ronay",
+          "summary": "Coming third in the World Cup was really not a disaster, and Saturday’s rout of Croatia and building the team around Jude Bellingham are good signs Move fast and fix things. It has been a fine week so far for Thomas Tuchel as he attempts the cyclical task of soldering together not just an England team, but a way of looking like one, all the while being battered by the to-and-fro conflicting winds ",
+          "link": "https://www.theguardian.com/football/2026/oct/04/thomas-tuchel-england-croatia-nations-league-euro-2028",
+          "published": "2026-10-04T21:00:37+00:00",
+          "source": "Football | The Guardian"
+        }
+      ],
+      "model_probs": {},
+      "market_probs": {
+        "home": 0.8457,
+        "draw": 0.1088,
+        "away": 0.0455,
+        "over": 0.6933,
+        "under": 0.3067
+      },
+      "base_probs": {
+        "home": 0.8457,
+        "draw": 0.1088,
+        "away": 0.0455,
+        "over": 0.6933,
+        "under": 0.3067
+      },
+      "final_probs": {
+        "home": 0.8457,
+        "draw": 0.1088,
+        "away": 0.0455,
+        "over": 0.6933,
+        "under": 0.3067
+      },
+      "final_candidates": [
+        {
+          "market": "h2h",
+          "side": "away",
+          "label": "П2",
+          "price": 30.0,
+          "book": "Betfair",
+          "avg_price": 20.859,
+          "prob": 0.0455,
+          "edge": 0.365
+        },
+        {
+          "market": "h2h",
+          "side": "draw",
+          "label": "Нічия",
+          "price": 10.0,
+          "book": "Betfair",
+          "avg_price": 8.731,
+          "prob": 0.1088,
+          "edge": 0.088
+        },
+        {
+          "market": "h2h",
+          "side": "home",
+          "label": "П1",
+          "price": 1.14,
+          "book": "1xBet",
+          "avg_price": 1.123,
+          "prob": 0.8457,
+          "edge": -0.0359
+        },
+        {
+          "market": "totals",
+          "side": "under",
+          "label": "ТМ 2.5",
+          "price": 3.1,
+          "book": "William Hill",
+          "avg_price": 3.067,
+          "prob": 0.3067,
+          "edge": -0.0492
+        },
+        {
+          "market": "totals",
+          "side": "over",
+          "label": "ТБ 2.5",
+          "price": 1.37,
+          "book": "Betsson",
+          "avg_price": 1.357,
+          "prob": 0.6933,
+          "edge": -0.0502
+        }
+      ],
+      "ai_error": "Gemini API 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev",
+      "verdict": "skip",
+      "priority": true
+    },
+    {
+      "id": "2718bb0aea7bb7aa60419612ff9341ff",
+      "league_name": "Ліга націй УЄФА",
+      "commence_time": "2026-10-06T18:45:00Z",
+      "home": "Estonia",
+      "away": "Iceland",
+      "odds": {
+        "h2h": {
+          "home": {
+            "best": 6.2,
+            "book": "Betfair",
+            "avg": 5.478,
+            "n": 11
+          },
+          "draw": {
+            "best": 4.3,
+            "book": "Betfair",
+            "avg": 3.905,
+            "n": 11
+          },
+          "away": {
+            "best": 1.63,
+            "book": "Betfair",
+            "avg": 1.582,
+            "n": 11
+          }
+        },
+        "totals": {
+          "line": 2.5,
+          "over": {
+            "best": 1.94,
+            "book": "1xBet",
+            "avg": 1.85,
+            "n": 6
+          },
+          "under": {
+            "best": 1.94,
+            "book": "1xBet",
+            "avg": 1.862,
+            "n": 6
+          }
+        }
+      },
+      "news": [],
+      "model_probs": {},
+      "market_probs": {
+        "home": 0.1705,
+        "draw": 0.2392,
+        "away": 0.5903,
+        "over": 0.5016,
+        "under": 0.4984
+      },
+      "base_probs": {
+        "home": 0.1705,
+        "draw": 0.2392,
+        "away": 0.5903,
+        "over": 0.5016,
+        "under": 0.4984
+      },
+      "final_probs": {
+        "home": 0.1705,
+        "draw": 0.2392,
+        "away": 0.5903,
+        "over": 0.5016,
+        "under": 0.4984
+      },
+      "final_candidates": [
+        {
+          "market": "h2h",
+          "side": "home",
+          "label": "П1",
+          "price": 6.2,
+          "book": "Betfair",
+          "avg_price": 5.478,
+          "prob": 0.1705,
+          "edge": 0.0571
+        },
+        {
+          "market": "h2h",
+          "side": "draw",
+          "label": "Нічия",
+          "price": 4.3,
+          "book": "Betfair",
+          "avg_price": 3.905,
+          "prob": 0.2392,
+          "edge": 0.0286
+        },
+        {
+          "market": "totals",
+          "side": "over",
+          "label": "ТБ 2.5",
+          "price": 1.94,
+          "book": "1xBet",
+          "avg_price": 1.85,
+          "prob": 0.5016,
+          "edge": -0.0269
+        },
+        {
+          "market": "totals",
+          "side": "under",
+          "label": "ТМ 2.5",
+          "price": 1.94,
+          "book": "1xBet",
+          "avg_price": 1.862,
+          "prob": 0.4984,
+          "edge": -0.0331
+        },
+        {
+          "market": "h2h",
+          "side": "away",
+          "label": "П2",
+          "price": 1.63,
+          "book": "Betfair",
+          "avg_price": 1.582,
+          "prob": 0.5903,
+          "edge": -0.0378
+        }
+      ],
+      "ai_error": "Gemini API 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev",
+      "verdict": "skip",
+      "priority": true
+    },
+    {
+      "id": "e32fea4406b5fdba3a733019ad3059ad",
+      "league_name": "Ліга націй УЄФА",
+      "commence_time": "2026-10-06T18:45:00Z",
+      "home": "Moldova",
+      "away": "Slovakia",
+      "odds": {
+        "h2h": {
+          "home": {
+            "best": 9.4,
+            "book": "Betfair",
+            "avg": 7.393,
+            "n": 14
+          },
+          "draw": {
+            "best": 4.85,
+            "book": "1xBet",
+            "avg": 4.491,
+            "n": 14
+          },
+          "away": {
+            "best": 1.44,
+            "book": "1xBet",
+            "avg": 1.4,
+            "n": 14
+          }
+        },
+        "totals": {
+          "line": 2.5,
+          "over": {
+            "best": 1.82,
+            "book": "BetAnything",
+            "avg": 1.752,
+            "n": 9
+          },
+          "under": {
+            "best": 2.12,
+            "book": "1xBet",
+            "avg": 2.0,
+            "n": 9
+          }
+        }
+      },
+      "news": [],
+      "model_probs": {},
+      "market_probs": {
+        "home": 0.1262,
+        "draw": 0.2077,
+        "away": 0.6662,
+        "over": 0.533,
+        "under": 0.467
+      },
+      "base_probs": {
+        "home": 0.1262,
+        "draw": 0.2077,
+        "away": 0.6662,
+        "over": 0.533,
+        "under": 0.467
+      },
+      "final_probs": {
+        "home": 0.1262,
+        "draw": 0.2077,
+        "away": 0.6662,
+        "over": 0.533,
+        "under": 0.467
+      },
+      "final_candidates": [
+        {
+          "market": "h2h",
+          "side": "home",
+          "label": "П1",
+          "price": 9.4,
+          "book": "Betfair",
+          "avg_price": 7.393,
+          "prob": 0.1262,
+          "edge": 0.1863
+        },
+        {
+          "market": "h2h",
+          "side": "draw",
+          "label": "Нічия",
+          "price": 4.85,
+          "book": "1xBet",
+          "avg_price": 4.491,
+          "prob": 0.2077,
+          "edge": 0.0073
+        },
+        {
+          "market": "totals",
+          "side": "under",
+          "label": "ТМ 2.5",
+          "price": 2.12,
+          "book": "1xBet",
+          "avg_price": 2.0,
+          "prob": 0.467,
+          "edge": -0.01
+        },
+        {
+          "market": "totals",
+          "side": "over",
+          "label": "ТБ 2.5",
+          "price": 1.82,
+          "book": "BetAnything",
+          "avg_price": 1.752,
+          "prob": 0.533,
+          "edge": -0.0299
+        },
+        {
+          "market": "h2h",
+          "side": "away",
+          "label": "П2",
+          "price": 1.44,
+          "book": "1xBet",
+          "avg_price": 1.4,
+          "prob": 0.6662,
+          "edge": -0.0407
+        }
+      ],
+      "ai_error": "Gemini API 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev",
+      "verdict": "skip",
+      "priority": true
+    },
+    {
+      "id": "fefdbdc59cf8fd0495796f9b372d0152",
+      "league_name": "Ліга націй УЄФА",
+      "commence_time": "2026-10-06T18:45:00Z",
+      "home": "Switzerland",
+      "away": "North Macedonia",
+      "odds": {
+        "h2h": {
+          "home": {
+            "best": 1.13,
+            "book": "Unibet (SE)",
+            "avg": 1.094,
+            "n": 14
+          },
+          "draw": {
+            "best": 11.0,
+            "book": "Betfair",
+            "avg": 9.35,
+            "n": 14
+          },
+          "away": {
+            "best": 38.0,
+            "book": "Nordic Bet",
+            "avg": 26.357,
+            "n": 14
+          }
+        },
+        "totals": {
+          "line": 2.5,
+          "over": {
+            "best": 1.39,
+            "book": "Nordic Bet",
+            "avg": 1.38,
+            "n": 3
+          },
+          "under": {
+            "best": 2.92,
+            "book": "Nordic Bet",
+            "avg": 2.907,
+            "n": 3
+          }
+        }
+      },
+      "news": [
+        {
+          "title": "The only side in Nations League yet to concede? Northern Ireland",
+          "summary": "With three clean sheets from three games in Uefa Nations League Group B2, Northern Ireland are the only team in this year's competition yet to concede a goal.",
+          "link": "https://www.bbc.co.uk/sport/football/articles/cw30elngz4y5o?at_medium=RSS&at_campaign=rss",
+          "published": "2026-10-05T07:07:15+00:00",
+          "source": "BBC Sport"
+        },
+        {
+          "title": "'Promising start' or 'shocking' display? Tartan Army on Skopje win",
+          "summary": "The Tartan Army have given a mixed reaction to Scotland's 2-0 win away to North Macedonia in the Nations League.",
+          "link": "https://www.bbc.co.uk/sport/football/articles/cr93zpl4zjpwo?at_medium=RSS&at_campaign=rss",
+          "published": "2026-10-04T14:45:11+00:00",
+          "source": "BBC Sport"
+        },
+        {
+          "title": "Bowie seizing Scotland shot after World Cup disappointment",
+          "summary": "BBC Scotland speaks to Kieron Bowie after he scores his first goal for his country against North Macedonia.",
+          "link": "https://www.bbc.co.uk/sport/football/articles/c5djvw4n8vp8o?at_medium=RSS&at_campaign=rss",
+          "published": "2026-10-04T07:59:10+00:00",
+          "source": "BBC Sport"
+        },
+        {
+          "title": "Two going on four, five or six on good night for new Scotland era",
+          "summary": "Scotland scored twice in North Macedonia but the scoreline does not reflect their dominance in Skopje, writes Tom English.",
+          "link": "https://www.bbc.co.uk/sport/football/articles/cx7vp540g75mo?at_medium=RSS&at_campaign=rss",
+          "published": "2026-10-03T22:22:18+00:00",
+          "source": "BBC Sport"
+        }
+      ],
+      "model_probs": {},
+      "market_probs": {
+        "home": 0.8632,
+        "draw": 0.101,
+        "away": 0.0358,
+        "over": 0.6781,
+        "under": 0.3219
+      },
+      "base_probs": {
+        "home": 0.8632,
+        "draw": 0.101,
+        "away": 0.0358,
+        "over": 0.6781,
+        "under": 0.3219
+      },
+      "final_probs": {
+        "home": 0.8632,
+        "draw": 0.101,
+        "away": 0.0358,
+        "over": 0.6781,
+        "under": 0.3219
+      },
+      "final_candidates": [
+        {
+          "market": "h2h",
+          "side": "away",
+          "label": "П2",
+          "price": 38.0,
+          "book": "Nordic Bet",
+          "avg_price": 26.357,
+          "prob": 0.0358,
+          "edge": 0.3604
+        },
+        {
+          "market": "h2h",
+          "side": "draw",
+          "label": "Нічия",
+          "price": 11.0,
+          "book": "Betfair",
+          "avg_price": 9.35,
+          "prob": 0.101,
+          "edge": 0.111
+        },
+        {
+          "market": "h2h",
+          "side": "home",
+          "label": "П1",
+          "price": 1.13,
           "book": "Unibet (SE)",
-          "avg_price": 2.25,
-          "prob": 0.4142,
-          "edge": -0.0266
+          "avg_price": 1.094,
+          "prob": 0.8632,
+          "edge": -0.0246
+        },
+        {
+          "market": "totals",
+          "side": "over",
+          "label": "ТБ 2.5",
+          "price": 1.39,
+          "book": "Nordic Bet",
+          "avg_price": 1.38,
+          "prob": 0.6781,
+          "edge": -0.0574
+        },
+        {
+          "market": "totals",
+          "side": "under",
+          "label": "ТМ 2.5",
+          "price": 2.92,
+          "book": "Nordic Bet",
+          "avg_price": 2.907,
+          "prob": 0.3219,
+          "edge": -0.0601
+        }
+      ],
+      "ai_error": "Gemini API 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev",
+      "verdict": "skip",
+      "priority": true
+    },
+    {
+      "id": "bc11b98f6ba1da1f5d5d051fd14cd197",
+      "league_name": "Ліга націй УЄФА",
+      "commence_time": "2026-10-06T18:45:00Z",
+      "home": "Scotland",
+      "away": "Slovenia",
+      "odds": {
+        "h2h": {
+          "home": {
+            "best": 1.82,
+            "book": "Betfair",
+            "avg": 1.751,
+            "n": 15
+          },
+          "draw": {
+            "best": 3.8,
+            "book": "Winamax (DE)",
+            "avg": 3.544,
+            "n": 15
+          },
+          "away": {
+            "best": 5.2,
+            "book": "Betfair",
+            "avg": 4.693,
+            "n": 15
+          }
+        },
+        "totals": {
+          "line": 2.5,
+          "over": {
+            "best": 2.32,
+            "book": "1xBet",
+            "avg": 2.229,
+            "n": 8
+          },
+          "under": {
+            "best": 1.67,
+            "book": "1xBet",
+            "avg": 1.613,
+            "n": 8
+          }
+        }
+      },
+      "news": [
+        {
+          "title": "You are the Scotland boss - what would you do?",
+          "summary": "Put yourself in the shoes of the new Scotland head coach Sebastien Pocognoli as he picks his XI to face Slovenia on Tuesday.",
+          "link": "https://www.bbc.co.uk/sport/football/articles/cr4g1q2w1g6zo?at_medium=RSS&at_campaign=rss",
+          "published": "2026-10-04T21:06:47+00:00",
+          "source": "BBC Sport"
+        },
+        {
+          "title": "Podcast: McGinn, McTominay, Robertson - are Scotland greats undroppable?",
+          "summary": "Scotland’s first win under Pocognoli and signs of a new identity emerging.",
+          "link": "https://www.bbc.co.uk/sounds/play/p0pf095x?at_medium=RSS&at_campaign=rss",
+          "published": "2026-10-05T07:00:00+00:00",
+          "source": "BBC Sport"
+        },
+        {
+          "title": "Scotland's next golf star? Scott surges to top 100 after back-to-back wins",
+          "summary": "Sandy Scott&#8217;s remarkable rise continued on Sunday as the Scot, who has battled back from a career-threatening wrist injury, clinched his second straight Korn Ferry Tour victory at the Compliance Solutions Championship.",
+          "link": "https://www.skysports.com/golf/news/12040/13595226/korn-ferry-tour-sandy-scott-breaks-into-top-100-with-back-to-back-wins-after-career-threatening-injury",
+          "published": "2026-10-05T06:52:00+00:00",
+          "source": "SkySports | News"
+        },
+        {
+          "title": "'Promising start' or 'shocking' display? Tartan Army on Skopje win",
+          "summary": "The Tartan Army have given a mixed reaction to Scotland's 2-0 win away to North Macedonia in the Nations League.",
+          "link": "https://www.bbc.co.uk/sport/football/articles/cr93zpl4zjpwo?at_medium=RSS&at_campaign=rss",
+          "published": "2026-10-04T14:45:11+00:00",
+          "source": "BBC Sport"
+        },
+        {
+          "title": "Bowie seizing Scotland shot after World Cup disappointment",
+          "summary": "BBC Scotland speaks to Kieron Bowie after he scores his first goal for his country against North Macedonia.",
+          "link": "https://www.bbc.co.uk/sport/football/articles/c5djvw4n8vp8o?at_medium=RSS&at_campaign=rss",
+          "published": "2026-10-04T07:59:10+00:00",
+          "source": "BBC Sport"
+        },
+        {
+          "title": "Two going on four, five or six on good night for new Scotland era",
+          "summary": "Scotland scored twice in North Macedonia but the scoreline does not reflect their dominance in Skopje, writes Tom English.",
+          "link": "https://www.bbc.co.uk/sport/football/articles/cx7vp540g75mo?at_medium=RSS&at_campaign=rss",
+          "published": "2026-10-03T22:22:18+00:00",
+          "source": "BBC Sport"
+        },
+        {
+          "title": "'It means everything' - numbers behind Robertson's 100-cap Scotland career",
+          "summary": "Andy Robertson has become only the second man ever to play 100 times for Scotland. BBC Sport Scotland charts his international career in numbers.",
+          "link": "https://www.bbc.co.uk/sport/football/articles/crgjqjg1l740o?at_medium=RSS&at_campaign=rss",
+          "published": "2026-10-03T21:27:29+00:00",
+          "source": "BBC Sport"
+        }
+      ],
+      "model_probs": {},
+      "market_probs": {
+        "home": 0.5356,
+        "draw": 0.2646,
+        "away": 0.1998,
+        "over": 0.4198,
+        "under": 0.5802
+      },
+      "base_probs": {
+        "home": 0.5356,
+        "draw": 0.2646,
+        "away": 0.1998,
+        "over": 0.4198,
+        "under": 0.5802
+      },
+      "final_probs": {
+        "home": 0.5356,
+        "draw": 0.2646,
+        "away": 0.1998,
+        "over": 0.4198,
+        "under": 0.5802
+      },
+      "final_candidates": [
+        {
+          "market": "h2h",
+          "side": "away",
+          "label": "П2",
+          "price": 5.2,
+          "book": "Betfair",
+          "avg_price": 4.693,
+          "prob": 0.1998,
+          "edge": 0.039
+        },
+        {
+          "market": "h2h",
+          "side": "draw",
+          "label": "Нічия",
+          "price": 3.8,
+          "book": "Winamax (DE)",
+          "avg_price": 3.544,
+          "prob": 0.2646,
+          "edge": 0.0055
+        },
+        {
+          "market": "h2h",
+          "side": "home",
+          "label": "П1",
+          "price": 1.82,
+          "book": "Betfair",
+          "avg_price": 1.751,
+          "prob": 0.5356,
+          "edge": -0.0252
+        },
+        {
+          "market": "totals",
+          "side": "over",
+          "label": "ТБ 2.5",
+          "price": 2.32,
+          "book": "1xBet",
+          "avg_price": 2.229,
+          "prob": 0.4198,
+          "edge": -0.0261
+        },
+        {
+          "market": "totals",
+          "side": "under",
+          "label": "ТМ 2.5",
+          "price": 1.67,
+          "book": "1xBet",
+          "avg_price": 1.613,
+          "prob": 0.5802,
+          "edge": -0.0311
         }
       ],
       "ai_error": "Gemini API 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev",
