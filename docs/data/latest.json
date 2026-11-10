@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-09T16:17:30.089513+00:00",
-  "duration_sec": 9.8,
+  "updated_at": "2026-11-10T14:52:24.319274+00:00",
+  "duration_sec": 9.7,
   "demo": false,
   "ai": {
     "mode": "ai",
@@ -17,7 +17,7 @@
     "max_odds": 5.0,
     "min_confidence": 5
   },
-  "news_count": 93,
+  "news_count": 103,
   "odds_credits_left": 424,
   "sources": [
     {
