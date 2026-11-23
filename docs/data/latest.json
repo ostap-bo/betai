@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-22T14:35:32.318582+00:00",
-  "duration_sec": 91.7,
+  "updated_at": "2026-11-23T18:08:11.971820+00:00",
+  "duration_sec": 103.3,
   "demo": false,
   "ai": {
     "mode": "ai",
@@ -17,8 +17,8 @@
     "max_odds": 5.0,
     "min_confidence": 5
   },
-  "news_count": 88,
-  "odds_credits_left": 370,
+  "news_count": 94,
+  "odds_credits_left": 362,
   "sources": [
     {
       "league": "Україна — УПЛ",
@@ -52,7 +52,7 @@
     },
     {
       "league": "Ліга чемпіонів",
-      "events": 0,
+      "events": 11,
       "source": "The Odds API",
       "note": null
     },
@@ -70,2416 +70,36 @@
     },
     {
       "league": "Англія — Прем'єр-ліга",
-      "events": 2,
-      "source": "The Odds API",
-      "note": null
-    },
-    {
-      "league": "Іспанія — Ла Ліга",
-      "events": 4,
-      "source": "The Odds API",
-      "note": null
-    },
-    {
-      "league": "Італія — Серія A",
-      "events": 3,
-      "source": "The Odds API",
-      "note": null
-    },
-    {
-      "league": "Німеччина — Бундесліга",
       "events": 1,
       "source": "The Odds API",
       "note": null
     },
     {
+      "league": "Іспанія — Ла Ліга",
+      "events": 1,
+      "source": "The Odds API",
+      "note": null
+    },
+    {
+      "league": "Італія — Серія A",
+      "events": 1,
+      "source": "The Odds API",
+      "note": null
+    },
+    {
+      "league": "Німеччина — Бундесліга",
+      "events": 0,
+      "source": "The Odds API",
+      "note": null
+    },
+    {
       "league": "Франція — Ліга 1",
-      "events": 2,
+      "events": 0,
       "source": "The Odds API",
       "note": null
     }
   ],
   "events": [
-    {
-      "id": "9718f9ea901236855faf57f77a0bd5b3",
-      "league_name": "Іспанія — Ла Ліга",
-      "commence_time": "2026-11-22T15:15:00Z",
-      "home": "Real Racing Club de Santander",
-      "away": "Real Sociedad",
-      "odds": {
-        "h2h": {
-          "home": {
-            "best": 3.45,
-            "book": "Betfair",
-            "avg": 3.242,
-            "n": 20
-          },
-          "draw": {
-            "best": 4.16,
-            "book": "1xBet",
-            "avg": 3.921,
-            "n": 20
-          },
-          "away": {
-            "best": 2.14,
-            "book": "Betfair",
-            "avg": 2.035,
-            "n": 20
-          }
-        },
-        "totals": {
-          "line": 2.5,
-          "over": {
-            "best": 1.41,
-            "book": "Betsson",
-            "avg": 1.403,
-            "n": 3
-          },
-          "under": {
-            "best": 2.95,
-            "book": "Betsson",
-            "avg": 2.89,
-            "n": 3
-          }
-        }
-      },
-      "expected_goals": {
-        "home": 1.95,
-        "away": 2.2
-      },
-      "likely_scores": [
-        {
-          "score": "1-2",
-          "p": 0.074
-        },
-        {
-          "score": "2-2",
-          "p": 0.073
-        },
-        {
-          "score": "1-1",
-          "p": 0.071
-        }
-      ],
-      "form": {
-        "home": [
-          {
-            "date": "2026-09-19",
-            "opponent": "Celta",
-            "venue": "A",
-            "score": "0-5",
-            "result": "L"
-          },
-          {
-            "date": "2026-10-11",
-            "opponent": "Valencia",
-            "venue": "H",
-            "score": "2-2",
-            "result": "D"
-          },
-          {
-            "date": "2026-10-18",
-            "opponent": "Osasuna",
-            "venue": "A",
-            "score": "0-2",
-            "result": "L"
-          },
-          {
-            "date": "2026-10-24",
-            "opponent": "Espanol",
-            "venue": "H",
-            "score": "2-1",
-            "result": "W"
-          },
-          {
-            "date": "2026-11-01",
-            "opponent": "Real Madrid",
-            "venue": "H",
-            "score": "0-3",
-            "result": "L"
-          },
-          {
-            "date": "2026-11-07",
-            "opponent": "Malaga",
-            "venue": "A",
-            "score": "2-1",
-            "result": "W"
-          }
-        ],
-        "away": [
-          {
-            "date": "2026-09-20",
-            "opponent": "Valencia",
-            "venue": "A",
-            "score": "3-2",
-            "result": "W"
-          },
-          {
-            "date": "2026-10-11",
-            "opponent": "La Coruna",
-            "venue": "H",
-            "score": "3-2",
-            "result": "W"
-          },
-          {
-            "date": "2026-10-18",
-            "opponent": "Malaga",
-            "venue": "A",
-            "score": "5-2",
-            "result": "W"
-          },
-          {
-            "date": "2026-10-25",
-            "opponent": "Levante",
-            "venue": "H",
-            "score": "2-1",
-            "result": "W"
-          },
-          {
-            "date": "2026-11-01",
-            "opponent": "Ath Bilbao",
-            "venue": "A",
-            "score": "1-2",
-            "result": "L"
-          },
-          {
-            "date": "2026-11-08",
-            "opponent": "Vallecano",
-            "venue": "H",
-            "score": "1-0",
-            "result": "W"
-          }
-        ]
-      },
-      "h2h": [],
-      "news": [
-        {
-          "title": "Armstrong plays down talk of Rangers transfer - gossip",
-          "summary": "Dinamo Bucharest winger Danny Armstrong says he has not talked with Rangers manager Derek McInnes about a move to Ibrox, while the chances of Jack Grealish joining Celtic are played down.",
-          "link": "https://www.bbc.co.uk/sport/football/articles/ckdd1epzz60eo?at_medium=RSS&at_campaign=rss",
-          "published": "2026-11-22T09:10:02+00:00",
-          "source": "BBC Sport"
-        },
-        {
-          "title": "Football Daily | Football’s political gamers face off at Fifa with the real-life final boss",
-          "summary": "Sign up now! Sign up now! Sign up now? Sign up now! Although the millions of gamers who are pulling sickies would beg to differ, the release of Grand Theft Auto VI wasn’t the most exciting midnight launch involving a sprawling enterprise full of shady characters. Over in Zurich, the clock also struck 12 on the candidate deadline for next year’s Fifa presidential election, leaving those of us who h",
-          "link": "https://www.theguardian.com/football/2026/nov/19/football-daily-fifa-presidential-election",
-          "published": "2026-11-19T15:42:09+00:00",
-          "source": "Football | The Guardian"
-        }
-      ],
-      "model_probs": {
-        "home": 0.3484,
-        "draw": 0.2095,
-        "away": 0.4421,
-        "over": 0.7841,
-        "under": 0.2159,
-        "btts": 0.7676
-      },
-      "market_probs": {
-        "home": 0.2924,
-        "draw": 0.2418,
-        "away": 0.4658,
-        "over": 0.6732,
-        "under": 0.3268
-      },
-      "base_probs": {
-        "home": 0.3148,
-        "draw": 0.2289,
-        "away": 0.4564,
-        "over": 0.7175,
-        "under": 0.2825
-      },
-      "final_probs": {
-        "home": 0.3148,
-        "draw": 0.2289,
-        "away": 0.4564,
-        "over": 0.7175,
-        "under": 0.2825
-      },
-      "final_candidates": [
-        {
-          "market": "h2h",
-          "side": "home",
-          "label": "П1",
-          "price": 3.45,
-          "book": "Betfair",
-          "avg_price": 3.242,
-          "prob": 0.3148,
-          "edge": 0.0861
-        },
-        {
-          "market": "totals",
-          "side": "over",
-          "label": "ТБ 2.5",
-          "price": 1.41,
-          "book": "Betsson",
-          "avg_price": 1.403,
-          "prob": 0.7175,
-          "edge": 0.0117
-        },
-        {
-          "market": "h2h",
-          "side": "away",
-          "label": "П2",
-          "price": 2.14,
-          "book": "Betfair",
-          "avg_price": 2.035,
-          "prob": 0.4564,
-          "edge": -0.0233
-        },
-        {
-          "market": "h2h",
-          "side": "draw",
-          "label": "Нічия",
-          "price": 4.16,
-          "book": "1xBet",
-          "avg_price": 3.921,
-          "prob": 0.2289,
-          "edge": -0.0478
-        },
-        {
-          "market": "totals",
-          "side": "under",
-          "label": "ТМ 2.5",
-          "price": 2.95,
-          "book": "Betsson",
-          "avg_price": 2.89,
-          "prob": 0.2825,
-          "edge": -0.1666
-        }
-      ],
-      "ai_error": "Gemini API 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.goog",
-      "verdict": "skip",
-      "priority": false
-    },
-    {
-      "id": "8e6ee05b6ac28dc2357f72b9f5a0643e",
-      "league_name": "Франція — Ліга 1",
-      "commence_time": "2026-11-22T16:15:00Z",
-      "home": "Lorient",
-      "away": "Rennes",
-      "odds": {
-        "h2h": {
-          "home": {
-            "best": 3.4,
-            "book": "Betfair",
-            "avg": 3.129,
-            "n": 22
-          },
-          "draw": {
-            "best": 3.49,
-            "book": "1xBet",
-            "avg": 3.25,
-            "n": 22
-          },
-          "away": {
-            "best": 2.45,
-            "book": "Unibet (SE)",
-            "avg": 2.314,
-            "n": 22
-          }
-        },
-        "totals": {
-          "line": 2.5,
-          "over": {
-            "best": 2.19,
-            "book": "Coolbet",
-            "avg": 2.066,
-            "n": 14
-          },
-          "under": {
-            "best": 1.82,
-            "book": "Unibet (SE)",
-            "avg": 1.739,
-            "n": 14
-          }
-        }
-      },
-      "expected_goals": {
-        "home": 1.67,
-        "away": 1.48
-      },
-      "likely_scores": [
-        {
-          "score": "1-1",
-          "p": 0.112
-        },
-        {
-          "score": "2-1",
-          "p": 0.088
-        },
-        {
-          "score": "1-2",
-          "p": 0.078
-        }
-      ],
-      "form": {
-        "home": [
-          {
-            "date": "2026-09-19",
-            "opponent": "Le Mans",
-            "venue": "A",
-            "score": "1-2",
-            "result": "L"
-          },
-          {
-            "date": "2026-10-10",
-            "opponent": "Paris FC",
-            "venue": "H",
-            "score": "1-0",
-            "result": "W"
-          },
-          {
-            "date": "2026-10-18",
-            "opponent": "Monaco",
-            "venue": "H",
-            "score": "1-0",
-            "result": "W"
-          },
-          {
-            "date": "2026-10-25",
-            "opponent": "Angers",
-            "venue": "A",
-            "score": "0-0",
-            "result": "D"
-          },
-          {
-            "date": "2026-11-02",
-            "opponent": "Brest",
-            "venue": "H",
-            "score": "0-2",
-            "result": "L"
-          },
-          {
-            "date": "2026-11-08",
-            "opponent": "Le Havre",
-            "venue": "A",
-            "score": "2-0",
-            "result": "W"
-          }
-        ],
-        "away": [
-          {
-            "date": "2026-09-19",
-            "opponent": "Lyon",
-            "venue": "A",
-            "score": "0-4",
-            "result": "L"
-          },
-          {
-            "date": "2026-10-11",
-            "opponent": "Auxerre",
-            "venue": "H",
-            "score": "4-1",
-            "result": "W"
-          },
-          {
-            "date": "2026-10-18",
-            "opponent": "Paris FC",
-            "venue": "A",
-            "score": "3-4",
-            "result": "L"
-          },
-          {
-            "date": "2026-10-25",
-            "opponent": "Strasbourg",
-            "venue": "H",
-            "score": "3-0",
-            "result": "W"
-          },
-          {
-            "date": "2026-10-30",
-            "opponent": "Nice",
-            "venue": "A",
-            "score": "2-5",
-            "result": "L"
-          },
-          {
-            "date": "2026-11-08",
-            "opponent": "Lille",
-            "venue": "H",
-            "score": "1-2",
-            "result": "L"
-          }
-        ]
-      },
-      "h2h": [
-        {
-          "date": "2025-08-24",
-          "home": "Lorient",
-          "away": "Rennes",
-          "score": "4-0"
-        },
-        {
-          "date": "2026-01-24",
-          "home": "Rennes",
-          "away": "Lorient",
-          "score": "0-2"
-        }
-      ],
-      "news": [],
-      "model_probs": {
-        "home": 0.4169,
-        "draw": 0.2476,
-        "away": 0.3355,
-        "over": 0.6112,
-        "under": 0.3888,
-        "btts": 0.6346
-      },
-      "market_probs": {
-        "home": 0.3017,
-        "draw": 0.2904,
-        "away": 0.4079,
-        "over": 0.457,
-        "under": 0.543
-      },
-      "base_probs": {
-        "home": 0.3478,
-        "draw": 0.2733,
-        "away": 0.3789,
-        "over": 0.5187,
-        "under": 0.4813
-      },
-      "final_probs": {
-        "home": 0.3478,
-        "draw": 0.2733,
-        "away": 0.3789,
-        "over": 0.5187,
-        "under": 0.4813
-      },
-      "final_candidates": [
-        {
-          "market": "h2h",
-          "side": "home",
-          "label": "П1",
-          "price": 3.4,
-          "book": "Betfair",
-          "avg_price": 3.129,
-          "prob": 0.3478,
-          "edge": 0.1825
-        },
-        {
-          "market": "totals",
-          "side": "over",
-          "label": "ТБ 2.5",
-          "price": 2.19,
-          "book": "Coolbet",
-          "avg_price": 2.066,
-          "prob": 0.5187,
-          "edge": 0.136
-        },
-        {
-          "market": "h2h",
-          "side": "draw",
-          "label": "Нічия",
-          "price": 3.49,
-          "book": "1xBet",
-          "avg_price": 3.25,
-          "prob": 0.2733,
-          "edge": -0.0462
-        },
-        {
-          "market": "h2h",
-          "side": "away",
-          "label": "П2",
-          "price": 2.45,
-          "book": "Unibet (SE)",
-          "avg_price": 2.314,
-          "prob": 0.3789,
-          "edge": -0.0717
-        },
-        {
-          "market": "totals",
-          "side": "under",
-          "label": "ТМ 2.5",
-          "price": 1.82,
-          "book": "Unibet (SE)",
-          "avg_price": 1.739,
-          "prob": 0.4813,
-          "edge": -0.124
-        }
-      ],
-      "ai_error": "Gemini API 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.goog",
-      "verdict": "skip",
-      "priority": false
-    },
-    {
-      "id": "4c08b213ed416e8f41e038f42a42b962",
-      "league_name": "Англія — Прем'єр-ліга",
-      "commence_time": "2026-11-22T16:30:00Z",
-      "home": "Liverpool",
-      "away": "Manchester United",
-      "odds": {
-        "h2h": {
-          "home": {
-            "best": 1.82,
-            "book": "1xBet",
-            "avg": 1.75,
-            "n": 25
-          },
-          "draw": {
-            "best": 4.33,
-            "book": "Marathon Bet",
-            "avg": 4.119,
-            "n": 25
-          },
-          "away": {
-            "best": 4.5,
-            "book": "Betfair",
-            "avg": 4.214,
-            "n": 25
-          }
-        },
-        "totals": {
-          "line": 2.5,
-          "over": {
-            "best": 1.53,
-            "book": "Marathon Bet",
-            "avg": 1.495,
-            "n": 4
-          },
-          "under": {
-            "best": 2.6,
-            "book": "Betsson",
-            "avg": 2.558,
-            "n": 4
-          }
-        }
-      },
-      "expected_goals": {
-        "home": 2.03,
-        "away": 1.32
-      },
-      "likely_scores": [
-        {
-          "score": "1-1",
-          "p": 0.1
-        },
-        {
-          "score": "2-1",
-          "p": 0.095
-        },
-        {
-          "score": "2-0",
-          "p": 0.072
-        }
-      ],
-      "form": {
-        "home": [
-          {
-            "date": "2026-09-20",
-            "opponent": "Bournemouth",
-            "venue": "A",
-            "score": "1-0",
-            "result": "W"
-          },
-          {
-            "date": "2026-10-11",
-            "opponent": "Man City",
-            "venue": "H",
-            "score": "0-3",
-            "result": "L"
-          },
-          {
-            "date": "2026-10-17",
-            "opponent": "Brentford",
-            "venue": "A",
-            "score": "2-1",
-            "result": "W"
-          },
-          {
-            "date": "2026-10-25",
-            "opponent": "Brighton",
-            "venue": "H",
-            "score": "2-0",
-            "result": "W"
-          },
-          {
-            "date": "2026-11-01",
-            "opponent": "Arsenal",
-            "venue": "H",
-            "score": "0-1",
-            "result": "L"
-          },
-          {
-            "date": "2026-11-08",
-            "opponent": "Crystal Palace",
-            "venue": "A",
-            "score": "3-1",
-            "result": "W"
-          }
-        ],
-        "away": [
-          {
-            "date": "2026-09-20",
-            "opponent": "Fulham",
-            "venue": "A",
-            "score": "1-1",
-            "result": "D"
-          },
-          {
-            "date": "2026-10-10",
-            "opponent": "Tottenham",
-            "venue": "H",
-            "score": "1-1",
-            "result": "D"
-          },
-          {
-            "date": "2026-10-18",
-            "opponent": "Leeds",
-            "venue": "A",
-            "score": "1-1",
-            "result": "D"
-          },
-          {
-            "date": "2026-10-25",
-            "opponent": "Bournemouth",
-            "venue": "H",
-            "score": "0-3",
-            "result": "L"
-          },
-          {
-            "date": "2026-10-31",
-            "opponent": "Chelsea",
-            "venue": "A",
-            "score": "0-2",
-            "result": "L"
-          },
-          {
-            "date": "2026-11-08",
-            "opponent": "Aston Villa",
-            "venue": "H",
-            "score": "4-4",
-            "result": "D"
-          }
-        ]
-      },
-      "h2h": [
-        {
-          "date": "2024-09-01",
-          "home": "Man United",
-          "away": "Liverpool",
-          "score": "0-3"
-        },
-        {
-          "date": "2025-01-05",
-          "home": "Liverpool",
-          "away": "Man United",
-          "score": "2-2"
-        },
-        {
-          "date": "2025-10-19",
-          "home": "Liverpool",
-          "away": "Man United",
-          "score": "1-2"
-        },
-        {
-          "date": "2026-05-03",
-          "home": "Man United",
-          "away": "Liverpool",
-          "score": "3-2"
-        }
-      ],
-      "news": [
-        {
-          "title": "'He will see what Man Utd are made of' - Pulis on Pochettino's first game",
-          "summary": "BBC Sport columnist Tony Pulis explains how new Manchester United boss Mauricio Pochettino will prepare for Sunday's game against Liverpool after only a few days with his squad.",
-          "link": "https://www.bbc.co.uk/sport/football/articles/ckqx5w58dgv7o?at_medium=RSS&at_campaign=rss",
-          "published": "2026-11-22T06:21:55+00:00",
-          "source": "BBC Sport"
-        },
-        {
-          "title": "Keating stars as Liverpool hold high-flying Chelsea to goalless draw",
-          "summary": "Chelsea miss the chance to consolidate their lead over Manchester City at the top of the Women's Super League as they fail to breach a stubborn Liverpool at the sunny St Helen's Stadium.",
-          "link": "https://www.bbc.co.uk/sport/football/videos/cmde1ll6pgj3o?at_medium=RSS&at_campaign=rss",
-          "published": "2026-11-21T18:34:55+00:00",
-          "source": "BBC Sport"
-        },
-        {
-          "title": "Manchester City 1-3 Tottenham, Arsenal v West Ham: WSL clockwatch – live",
-          "summary": "Manchester United rally late on to beat Birmingham Live scores | Table | Follow on TikTok | And email John Shaw strikes for City! Rose wins the ball high up the pitch before passing to Shaw, who is left in plenty of space in the box. The striker then has plenty of time to slide the ball home. Continue reading...",
-          "link": "https://www.theguardian.com/football/live/2026/nov/22/wsl-manchester-city-tottenham-birmingham-manchester-united-arsenal-west-ham-live",
-          "published": "2026-11-22T14:19:40+00:00",
-          "source": "Football | The Guardian"
-        },
-        {
-          "title": "Man City lose again as home WSL record crumbles with Spurs defeat",
-          "summary": "Manchester City lost for a second WSL game in a row, beaten 3-1 by Tottenham, with their 100 per cent home league record under Andree Jeglertz coming to an abrupt end.",
-          "link": "https://www.skysports.com/football/manchester-city-women-vs-tottenham-hotspur-women/report/575831",
-          "published": "2026-11-22T14:15:00+00:00",
-          "source": "SkySports | News"
-        },
-        {
-          "title": "Bruno Fernandes reveals talks over new Manchester United contract are on hold",
-          "summary": "Club captain confirms he has been offered a new deal ‘Not the right moment to be talking about negotiations’ Bruno Fernandes has revealed that Manchester United have offered him a new contract, but discussions have been ⁠put on hold as the club focus on turning around their terrible start to the season. Fernandes’s current deal expires at the end of this campaign, although United ⁠hold an ​option ",
-          "link": "https://www.theguardian.com/football/2026/nov/22/bruno-fernandes-reveals-talks-over-new-manchester-united-contract-are-on-hold",
-          "published": "2026-11-22T11:33:54+00:00",
-          "source": "Football | The Guardian"
-        },
-        {
-          "title": "'Not the right time' - Fernandes pauses Man Utd contract talks",
-          "summary": "Manchester United captain Bruno Fernandes says he has been offered a new contract by the club but feels it \"is not the right time\" for discussions about his future.",
-          "link": "https://www.bbc.co.uk/sport/football/articles/c6x2e8devk1po?at_medium=RSS&at_campaign=rss",
-          "published": "2026-11-22T08:41:20+00:00",
-          "source": "BBC Sport"
-        },
-        {
-          "title": "‘Obviously it’s not good’: Arteta sweating over David Raya’s fitness after injury",
-          "summary": "Keeper close to tears at Newcastle after hurting shoulder Arsenal held 2-2, with Jaissle hailing ‘excellent’ display Arsenal were left sweating on the fitness of their goalkeeper David Raya after the Spaniard was forced off with a shoulder injury during the second half of the 2-2 draw at Newcastle on Saturday evening. It left Mikel Arteta’s side six points clear of Brighton and Manchester City at ",
-          "link": "https://www.theguardian.com/football/2026/nov/21/david-raya-shoulder-injury-arsenal-newcastle-mikel-arteta",
-          "published": "2026-11-21T21:48:21+00:00",
-          "source": "Football | The Guardian"
-        },
-        {
-          "title": "AC Milan monitoring Man Utd's Fernandes - Sunday's gossip",
-          "summary": "AC Milan monitoring Manchester United midfielder Bruno Fernandes, Arsenal pair yet to start talks on new deals and Trabzonspor renew interest in Tottenham forward Richarlison, plus more.",
-          "link": "https://www.bbc.co.uk/sport/football/articles/cq8j4e8nlvm1o?at_medium=RSS&at_campaign=rss",
-          "published": "2026-11-21T20:35:12+00:00",
-          "source": "BBC Sport"
-        }
-      ],
-      "model_probs": {
-        "home": 0.5344,
-        "draw": 0.2253,
-        "away": 0.2403,
-        "over": 0.6508,
-        "under": 0.3492,
-        "btts": 0.6421
-      },
-      "market_probs": {
-        "home": 0.5434,
-        "draw": 0.2309,
-        "away": 0.2257,
-        "over": 0.6311,
-        "under": 0.3689
-      },
-      "base_probs": {
-        "home": 0.5398,
-        "draw": 0.2287,
-        "away": 0.2315,
-        "over": 0.639,
-        "under": 0.361
-      },
-      "final_probs": {
-        "home": 0.5398,
-        "draw": 0.2287,
-        "away": 0.2315,
-        "over": 0.639,
-        "under": 0.361
-      },
-      "final_candidates": [
-        {
-          "market": "h2h",
-          "side": "away",
-          "label": "П2",
-          "price": 4.5,
-          "book": "Betfair",
-          "avg_price": 4.214,
-          "prob": 0.2315,
-          "edge": 0.0417
-        },
-        {
-          "market": "h2h",
-          "side": "draw",
-          "label": "Нічия",
-          "price": 4.33,
-          "book": "Marathon Bet",
-          "avg_price": 4.119,
-          "prob": 0.2287,
-          "edge": -0.0097
-        },
-        {
-          "market": "h2h",
-          "side": "home",
-          "label": "П1",
-          "price": 1.82,
-          "book": "1xBet",
-          "avg_price": 1.75,
-          "prob": 0.5398,
-          "edge": -0.0176
-        },
-        {
-          "market": "totals",
-          "side": "over",
-          "label": "ТБ 2.5",
-          "price": 1.53,
-          "book": "Marathon Bet",
-          "avg_price": 1.495,
-          "prob": 0.639,
-          "edge": -0.0223
-        },
-        {
-          "market": "totals",
-          "side": "under",
-          "label": "ТМ 2.5",
-          "price": 2.6,
-          "book": "Betsson",
-          "avg_price": 2.558,
-          "prob": 0.361,
-          "edge": -0.0614
-        }
-      ],
-      "ai_error": "Gemini API 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.goog",
-      "verdict": "skip",
-      "priority": false
-    },
-    {
-      "id": "9a214142c9b31ad8233dccad53f75d6d",
-      "league_name": "Німеччина — Бундесліга",
-      "commence_time": "2026-11-22T16:30:00Z",
-      "home": "Werder Bremen",
-      "away": "Hamburger SV",
-      "odds": {
-        "h2h": {
-          "home": {
-            "best": 1.64,
-            "book": "1xBet",
-            "avg": 1.576,
-            "n": 23
-          },
-          "draw": {
-            "best": 4.51,
-            "book": "1xBet",
-            "avg": 4.288,
-            "n": 23
-          },
-          "away": {
-            "best": 6.0,
-            "book": "Betfair",
-            "avg": 5.254,
-            "n": 23
-          }
-        },
-        "totals": {
-          "line": 2.5,
-          "over": {
-            "best": 1.71,
-            "book": "Matchbook",
-            "avg": 1.637,
-            "n": 8
-          },
-          "under": {
-            "best": 2.37,
-            "book": "1xBet",
-            "avg": 2.26,
-            "n": 8
-          }
-        }
-      },
-      "expected_goals": {
-        "home": 1.87,
-        "away": 1.22
-      },
-      "likely_scores": [
-        {
-          "score": "1-1",
-          "p": 0.11
-        },
-        {
-          "score": "2-1",
-          "p": 0.097
-        },
-        {
-          "score": "2-0",
-          "p": 0.08
-        }
-      ],
-      "form": {
-        "home": [
-          {
-            "date": "2026-09-19",
-            "opponent": "Augsburg",
-            "venue": "H",
-            "score": "3-2",
-            "result": "W"
-          },
-          {
-            "date": "2026-10-09",
-            "opponent": "Dortmund",
-            "venue": "A",
-            "score": "2-2",
-            "result": "D"
-          },
-          {
-            "date": "2026-10-17",
-            "opponent": "Paderborn",
-            "venue": "H",
-            "score": "2-2",
-            "result": "D"
-          },
-          {
-            "date": "2026-10-24",
-            "opponent": "Mainz",
-            "venue": "A",
-            "score": "3-2",
-            "result": "W"
-          },
-          {
-            "date": "2026-10-31",
-            "opponent": "Hoffenheim",
-            "venue": "H",
-            "score": "2-0",
-            "result": "W"
-          },
-          {
-            "date": "2026-11-07",
-            "opponent": "Stuttgart",
-            "venue": "A",
-            "score": "0-1",
-            "result": "L"
-          }
-        ],
-        "away": [
-          {
-            "date": "2026-09-19",
-            "opponent": "FC Koln",
-            "venue": "H",
-            "score": "2-1",
-            "result": "W"
-          },
-          {
-            "date": "2026-10-10",
-            "opponent": "Hoffenheim",
-            "venue": "A",
-            "score": "3-2",
-            "result": "W"
-          },
-          {
-            "date": "2026-10-17",
-            "opponent": "Stuttgart",
-            "venue": "H",
-            "score": "1-0",
-            "result": "W"
-          },
-          {
-            "date": "2026-10-24",
-            "opponent": "Paderborn",
-            "venue": "A",
-            "score": "0-1",
-            "result": "L"
-          },
-          {
-            "date": "2026-11-01",
-            "opponent": "Ein Frankfurt",
-            "venue": "A",
-            "score": "1-3",
-            "result": "L"
-          },
-          {
-            "date": "2026-11-06",
-            "opponent": "M'gladbach",
-            "venue": "H",
-            "score": "3-1",
-            "result": "W"
-          }
-        ]
-      },
-      "h2h": [
-        {
-          "date": "2025-12-07",
-          "home": "Hamburg",
-          "away": "Werder Bremen",
-          "score": "3-2"
-        },
-        {
-          "date": "2026-04-18",
-          "home": "Werder Bremen",
-          "away": "Hamburg",
-          "score": "3-1"
-        }
-      ],
-      "news": [],
-      "model_probs": {
-        "home": 0.5199,
-        "draw": 0.2385,
-        "away": 0.2416,
-        "over": 0.5954,
-        "under": 0.4046,
-        "btts": 0.6013
-      },
-      "market_probs": {
-        "home": 0.5997,
-        "draw": 0.2204,
-        "away": 0.1799,
-        "over": 0.5799,
-        "under": 0.4201
-      },
-      "base_probs": {
-        "home": 0.5678,
-        "draw": 0.2277,
-        "away": 0.2046,
-        "over": 0.5861,
-        "under": 0.4139
-      },
-      "final_probs": {
-        "home": 0.5678,
-        "draw": 0.2277,
-        "away": 0.2046,
-        "over": 0.5861,
-        "under": 0.4139
-      },
-      "final_candidates": [
-        {
-          "market": "h2h",
-          "side": "away",
-          "label": "П2",
-          "price": 6.0,
-          "book": "Betfair",
-          "avg_price": 5.254,
-          "prob": 0.2046,
-          "edge": 0.2276
-        },
-        {
-          "market": "h2h",
-          "side": "draw",
-          "label": "Нічия",
-          "price": 4.51,
-          "book": "1xBet",
-          "avg_price": 4.288,
-          "prob": 0.2277,
-          "edge": 0.0269
-        },
-        {
-          "market": "totals",
-          "side": "over",
-          "label": "ТБ 2.5",
-          "price": 1.71,
-          "book": "Matchbook",
-          "avg_price": 1.637,
-          "prob": 0.5861,
-          "edge": 0.0022
-        },
-        {
-          "market": "totals",
-          "side": "under",
-          "label": "ТМ 2.5",
-          "price": 2.37,
-          "book": "1xBet",
-          "avg_price": 2.26,
-          "prob": 0.4139,
-          "edge": -0.0191
-        },
-        {
-          "market": "h2h",
-          "side": "home",
-          "label": "П1",
-          "price": 1.64,
-          "book": "1xBet",
-          "avg_price": 1.576,
-          "prob": 0.5678,
-          "edge": -0.0688
-        }
-      ],
-      "ai_error": "Gemini API 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.goog",
-      "verdict": "skip",
-      "priority": false
-    },
-    {
-      "id": "5faf836ce6c0fd72af5d1fe258c63bc6",
-      "league_name": "Італія — Серія A",
-      "commence_time": "2026-11-22T17:00:00Z",
-      "home": "AC Milan",
-      "away": "Frosinone",
-      "odds": {
-        "h2h": {
-          "home": {
-            "best": 1.68,
-            "book": "Betfair",
-            "avg": 1.605,
-            "n": 24
-          },
-          "draw": {
-            "best": 4.83,
-            "book": "1xBet",
-            "avg": 4.417,
-            "n": 24
-          },
-          "away": {
-            "best": 5.2,
-            "book": "Matchbook",
-            "avg": 4.803,
-            "n": 24
-          }
-        },
-        "totals": {
-          "line": 2.5,
-          "over": {
-            "best": 1.42,
-            "book": "Betsson",
-            "avg": 1.41,
-            "n": 3
-          },
-          "under": {
-            "best": 2.91,
-            "book": "Betsson",
-            "avg": 2.853,
-            "n": 3
-          }
-        }
-      },
-      "expected_goals": {
-        "home": 1.85,
-        "away": 1.63
-      },
-      "likely_scores": [
-        {
-          "score": "1-1",
-          "p": 0.099
-        },
-        {
-          "score": "2-1",
-          "p": 0.086
-        },
-        {
-          "score": "1-2",
-          "p": 0.076
-        }
-      ],
-      "form": {
-        "home": [
-          {
-            "date": "2026-10-11",
-            "opponent": "Sassuolo",
-            "venue": "A",
-            "score": "1-1",
-            "result": "D"
-          },
-          {
-            "date": "2026-10-18",
-            "opponent": "Atalanta",
-            "venue": "H",
-            "score": "3-2",
-            "result": "W"
-          },
-          {
-            "date": "2026-10-25",
-            "opponent": "Udinese",
-            "venue": "A",
-            "score": "2-0",
-            "result": "W"
-          },
-          {
-            "date": "2026-10-28",
-            "opponent": "Bologna",
-            "venue": "H",
-            "score": "2-4",
-            "result": "L"
-          },
-          {
-            "date": "2026-10-31",
-            "opponent": "Inter",
-            "venue": "H",
-            "score": "3-1",
-            "result": "W"
-          },
-          {
-            "date": "2026-11-08",
-            "opponent": "Genoa",
-            "venue": "A",
-            "score": "2-1",
-            "result": "W"
-          }
-        ],
-        "away": [
-          {
-            "date": "2026-10-10",
-            "opponent": "Napoli",
-            "venue": "A",
-            "score": "0-3",
-            "result": "L"
-          },
-          {
-            "date": "2026-10-16",
-            "opponent": "Sassuolo",
-            "venue": "H",
-            "score": "4-2",
-            "result": "W"
-          },
-          {
-            "date": "2026-10-25",
-            "opponent": "Atalanta",
-            "venue": "A",
-            "score": "4-4",
-            "result": "D"
-          },
-          {
-            "date": "2026-10-29",
-            "opponent": "Lecce",
-            "venue": "H",
-            "score": "5-1",
-            "result": "W"
-          },
-          {
-            "date": "2026-11-01",
-            "opponent": "Torino",
-            "venue": "H",
-            "score": "2-0",
-            "result": "W"
-          },
-          {
-            "date": "2026-11-07",
-            "opponent": "Cagliari",
-            "venue": "A",
-            "score": "0-1",
-            "result": "L"
-          }
-        ]
-      },
-      "h2h": [],
-      "news": [
-        {
-          "title": "AC Milan monitoring Man Utd's Fernandes - Sunday's gossip",
-          "summary": "AC Milan monitoring Manchester United midfielder Bruno Fernandes, Arsenal pair yet to start talks on new deals and Trabzonspor renew interest in Tottenham forward Richarlison, plus more.",
-          "link": "https://www.bbc.co.uk/sport/football/articles/cq8j4e8nlvm1o?at_medium=RSS&at_campaign=rss",
-          "published": "2026-11-21T20:35:12+00:00",
-          "source": "BBC Sport"
-        }
-      ],
-      "model_probs": {
-        "home": 0.4282,
-        "draw": 0.2335,
-        "away": 0.3383,
-        "over": 0.6749,
-        "under": 0.3251,
-        "btts": 0.6828
-      },
-      "market_probs": {
-        "home": 0.5891,
-        "draw": 0.2141,
-        "away": 0.1969,
-        "over": 0.6692,
-        "under": 0.3308
-      },
-      "base_probs": {
-        "home": 0.5247,
-        "draw": 0.2218,
-        "away": 0.2534,
-        "over": 0.6715,
-        "under": 0.3285
-      },
-      "final_probs": {
-        "home": 0.5247,
-        "draw": 0.2218,
-        "away": 0.2534,
-        "over": 0.6715,
-        "under": 0.3285
-      },
-      "final_candidates": [
-        {
-          "market": "h2h",
-          "side": "away",
-          "label": "П2",
-          "price": 5.2,
-          "book": "Matchbook",
-          "avg_price": 4.803,
-          "prob": 0.2534,
-          "edge": 0.3177
-        },
-        {
-          "market": "h2h",
-          "side": "draw",
-          "label": "Нічия",
-          "price": 4.83,
-          "book": "1xBet",
-          "avg_price": 4.417,
-          "prob": 0.2218,
-          "edge": 0.0713
-        },
-        {
-          "market": "totals",
-          "side": "under",
-          "label": "ТМ 2.5",
-          "price": 2.91,
-          "book": "Betsson",
-          "avg_price": 2.853,
-          "prob": 0.3285,
-          "edge": -0.0441
-        },
-        {
-          "market": "totals",
-          "side": "over",
-          "label": "ТБ 2.5",
-          "price": 1.42,
-          "book": "Betsson",
-          "avg_price": 1.41,
-          "prob": 0.6715,
-          "edge": -0.0465
-        },
-        {
-          "market": "h2h",
-          "side": "home",
-          "label": "П1",
-          "price": 1.68,
-          "book": "Betfair",
-          "avg_price": 1.605,
-          "prob": 0.5247,
-          "edge": -0.1185
-        }
-      ],
-      "ai_error": "Gemini API 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.goog",
-      "verdict": "skip",
-      "priority": false
-    },
-    {
-      "id": "893268e5503c4e58fbf137e4b5db7e93",
-      "league_name": "Іспанія — Ла Ліга",
-      "commence_time": "2026-11-22T17:30:00Z",
-      "home": "CA Osasuna",
-      "away": "Málaga",
-      "odds": {
-        "h2h": {
-          "home": {
-            "best": 1.89,
-            "book": "Coolbet",
-            "avg": 1.805,
-            "n": 20
-          },
-          "draw": {
-            "best": 3.8,
-            "book": "Unibet (SE)",
-            "avg": 3.571,
-            "n": 20
-          },
-          "away": {
-            "best": 4.88,
-            "book": "1xBet",
-            "avg": 4.502,
-            "n": 20
-          }
-        },
-        "totals": {
-          "line": 2.5,
-          "over": {
-            "best": 2.06,
-            "book": "Pinnacle",
-            "avg": 1.965,
-            "n": 14
-          },
-          "under": {
-            "best": 1.89,
-            "book": "1xBet",
-            "avg": 1.829,
-            "n": 14
-          }
-        }
-      },
-      "expected_goals": {
-        "home": 1.79,
-        "away": 0.95
-      },
-      "likely_scores": [
-        {
-          "score": "1-1",
-          "p": 0.116
-        },
-        {
-          "score": "1-0",
-          "p": 0.11
-        },
-        {
-          "score": "2-0",
-          "p": 0.104
-        }
-      ],
-      "form": {
-        "home": [
-          {
-            "date": "2026-09-19",
-            "opponent": "Vallecano",
-            "venue": "H",
-            "score": "1-1",
-            "result": "D"
-          },
-          {
-            "date": "2026-10-11",
-            "opponent": "Betis",
-            "venue": "A",
-            "score": "2-5",
-            "result": "L"
-          },
-          {
-            "date": "2026-10-18",
-            "opponent": "Santander",
-            "venue": "H",
-            "score": "2-0",
-            "result": "W"
-          },
-          {
-            "date": "2026-10-26",
-            "opponent": "Sevilla",
-            "venue": "A",
-            "score": "0-2",
-            "result": "L"
-          },
-          {
-            "date": "2026-11-02",
-            "opponent": "La Coruna",
-            "venue": "A",
-            "score": "1-2",
-            "result": "L"
-          },
-          {
-            "date": "2026-11-07",
-            "opponent": "Ath Bilbao",
-            "venue": "H",
-            "score": "1-1",
-            "result": "D"
-          }
-        ],
-        "away": [
-          {
-            "date": "2026-09-20",
-            "opponent": "Getafe",
-            "venue": "A",
-            "score": "0-1",
-            "result": "L"
-          },
-          {
-            "date": "2026-10-09",
-            "opponent": "Espanol",
-            "venue": "H",
-            "score": "1-1",
-            "result": "D"
-          },
-          {
-            "date": "2026-10-18",
-            "opponent": "Sociedad",
-            "venue": "H",
-            "score": "2-5",
-            "result": "L"
-          },
-          {
-            "date": "2026-10-23",
-            "opponent": "Alaves",
-            "venue": "A",
-            "score": "1-1",
-            "result": "D"
-          },
-          {
-            "date": "2026-10-31",
-            "opponent": "Betis",
-            "venue": "A",
-            "score": "1-2",
-            "result": "L"
-          },
-          {
-            "date": "2026-11-07",
-            "opponent": "Santander",
-            "venue": "H",
-            "score": "1-2",
-            "result": "L"
-          }
-        ]
-      },
-      "h2h": [],
-      "news": [],
-      "model_probs": {
-        "home": 0.5654,
-        "draw": 0.2442,
-        "away": 0.1904,
-        "over": 0.5145,
-        "under": 0.4855,
-        "btts": 0.5158
-      },
-      "market_probs": {
-        "home": 0.5246,
-        "draw": 0.2651,
-        "away": 0.2103,
-        "over": 0.4821,
-        "under": 0.5179
-      },
-      "base_probs": {
-        "home": 0.5409,
-        "draw": 0.2568,
-        "away": 0.2023,
-        "over": 0.495,
-        "under": 0.505
-      },
-      "final_probs": {
-        "home": 0.5409,
-        "draw": 0.2568,
-        "away": 0.2023,
-        "over": 0.495,
-        "under": 0.505
-      },
-      "final_candidates": [
-        {
-          "market": "h2h",
-          "side": "home",
-          "label": "П1",
-          "price": 1.89,
-          "book": "Coolbet",
-          "avg_price": 1.805,
-          "prob": 0.5409,
-          "edge": 0.0223
-        },
-        {
-          "market": "totals",
-          "side": "over",
-          "label": "ТБ 2.5",
-          "price": 2.06,
-          "book": "Pinnacle",
-          "avg_price": 1.965,
-          "prob": 0.495,
-          "edge": 0.0197
-        },
-        {
-          "market": "h2h",
-          "side": "away",
-          "label": "П2",
-          "price": 4.88,
-          "book": "1xBet",
-          "avg_price": 4.502,
-          "prob": 0.2023,
-          "edge": -0.0128
-        },
-        {
-          "market": "h2h",
-          "side": "draw",
-          "label": "Нічия",
-          "price": 3.8,
-          "book": "Unibet (SE)",
-          "avg_price": 3.571,
-          "prob": 0.2568,
-          "edge": -0.0242
-        },
-        {
-          "market": "totals",
-          "side": "under",
-          "label": "ТМ 2.5",
-          "price": 1.89,
-          "book": "1xBet",
-          "avg_price": 1.829,
-          "prob": 0.505,
-          "edge": -0.0456
-        }
-      ],
-      "ai_error": "Gemini API 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.goog",
-      "verdict": "skip",
-      "priority": false
-    },
-    {
-      "id": "e22f82b10fe71d230248b88fef87e58f",
-      "league_name": "Італія — Серія A",
-      "commence_time": "2026-11-22T19:45:00Z",
-      "home": "Atalanta BC",
-      "away": "Inter Milan",
-      "odds": {
-        "h2h": {
-          "home": {
-            "best": 6.0,
-            "book": "Betfair",
-            "avg": 5.333,
-            "n": 23
-          },
-          "draw": {
-            "best": 5.0,
-            "book": "Winamax (DE)",
-            "avg": 4.629,
-            "n": 23
-          },
-          "away": {
-            "best": 1.6,
-            "book": "1xBet",
-            "avg": 1.534,
-            "n": 23
-          }
-        },
-        "totals": {
-          "line": 2.5,
-          "over": {
-            "best": 1.4,
-            "book": "Betsson",
-            "avg": 1.397,
-            "n": 3
-          },
-          "under": {
-            "best": 3.0,
-            "book": "Betsson",
-            "avg": 2.95,
-            "n": 3
-          }
-        }
-      },
-      "expected_goals": {
-        "home": 1.31,
-        "away": 2.09
-      },
-      "likely_scores": [
-        {
-          "score": "1-1",
-          "p": 0.097
-        },
-        {
-          "score": "1-2",
-          "p": 0.096
-        },
-        {
-          "score": "0-2",
-          "p": 0.073
-        }
-      ],
-      "form": {
-        "home": [
-          {
-            "date": "2026-10-12",
-            "opponent": "Venezia",
-            "venue": "H",
-            "score": "3-1",
-            "result": "W"
-          },
-          {
-            "date": "2026-10-18",
-            "opponent": "Milan",
-            "venue": "A",
-            "score": "2-3",
-            "result": "L"
-          },
-          {
-            "date": "2026-10-25",
-            "opponent": "Frosinone",
-            "venue": "H",
-            "score": "4-4",
-            "result": "D"
-          },
-          {
-            "date": "2026-10-29",
-            "opponent": "Fiorentina",
-            "venue": "A",
-            "score": "2-2",
-            "result": "D"
-          },
-          {
-            "date": "2026-11-02",
-            "opponent": "Parma",
-            "venue": "H",
-            "score": "0-3",
-            "result": "L"
-          },
-          {
-            "date": "2026-11-08",
-            "opponent": "Monza",
-            "venue": "A",
-            "score": "1-0",
-            "result": "W"
-          }
-        ],
-        "away": [
-          {
-            "date": "2026-10-10",
-            "opponent": "Parma",
-            "venue": "H",
-            "score": "3-0",
-            "result": "W"
-          },
-          {
-            "date": "2026-10-17",
-            "opponent": "Bologna",
-            "venue": "A",
-            "score": "3-1",
-            "result": "W"
-          },
-          {
-            "date": "2026-10-25",
-            "opponent": "Fiorentina",
-            "venue": "H",
-            "score": "2-1",
-            "result": "W"
-          },
-          {
-            "date": "2026-10-28",
-            "opponent": "Venezia",
-            "venue": "A",
-            "score": "2-0",
-            "result": "W"
-          },
-          {
-            "date": "2026-10-31",
-            "opponent": "Milan",
-            "venue": "A",
-            "score": "1-3",
-            "result": "L"
-          },
-          {
-            "date": "2026-11-08",
-            "opponent": "Como",
-            "venue": "H",
-            "score": "2-0",
-            "result": "W"
-          }
-        ]
-      },
-      "h2h": [
-        {
-          "date": "2024-08-30",
-          "home": "Inter",
-          "away": "Atalanta",
-          "score": "4-0"
-        },
-        {
-          "date": "2025-03-16",
-          "home": "Atalanta",
-          "away": "Inter",
-          "score": "0-2"
-        },
-        {
-          "date": "2025-12-28",
-          "home": "Atalanta",
-          "away": "Inter",
-          "score": "0-1"
-        },
-        {
-          "date": "2026-03-14",
-          "home": "Inter",
-          "away": "Atalanta",
-          "score": "1-1"
-        }
-      ],
-      "news": [
-        {
-          "title": "Argentina midfielder Paredes collapses during TV interview",
-          "summary": "World Cup winning midfielder Leandro Paredes collapses while giving a post-match interview minutes after winning a trophy with Boca Juniors.",
-          "link": "https://www.bbc.co.uk/sport/football/articles/cwnv45818z59o?at_medium=RSS&at_campaign=rss",
-          "published": "2026-11-22T07:13:34+00:00",
-          "source": "BBC Sport"
-        },
-        {
-          "title": "Lionel Messi at center of red-card controversy as Inter Miami face early MLS playoff exit",
-          "summary": "Messi booked for throwing ball into opponent’s face Columbus coach insists Argentine deserved red card Defending champions thrashed 3-0 in series opener Columbus Crew coach Laurent Courtois said Lionel Messi should have been sent off after throwing a ball into an opponent’s face as Inter Miami crashed to a 3-0 defeat in the MLS Cup playoffs on Saturday. Messi’s frustration boiled over on the strok",
-          "link": "https://www.theguardian.com/football/2026/nov/21/lionel-messi-red-card-controversy-inter-miami-columbus-crew-mls-playoffs",
-          "published": "2026-11-22T03:01:55+00:00",
-          "source": "Football | The Guardian"
-        },
-        {
-          "title": "'They looked like a team again' - Hearts  roar back with Dundee demolition",
-          "summary": "After a worrying week before the international break, Hearts respond is style by thrashing Dundee 8-0 at Dens Park.",
-          "link": "https://www.bbc.co.uk/sport/football/articles/cm9w98y28djno?at_medium=RSS&at_campaign=rss",
-          "published": "2026-11-21T22:45:05+00:00",
-          "source": "BBC Sport"
-        },
-        {
-          "title": "Hirst key for Stoke, injuries derail Millwall - Sam Parkin's EFL takeaways",
-          "summary": "After the last international break of the year, Final score pundit and former Swindon Town, Luton Town and Northampton Town striker selects his takeaways from the Championship, League One and League Two.",
-          "link": "https://www.bbc.co.uk/sport/football/articles/c6r7g8253e3yo?at_medium=RSS&at_campaign=rss",
-          "published": "2026-11-21T20:36:43+00:00",
-          "source": "BBC Sport"
-        },
-        {
-          "title": "AC Milan monitoring Man Utd's Fernandes - Sunday's gossip",
-          "summary": "AC Milan monitoring Manchester United midfielder Bruno Fernandes, Arsenal pair yet to start talks on new deals and Trabzonspor renew interest in Tottenham forward Richarlison, plus more.",
-          "link": "https://www.bbc.co.uk/sport/football/articles/cq8j4e8nlvm1o?at_medium=RSS&at_campaign=rss",
-          "published": "2026-11-21T20:35:12+00:00",
-          "source": "BBC Sport"
-        },
-        {
-          "title": "Training hard and biding his time, Dele Alli has not given up on football yet",
-          "summary": "The 30-year-old former England star combines Twitch streaming with working to return to the top as a player Consider the training regime Dele Alli has followed since he left Como 18 months ago and it becomes clear why he takes exception to suggestions he has given up on football in favour of becoming an internet personality. He trains five or six days a week with Connor Peters, an elite performanc",
-          "link": "https://www.theguardian.com/football/2026/nov/20/dele-alli-tottenham-mk-dons-england",
-          "published": "2026-11-20T19:00:37+00:00",
-          "source": "Football | The Guardian"
-        },
-        {
-          "title": "What history tells us about the Premier League table after 10 games of a season",
-          "summary": "Past years suggest it is tough to make big positional gains after slow start but that someone now safe will be relegated The Premier League is about to enter the most intense phase of its season. After 10 rounds of fixtures across the past three months there are 10 in the next seven weeks. Yet if you hibernated for winter, most clubs would be in roughly the same position no matter when in spring y",
-          "link": "https://www.theguardian.com/football/2026/nov/20/premier-league-table-history-after-10-games-season",
-          "published": "2026-11-20T08:00:26+00:00",
-          "source": "Football | The Guardian"
-        },
-        {
-          "title": "Summer signings join Lionel Messi among MLS’s top earners: Takeaways from the league’s salary release",
-          "summary": "How much in player salaries did it take to earn a point in the 2026 MLS regular season? The latest batch of salaries lends some insight Lionel Messi has closer company at the top of MLS’s list of highest-paid players, thanks to another pair of former Barcelona attackers. The Inter Miami captain is still comfortably the league’s top earner, on a guaranteed compensation of $28.3m. Robert Lewandowski",
-          "link": "https://www.theguardian.com/football/2026/nov/19/mls-salary-release-lionel-messi-spent-per-point",
-          "published": "2026-11-19T18:01:17+00:00",
-          "source": "Football | The Guardian"
-        }
-      ],
-      "model_probs": {
-        "home": 0.2304,
-        "draw": 0.2209,
-        "away": 0.5487,
-        "over": 0.6599,
-        "under": 0.3401,
-        "btts": 0.6449
-      },
-      "market_probs": {
-        "home": 0.1777,
-        "draw": 0.2047,
-        "away": 0.6177,
-        "over": 0.6786,
-        "under": 0.3214
-      },
-      "base_probs": {
-        "home": 0.1988,
-        "draw": 0.2112,
-        "away": 0.5901,
-        "over": 0.6711,
-        "under": 0.3289
-      },
-      "final_probs": {
-        "home": 0.1988,
-        "draw": 0.2112,
-        "away": 0.5901,
-        "over": 0.6711,
-        "under": 0.3289
-      },
-      "final_candidates": [
-        {
-          "market": "h2h",
-          "side": "home",
-          "label": "П1",
-          "price": 6.0,
-          "book": "Betfair",
-          "avg_price": 5.333,
-          "prob": 0.1988,
-          "edge": 0.1928
-        },
-        {
-          "market": "h2h",
-          "side": "draw",
-          "label": "Нічия",
-          "price": 5.0,
-          "book": "Winamax (DE)",
-          "avg_price": 4.629,
-          "prob": 0.2112,
-          "edge": 0.056
-        },
-        {
-          "market": "totals",
-          "side": "under",
-          "label": "ТМ 2.5",
-          "price": 3.0,
-          "book": "Betsson",
-          "avg_price": 2.95,
-          "prob": 0.3289,
-          "edge": -0.0133
-        },
-        {
-          "market": "h2h",
-          "side": "away",
-          "label": "П2",
-          "price": 1.6,
-          "book": "1xBet",
-          "avg_price": 1.534,
-          "prob": 0.5901,
-          "edge": -0.0558
-        },
-        {
-          "market": "totals",
-          "side": "over",
-          "label": "ТБ 2.5",
-          "price": 1.4,
-          "book": "Betsson",
-          "avg_price": 1.397,
-          "prob": 0.6711,
-          "edge": -0.0605
-        }
-      ],
-      "ai_error": "Gemini API 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.goog",
-      "verdict": "skip",
-      "priority": false
-    },
-    {
-      "id": "98fae24771271c96d5dd364e535405d2",
-      "league_name": "Франція — Ліга 1",
-      "commence_time": "2026-11-22T19:45:00Z",
-      "home": "Marseille",
-      "away": "Le Mans FC",
-      "odds": {
-        "h2h": {
-          "home": {
-            "best": 1.49,
-            "book": "1xBet",
-            "avg": 1.433,
-            "n": 22
-          },
-          "draw": {
-            "best": 5.1,
-            "book": "Betfair",
-            "avg": 4.878,
-            "n": 22
-          },
-          "away": {
-            "best": 7.4,
-            "book": "Betfair",
-            "avg": 6.519,
-            "n": 22
-          }
-        },
-        "totals": {
-          "line": 2.5,
-          "over": {
-            "best": 1.53,
-            "book": "William Hill",
-            "avg": 1.517,
-            "n": 3
-          },
-          "under": {
-            "best": 2.56,
-            "book": "Betsson",
-            "avg": 2.51,
-            "n": 3
-          }
-        }
-      },
-      "expected_goals": {
-        "home": 2.62,
-        "away": 1.17
-      },
-      "likely_scores": [
-        {
-          "score": "2-1",
-          "p": 0.091
-        },
-        {
-          "score": "3-1",
-          "p": 0.079
-        },
-        {
-          "score": "2-0",
-          "p": 0.077
-        }
-      ],
-      "form": {
-        "home": [
-          {
-            "date": "2026-09-20",
-            "opponent": "Paris SG",
-            "venue": "H",
-            "score": "1-2",
-            "result": "L"
-          },
-          {
-            "date": "2026-10-11",
-            "opponent": "Troyes",
-            "venue": "A",
-            "score": "2-0",
-            "result": "W"
-          },
-          {
-            "date": "2026-10-18",
-            "opponent": "Angers",
-            "venue": "A",
-            "score": "5-2",
-            "result": "W"
-          },
-          {
-            "date": "2026-10-25",
-            "opponent": "Le Havre",
-            "venue": "H",
-            "score": "4-3",
-            "result": "W"
-          },
-          {
-            "date": "2026-11-01",
-            "opponent": "Toulouse",
-            "venue": "H",
-            "score": "2-0",
-            "result": "W"
-          },
-          {
-            "date": "2026-11-08",
-            "opponent": "Lens",
-            "venue": "A",
-            "score": "2-1",
-            "result": "W"
-          }
-        ],
-        "away": [
-          {
-            "date": "2026-09-19",
-            "opponent": "Lorient",
-            "venue": "H",
-            "score": "2-1",
-            "result": "W"
-          },
-          {
-            "date": "2026-10-10",
-            "opponent": "Paris SG",
-            "venue": "A",
-            "score": "1-3",
-            "result": "L"
-          },
-          {
-            "date": "2026-10-16",
-            "opponent": "Toulouse",
-            "venue": "H",
-            "score": "0-3",
-            "result": "L"
-          },
-          {
-            "date": "2026-10-25",
-            "opponent": "Auxerre",
-            "venue": "A",
-            "score": "1-1",
-            "result": "D"
-          },
-          {
-            "date": "2026-10-31",
-            "opponent": "Troyes",
-            "venue": "A",
-            "score": "0-2",
-            "result": "L"
-          },
-          {
-            "date": "2026-11-08",
-            "opponent": "Monaco",
-            "venue": "H",
-            "score": "1-1",
-            "result": "D"
-          }
-        ]
-      },
-      "h2h": [],
-      "news": [],
-      "model_probs": {
-        "home": 0.6797,
-        "draw": 0.1751,
-        "away": 0.1452,
-        "over": 0.7311,
-        "under": 0.2689,
-        "btts": 0.6452
-      },
-      "market_probs": {
-        "home": 0.6607,
-        "draw": 0.1941,
-        "away": 0.1452,
-        "over": 0.6233,
-        "under": 0.3767
-      },
-      "base_probs": {
-        "home": 0.6683,
-        "draw": 0.1865,
-        "away": 0.1452,
-        "over": 0.6664,
-        "under": 0.3336
-      },
-      "final_probs": {
-        "home": 0.6683,
-        "draw": 0.1865,
-        "away": 0.1452,
-        "over": 0.6664,
-        "under": 0.3336
-      },
-      "final_candidates": [
-        {
-          "market": "h2h",
-          "side": "away",
-          "label": "П2",
-          "price": 7.4,
-          "book": "Betfair",
-          "avg_price": 6.519,
-          "prob": 0.1452,
-          "edge": 0.0745
-        },
-        {
-          "market": "totals",
-          "side": "over",
-          "label": "ТБ 2.5",
-          "price": 1.53,
-          "book": "William Hill",
-          "avg_price": 1.517,
-          "prob": 0.6664,
-          "edge": 0.0196
-        },
-        {
-          "market": "h2h",
-          "side": "home",
-          "label": "П1",
-          "price": 1.49,
-          "book": "1xBet",
-          "avg_price": 1.433,
-          "prob": 0.6683,
-          "edge": -0.0042
-        },
-        {
-          "market": "h2h",
-          "side": "draw",
-          "label": "Нічия",
-          "price": 5.1,
-          "book": "Betfair",
-          "avg_price": 4.878,
-          "prob": 0.1865,
-          "edge": -0.0489
-        },
-        {
-          "market": "totals",
-          "side": "under",
-          "label": "ТМ 2.5",
-          "price": 2.56,
-          "book": "Betsson",
-          "avg_price": 2.51,
-          "prob": 0.3336,
-          "edge": -0.146
-        }
-      ],
-      "ai_error": "Gemini API 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.goog",
-      "verdict": "skip",
-      "priority": false
-    },
-    {
-      "id": "7a62fe738bd20cfff6027c52fec05d51",
-      "league_name": "Іспанія — Ла Ліга",
-      "commence_time": "2026-11-22T20:00:00Z",
-      "home": "Getafe",
-      "away": "Atlético Madrid",
-      "odds": {
-        "h2h": {
-          "home": {
-            "best": 7.8,
-            "book": "Betfair",
-            "avg": 6.905,
-            "n": 19
-          },
-          "draw": {
-            "best": 4.2,
-            "book": "Unibet (NL)",
-            "avg": 3.978,
-            "n": 19
-          },
-          "away": {
-            "best": 1.58,
-            "book": "Betfair",
-            "avg": 1.532,
-            "n": 19
-          }
-        },
-        "totals": {
-          "line": 2.5,
-          "over": {
-            "best": 2.21,
-            "book": "Coolbet",
-            "avg": 2.078,
-            "n": 13
-          },
-          "under": {
-            "best": 1.84,
-            "book": "1xBet",
-            "avg": 1.732,
-            "n": 13
-          }
-        }
-      },
-      "expected_goals": {
-        "home": 0.8,
-        "away": 1.29
-      },
-      "likely_scores": [
-        {
-          "score": "0-1",
-          "p": 0.152
-        },
-        {
-          "score": "1-1",
-          "p": 0.135
-        },
-        {
-          "score": "0-0",
-          "p": 0.131
-        }
-      ],
-      "form": {
-        "home": [
-          {
-            "date": "2026-09-20",
-            "opponent": "Malaga",
-            "venue": "H",
-            "score": "1-0",
-            "result": "W"
-          },
-          {
-            "date": "2026-10-10",
-            "opponent": "Barcelona",
-            "venue": "A",
-            "score": "0-3",
-            "result": "L"
-          },
-          {
-            "date": "2026-10-19",
-            "opponent": "Vallecano",
-            "venue": "H",
-            "score": "1-1",
-            "result": "D"
-          },
-          {
-            "date": "2026-10-25",
-            "opponent": "Ath Bilbao",
-            "venue": "A",
-            "score": "0-4",
-            "result": "L"
-          },
-          {
-            "date": "2026-11-01",
-            "opponent": "Sevilla",
-            "venue": "H",
-            "score": "3-1",
-            "result": "W"
-          },
-          {
-            "date": "2026-11-08",
-            "opponent": "Villarreal",
-            "venue": "A",
-            "score": "0-2",
-            "result": "L"
-          }
-        ],
-        "away": [
-          {
-            "date": "2026-09-20",
-            "opponent": "Real Madrid",
-            "venue": "H",
-            "score": "2-1",
-            "result": "W"
-          },
-          {
-            "date": "2026-10-10",
-            "opponent": "Alaves",
-            "venue": "A",
-            "score": "2-1",
-            "result": "W"
-          },
-          {
-            "date": "2026-10-17",
-            "opponent": "Espanol",
-            "venue": "A",
-            "score": "1-0",
-            "result": "W"
-          },
-          {
-            "date": "2026-10-24",
-            "opponent": "La Coruna",
-            "venue": "H",
-            "score": "1-0",
-            "result": "W"
-          },
-          {
-            "date": "2026-10-31",
-            "opponent": "Levante",
-            "venue": "A",
-            "score": "2-0",
-            "result": "W"
-          },
-          {
-            "date": "2026-11-08",
-            "opponent": "Barcelona",
-            "venue": "H",
-            "score": "1-2",
-            "result": "L"
-          }
-        ]
-      },
-      "h2h": [
-        {
-          "date": "2024-12-15",
-          "home": "Ath Madrid",
-          "away": "Getafe",
-          "score": "1-0"
-        },
-        {
-          "date": "2025-03-09",
-          "home": "Getafe",
-          "away": "Ath Madrid",
-          "score": "2-1"
-        },
-        {
-          "date": "2025-11-23",
-          "home": "Getafe",
-          "away": "Ath Madrid",
-          "score": "0-1"
-        },
-        {
-          "date": "2026-03-14",
-          "home": "Ath Madrid",
-          "away": "Getafe",
-          "score": "1-0"
-        }
-      ],
-      "news": [],
-      "model_probs": {
-        "home": 0.2226,
-        "draw": 0.3033,
-        "away": 0.4741,
-        "over": 0.3477,
-        "under": 0.6523,
-        "btts": 0.4064
-      },
-      "market_probs": {
-        "home": 0.1381,
-        "draw": 0.2397,
-        "away": 0.6223,
-        "over": 0.4546,
-        "under": 0.5454
-      },
-      "base_probs": {
-        "home": 0.1719,
-        "draw": 0.2651,
-        "away": 0.563,
-        "over": 0.4118,
-        "under": 0.5882
-      },
-      "final_probs": {
-        "home": 0.1719,
-        "draw": 0.2651,
-        "away": 0.563,
-        "over": 0.4118,
-        "under": 0.5882
-      },
-      "final_candidates": [
-        {
-          "market": "h2h",
-          "side": "home",
-          "label": "П1",
-          "price": 7.8,
-          "book": "Betfair",
-          "avg_price": 6.905,
-          "prob": 0.1719,
-          "edge": 0.3408
-        },
-        {
-          "market": "h2h",
-          "side": "draw",
-          "label": "Нічия",
-          "price": 4.2,
-          "book": "Unibet (NL)",
-          "avg_price": 3.978,
-          "prob": 0.2651,
-          "edge": 0.1134
-        },
-        {
-          "market": "totals",
-          "side": "under",
-          "label": "ТМ 2.5",
-          "price": 1.84,
-          "book": "1xBet",
-          "avg_price": 1.732,
-          "prob": 0.5882,
-          "edge": 0.0823
-        },
-        {
-          "market": "totals",
-          "side": "over",
-          "label": "ТБ 2.5",
-          "price": 2.21,
-          "book": "Coolbet",
-          "avg_price": 2.078,
-          "prob": 0.4118,
-          "edge": -0.0899
-        },
-        {
-          "market": "h2h",
-          "side": "away",
-          "label": "П2",
-          "price": 1.58,
-          "book": "Betfair",
-          "avg_price": 1.532,
-          "prob": 0.563,
-          "edge": -0.1105
-        }
-      ],
-      "ai_error": "Gemini API 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.goog",
-      "verdict": "skip",
-      "priority": false
-    },
     {
       "id": "99776445d5a5f4ed008f9a6d6a1495b7",
       "league_name": "Італія — Серія A",
@@ -2489,56 +109,56 @@
       "odds": {
         "h2h": {
           "home": {
-            "best": 3.9,
-            "book": "1xBet",
-            "avg": 3.667,
-            "n": 24
+            "best": 4.0,
+            "book": "Betfair",
+            "avg": 3.719,
+            "n": 23
           },
           "draw": {
-            "best": 4.11,
+            "best": 4.0,
             "book": "1xBet",
-            "avg": 3.779,
-            "n": 24
+            "avg": 3.727,
+            "n": 23
           },
           "away": {
-            "best": 2.02,
-            "book": "Betfair",
-            "avg": 1.91,
-            "n": 24
+            "best": 2.0,
+            "book": "1xBet",
+            "avg": 1.93,
+            "n": 23
           }
         },
         "totals": {
           "line": 2.5,
           "over": {
-            "best": 1.67,
+            "best": 1.7,
             "book": "1xBet",
-            "avg": 1.585,
+            "avg": 1.632,
             "n": 13
           },
           "under": {
-            "best": 2.45,
-            "book": "Tipico",
-            "avg": 2.319,
+            "best": 2.34,
+            "book": "1xBet",
+            "avg": 2.221,
             "n": 13
           }
         }
       },
       "expected_goals": {
-        "home": 1.52,
-        "away": 2.01
+        "home": 1.53,
+        "away": 1.98
       },
       "likely_scores": [
         {
           "score": "1-1",
-          "p": 0.095
+          "p": 0.096
         },
         {
           "score": "1-2",
           "p": 0.09
         },
         {
-          "score": "2-2",
-          "p": 0.068
+          "score": "2-1",
+          "p": 0.069
         }
       ],
       "form": {
@@ -2647,84 +267,84 @@
       ],
       "news": [],
       "model_probs": {
-        "home": 0.2887,
-        "draw": 0.2263,
-        "away": 0.485,
-        "over": 0.6848,
-        "under": 0.3152,
-        "btts": 0.6823
+        "home": 0.2941,
+        "draw": 0.2283,
+        "away": 0.4776,
+        "over": 0.6793,
+        "under": 0.3207,
+        "btts": 0.6794
       },
       "market_probs": {
-        "home": 0.2571,
-        "draw": 0.2494,
-        "away": 0.4935,
-        "over": 0.594,
-        "under": 0.406
+        "home": 0.2548,
+        "draw": 0.2542,
+        "away": 0.491,
+        "over": 0.5764,
+        "under": 0.4236
       },
       "base_probs": {
-        "home": 0.2697,
-        "draw": 0.2402,
-        "away": 0.4901,
-        "over": 0.6303,
-        "under": 0.3697
+        "home": 0.2705,
+        "draw": 0.2439,
+        "away": 0.4856,
+        "over": 0.6176,
+        "under": 0.3824
       },
       "final_probs": {
-        "home": 0.2697,
-        "draw": 0.2402,
-        "away": 0.4901,
-        "over": 0.6303,
-        "under": 0.3697
+        "home": 0.2705,
+        "draw": 0.2439,
+        "away": 0.4856,
+        "over": 0.6176,
+        "under": 0.3824
       },
       "final_candidates": [
-        {
-          "market": "totals",
-          "side": "over",
-          "label": "ТБ 2.5",
-          "price": 1.67,
-          "book": "1xBet",
-          "avg_price": 1.585,
-          "prob": 0.6303,
-          "edge": 0.0526
-        },
         {
           "market": "h2h",
           "side": "home",
           "label": "П1",
-          "price": 3.9,
-          "book": "1xBet",
-          "avg_price": 3.667,
-          "prob": 0.2697,
-          "edge": 0.0518
+          "price": 4.0,
+          "book": "Betfair",
+          "avg_price": 3.719,
+          "prob": 0.2705,
+          "edge": 0.082
         },
         {
-          "market": "h2h",
-          "side": "away",
-          "label": "П2",
-          "price": 2.02,
-          "book": "Betfair",
-          "avg_price": 1.91,
-          "prob": 0.4901,
-          "edge": -0.01
+          "market": "totals",
+          "side": "over",
+          "label": "ТБ 2.5",
+          "price": 1.7,
+          "book": "1xBet",
+          "avg_price": 1.632,
+          "prob": 0.6176,
+          "edge": 0.0499
         },
         {
           "market": "h2h",
           "side": "draw",
           "label": "Нічия",
-          "price": 4.11,
+          "price": 4.0,
           "book": "1xBet",
-          "avg_price": 3.779,
-          "prob": 0.2402,
-          "edge": -0.0128
+          "avg_price": 3.727,
+          "prob": 0.2439,
+          "edge": -0.0244
+        },
+        {
+          "market": "h2h",
+          "side": "away",
+          "label": "П2",
+          "price": 2.0,
+          "book": "1xBet",
+          "avg_price": 1.93,
+          "prob": 0.4856,
+          "edge": -0.0288
         },
         {
           "market": "totals",
           "side": "under",
           "label": "ТМ 2.5",
-          "price": 2.45,
-          "book": "Tipico",
-          "avg_price": 2.319,
-          "prob": 0.3697,
-          "edge": -0.0942
+          "price": 2.34,
+          "book": "1xBet",
+          "avg_price": 2.221,
+          "prob": 0.3824,
+          "edge": -0.1052
         }
       ],
       "ai_error": "Gemini API 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.goog",
@@ -2740,43 +360,43 @@
       "odds": {
         "h2h": {
           "home": {
-            "best": 2.38,
+            "best": 2.42,
             "book": "Betfair",
-            "avg": 2.27,
-            "n": 25
+            "avg": 2.297,
+            "n": 24
           },
           "draw": {
-            "best": 3.72,
+            "best": 3.58,
             "book": "1xBet",
-            "avg": 3.476,
-            "n": 25
+            "avg": 3.422,
+            "n": 24
           },
           "away": {
             "best": 3.3,
-            "book": "Matchbook",
-            "avg": 3.045,
-            "n": 25
+            "book": "Unibet (SE)",
+            "avg": 3.082,
+            "n": 24
           }
         },
         "totals": {
           "line": 2.5,
           "over": {
-            "best": 1.88,
-            "book": "1xBet",
-            "avg": 1.788,
-            "n": 17
+            "best": 1.95,
+            "book": "Matchbook",
+            "avg": 1.839,
+            "n": 18
           },
           "under": {
-            "best": 2.08,
-            "book": "Unibet (SE)",
-            "avg": 2.022,
-            "n": 17
+            "best": 2.05,
+            "book": "1xBet",
+            "avg": 1.967,
+            "n": 18
           }
         }
       },
       "expected_goals": {
-        "home": 1.54,
-        "away": 1.08
+        "home": 1.55,
+        "away": 1.06
       },
       "likely_scores": [
         {
@@ -2785,11 +405,11 @@
         },
         {
           "score": "1-0",
-          "p": 0.105
+          "p": 0.107
         },
         {
           "score": "2-1",
-          "p": 0.093
+          "p": 0.094
         }
       ],
       "form": {
@@ -2908,86 +528,108 @@
           "score": "2-2"
         }
       ],
-      "news": [],
+      "news": [
+        {
+          "title": "Armstrong is Everton's running man and Moyes believes he can get better",
+          "summary": "Harrison Armstrong has started every Premier League game for Everton this season, ranking in the top three for distance covered in the competition going into the weekend. This has been some year for a player who started 2026 on loan at Preston North End.",
+          "link": "https://www.skysports.com/football/news/12040/13610423/harrison-armstrongs-distance-covered-stats-highlight-everton-midfielders-impact-under-david-moyes-this-season",
+          "published": "2026-11-23T10:00:00+00:00",
+          "source": "SkySports | News"
+        },
+        {
+          "title": "‘Haaland must be worried’: Thierno Barry’s rise has David Moyes purring",
+          "summary": "Everton striker has worked hard to find his scoring touch after admitting he hit ‘rock bottom’ at times last season A most unexpected name sits behind the phenomenon Erling Haaland and the £125m proven marksman Alexander Isak in the Premier League goalscoring chart this season. The rise of Thierno Barry may have surprised even the man himself but stands as a fitting reward for single-minded persev",
+          "link": "https://www.theguardian.com/football/2026/nov/23/thierno-barry-rise-david-moyes-purring-everton",
+          "published": "2026-11-23T08:00:51+00:00",
+          "source": "Football | The Guardian"
+        },
+        {
+          "title": "Own-goal mishap gifts Brighton first away victory",
+          "summary": "Brighton secured their first Women's Super League away win of the season thanks to a bizarre own goal from Everton's Maz Pacheco.",
+          "link": "https://www.bbc.co.uk/sport/football/videos/cqx2w0m8v84wo?at_medium=RSS&at_campaign=rss",
+          "published": "2026-11-22T19:50:33+00:00",
+          "source": "BBC Sport"
+        }
+      ],
       "model_probs": {
-        "home": 0.4729,
-        "draw": 0.2692,
-        "away": 0.2579,
-        "over": 0.4856,
-        "under": 0.5144,
-        "btts": 0.525
+        "home": 0.4774,
+        "draw": 0.2689,
+        "away": 0.2537,
+        "over": 0.4839,
+        "under": 0.5161,
+        "btts": 0.5224
       },
       "market_probs": {
-        "home": 0.4169,
-        "draw": 0.2723,
-        "away": 0.3108,
-        "over": 0.5307,
-        "under": 0.4693
+        "home": 0.4138,
+        "draw": 0.2778,
+        "away": 0.3084,
+        "over": 0.5168,
+        "under": 0.4832
       },
       "base_probs": {
-        "home": 0.4393,
-        "draw": 0.271,
-        "away": 0.2897,
-        "over": 0.5127,
-        "under": 0.4873
+        "home": 0.4392,
+        "draw": 0.2742,
+        "away": 0.2865,
+        "over": 0.5036,
+        "under": 0.4964
       },
       "final_probs": {
-        "home": 0.4393,
-        "draw": 0.271,
-        "away": 0.2897,
-        "over": 0.5127,
-        "under": 0.4873
+        "home": 0.4392,
+        "draw": 0.2742,
+        "away": 0.2865,
+        "over": 0.5036,
+        "under": 0.4964
       },
       "final_candidates": [
         {
           "market": "h2h",
           "side": "home",
           "label": "П1",
-          "price": 2.38,
+          "price": 2.42,
           "book": "Betfair",
-          "avg_price": 2.27,
-          "prob": 0.4393,
-          "edge": 0.0455
+          "avg_price": 2.297,
+          "prob": 0.4392,
+          "edge": 0.0629
         },
         {
           "market": "totals",
           "side": "under",
           "label": "ТМ 2.5",
-          "price": 2.08,
-          "book": "Unibet (SE)",
-          "avg_price": 2.022,
-          "prob": 0.4873,
-          "edge": 0.0136
-        },
-        {
-          "market": "h2h",
-          "side": "draw",
-          "label": "Нічия",
-          "price": 3.72,
+          "price": 2.05,
           "book": "1xBet",
-          "avg_price": 3.476,
-          "prob": 0.271,
-          "edge": 0.0081
+          "avg_price": 1.967,
+          "prob": 0.4964,
+          "edge": 0.0176
         },
         {
           "market": "totals",
           "side": "over",
           "label": "ТБ 2.5",
-          "price": 1.88,
+          "price": 1.95,
+          "book": "Matchbook",
+          "avg_price": 1.839,
+          "prob": 0.5036,
+          "edge": -0.018
+        },
+        {
+          "market": "h2h",
+          "side": "draw",
+          "label": "Нічия",
+          "price": 3.58,
           "book": "1xBet",
-          "avg_price": 1.788,
-          "prob": 0.5127,
-          "edge": -0.0361
+          "avg_price": 3.422,
+          "prob": 0.2742,
+          "edge": -0.0184
         },
         {
           "market": "h2h",
           "side": "away",
           "label": "П2",
           "price": 3.3,
-          "book": "Matchbook",
-          "avg_price": 3.045,
-          "prob": 0.2897,
-          "edge": -0.044
+          "book": "Unibet (SE)",
+          "avg_price": 3.082,
+          "prob": 0.2865,
+          "edge": -0.0546
         }
       ],
       "ai_error": "Gemini API 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.goog",
@@ -3003,43 +645,43 @@
       "odds": {
         "h2h": {
           "home": {
-            "best": 2.26,
+            "best": 2.29,
             "book": "1xBet",
-            "avg": 2.162,
-            "n": 20
+            "avg": 2.138,
+            "n": 19
           },
           "draw": {
-            "best": 3.82,
-            "book": "1xBet",
-            "avg": 3.537,
-            "n": 20
+            "best": 3.8,
+            "book": "Betfair",
+            "avg": 3.563,
+            "n": 19
           },
           "away": {
-            "best": 3.4,
-            "book": "Unibet (NL)",
-            "avg": 3.193,
-            "n": 20
+            "best": 3.46,
+            "book": "Pinnacle",
+            "avg": 3.265,
+            "n": 19
           }
         },
         "totals": {
           "line": 2.5,
           "over": {
-            "best": 1.76,
-            "book": "Unibet (SE)",
-            "avg": 1.688,
-            "n": 12
+            "best": 1.74,
+            "book": "1xBet",
+            "avg": 1.63,
+            "n": 11
           },
           "under": {
-            "best": 2.28,
-            "book": "1xBet",
-            "avg": 2.133,
-            "n": 12
+            "best": 2.35,
+            "book": "Tipico",
+            "avg": 2.235,
+            "n": 11
           }
         }
       },
       "expected_goals": {
         "home": 1.74,
-        "away": 1.31
+        "away": 1.32
       },
       "likely_scores": [
         {
@@ -3052,7 +694,7 @@
         },
         {
           "score": "1-0",
-          "p": 0.076
+          "p": 0.075
         }
       ],
       "form": {
@@ -3161,89 +803,1599 @@
       ],
       "news": [],
       "model_probs": {
-        "home": 0.4689,
-        "draw": 0.2476,
-        "away": 0.2835,
-        "over": 0.5891,
-        "under": 0.4109,
-        "btts": 0.6095
+        "home": 0.4666,
+        "draw": 0.2479,
+        "away": 0.2854,
+        "over": 0.5889,
+        "under": 0.4111,
+        "btts": 0.6098
       },
       "market_probs": {
-        "home": 0.437,
-        "draw": 0.2671,
-        "away": 0.2959,
-        "over": 0.5582,
-        "under": 0.4418
+        "home": 0.4435,
+        "draw": 0.2661,
+        "away": 0.2904,
+        "over": 0.5783,
+        "under": 0.4217
       },
       "base_probs": {
-        "home": 0.4498,
-        "draw": 0.2593,
-        "away": 0.2909,
-        "over": 0.5706,
-        "under": 0.4294
+        "home": 0.4527,
+        "draw": 0.2588,
+        "away": 0.2884,
+        "over": 0.5825,
+        "under": 0.4175
       },
       "final_probs": {
-        "home": 0.4498,
-        "draw": 0.2593,
-        "away": 0.2909,
-        "over": 0.5706,
-        "under": 0.4294
+        "home": 0.4527,
+        "draw": 0.2588,
+        "away": 0.2884,
+        "over": 0.5825,
+        "under": 0.4175
       },
       "final_candidates": [
         {
           "market": "h2h",
           "side": "home",
           "label": "П1",
-          "price": 2.26,
+          "price": 2.29,
           "book": "1xBet",
-          "avg_price": 2.162,
-          "prob": 0.4498,
-          "edge": 0.0165
+          "avg_price": 2.138,
+          "prob": 0.4527,
+          "edge": 0.0367
         },
         {
           "market": "totals",
           "side": "over",
           "label": "ТБ 2.5",
-          "price": 1.76,
-          "book": "Unibet (SE)",
-          "avg_price": 1.688,
-          "prob": 0.5706,
-          "edge": 0.0043
-        },
-        {
-          "market": "h2h",
-          "side": "draw",
-          "label": "Нічия",
-          "price": 3.82,
+          "price": 1.74,
           "book": "1xBet",
-          "avg_price": 3.537,
-          "prob": 0.2593,
-          "edge": -0.0095
+          "avg_price": 1.63,
+          "prob": 0.5825,
+          "edge": 0.0135
         },
         {
           "market": "h2h",
           "side": "away",
           "label": "П2",
-          "price": 3.4,
-          "book": "Unibet (NL)",
-          "avg_price": 3.193,
-          "prob": 0.2909,
-          "edge": -0.0109
+          "price": 3.46,
+          "book": "Pinnacle",
+          "avg_price": 3.265,
+          "prob": 0.2884,
+          "edge": -0.0021
+        },
+        {
+          "market": "h2h",
+          "side": "draw",
+          "label": "Нічия",
+          "price": 3.8,
+          "book": "Betfair",
+          "avg_price": 3.563,
+          "prob": 0.2588,
+          "edge": -0.0166
         },
         {
           "market": "totals",
           "side": "under",
           "label": "ТМ 2.5",
-          "price": 2.28,
-          "book": "1xBet",
-          "avg_price": 2.133,
-          "prob": 0.4294,
-          "edge": -0.021
+          "price": 2.35,
+          "book": "Tipico",
+          "avg_price": 2.235,
+          "prob": 0.4175,
+          "edge": -0.0189
         }
       ],
       "ai_error": "Gemini API 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.goog",
       "verdict": "skip",
       "priority": false
+    },
+    {
+      "id": "e422af92d1fc06c0a330838c1c2f2e08",
+      "league_name": "Ліга чемпіонів",
+      "commence_time": "2026-11-24T17:45:00Z",
+      "home": "Galatasaray",
+      "away": "Aston Villa",
+      "odds": {
+        "h2h": {
+          "home": {
+            "best": 3.05,
+            "book": "Betfair",
+            "avg": 2.851,
+            "n": 23
+          },
+          "draw": {
+            "best": 4.1,
+            "book": "Unibet (SE)",
+            "avg": 3.889,
+            "n": 23
+          },
+          "away": {
+            "best": 2.32,
+            "book": "1xBet",
+            "avg": 2.232,
+            "n": 23
+          }
+        },
+        "totals": {
+          "line": 2.5,
+          "over": {
+            "best": 1.38,
+            "book": "Betsson",
+            "avg": 1.363,
+            "n": 3
+          },
+          "under": {
+            "best": 3.25,
+            "book": "William Hill",
+            "avg": 3.127,
+            "n": 3
+          }
+        }
+      },
+      "news": [
+        {
+          "title": "Emery insists no change of plan for Aston Villa despite fears over Galatasaray surface",
+          "summary": "‘Hopefully the pitch will be as best as possible,’ says Villa manager Turkish champions had to move game on Saturday Unai Emery has insisted he will not alter his plans for Aston Villa’s Champions League game at ­Galatasaray on Tuesday night on account of concerns about the state of the pitch. The Turkish champions hastily moved Saturday’s home fixture from Rams Park after starting emergency repai",
+          "link": "https://www.theguardian.com/football/2026/nov/23/unai-emery-no-change-of-plan-aston-villa-galatasaray-surface",
+          "published": "2026-11-23T14:56:36+00:00",
+          "source": "Football | The Guardian"
+        }
+      ],
+      "model_probs": {},
+      "market_probs": {
+        "home": 0.3322,
+        "draw": 0.2435,
+        "away": 0.4243,
+        "over": 0.6964,
+        "under": 0.3036
+      },
+      "base_probs": {
+        "home": 0.3322,
+        "draw": 0.2435,
+        "away": 0.4243,
+        "over": 0.6964,
+        "under": 0.3036
+      },
+      "final_probs": {
+        "home": 0.3322,
+        "draw": 0.2435,
+        "away": 0.4243,
+        "over": 0.6964,
+        "under": 0.3036
+      },
+      "final_candidates": [
+        {
+          "market": "h2h",
+          "side": "home",
+          "label": "П1",
+          "price": 3.05,
+          "book": "Betfair",
+          "avg_price": 2.851,
+          "prob": 0.3322,
+          "edge": 0.0132
+        },
+        {
+          "market": "h2h",
+          "side": "draw",
+          "label": "Нічия",
+          "price": 4.1,
+          "book": "Unibet (SE)",
+          "avg_price": 3.889,
+          "prob": 0.2435,
+          "edge": -0.0017
+        },
+        {
+          "market": "totals",
+          "side": "under",
+          "label": "ТМ 2.5",
+          "price": 3.25,
+          "book": "William Hill",
+          "avg_price": 3.127,
+          "prob": 0.3036,
+          "edge": -0.0133
+        },
+        {
+          "market": "h2h",
+          "side": "away",
+          "label": "П2",
+          "price": 2.32,
+          "book": "1xBet",
+          "avg_price": 2.232,
+          "prob": 0.4243,
+          "edge": -0.0156
+        },
+        {
+          "market": "totals",
+          "side": "over",
+          "label": "ТБ 2.5",
+          "price": 1.38,
+          "book": "Betsson",
+          "avg_price": 1.363,
+          "prob": 0.6964,
+          "edge": -0.039
+        }
+      ],
+      "ai_error": "Gemini API 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.goog",
+      "verdict": "skip",
+      "priority": true
+    },
+    {
+      "id": "50b80f3ebd38bf63663b11ae0afc575b",
+      "league_name": "Ліга чемпіонів",
+      "commence_time": "2026-11-24T17:45:00Z",
+      "home": "Bodø/Glimt",
+      "away": "LASK",
+      "odds": {
+        "h2h": {
+          "home": {
+            "best": 1.58,
+            "book": "GTbets",
+            "avg": 1.505,
+            "n": 23
+          },
+          "draw": {
+            "best": 5.5,
+            "book": "Betfair",
+            "avg": 4.991,
+            "n": 23
+          },
+          "away": {
+            "best": 5.9,
+            "book": "Matchbook",
+            "avg": 5.258,
+            "n": 23
+          }
+        },
+        "totals": {
+          "line": 2.5,
+          "over": {
+            "best": 1.28,
+            "book": "Nordic Bet",
+            "avg": 1.27,
+            "n": 3
+          },
+          "under": {
+            "best": 3.75,
+            "book": "Nordic Bet",
+            "avg": 3.75,
+            "n": 3
+          }
+        }
+      },
+      "news": [],
+      "model_probs": {},
+      "market_probs": {
+        "home": 0.6298,
+        "draw": 0.1899,
+        "away": 0.1803,
+        "over": 0.747,
+        "under": 0.253
+      },
+      "base_probs": {
+        "home": 0.6298,
+        "draw": 0.1899,
+        "away": 0.1803,
+        "over": 0.747,
+        "under": 0.253
+      },
+      "final_probs": {
+        "home": 0.6298,
+        "draw": 0.1899,
+        "away": 0.1803,
+        "over": 0.747,
+        "under": 0.253
+      },
+      "final_candidates": [
+        {
+          "market": "h2h",
+          "side": "away",
+          "label": "П2",
+          "price": 5.9,
+          "book": "Matchbook",
+          "avg_price": 5.258,
+          "prob": 0.1803,
+          "edge": 0.0638
+        },
+        {
+          "market": "h2h",
+          "side": "draw",
+          "label": "Нічия",
+          "price": 5.5,
+          "book": "Betfair",
+          "avg_price": 4.991,
+          "prob": 0.1899,
+          "edge": 0.0445
+        },
+        {
+          "market": "h2h",
+          "side": "home",
+          "label": "П1",
+          "price": 1.58,
+          "book": "GTbets",
+          "avg_price": 1.505,
+          "prob": 0.6298,
+          "edge": -0.0049
+        },
+        {
+          "market": "totals",
+          "side": "over",
+          "label": "ТБ 2.5",
+          "price": 1.28,
+          "book": "Nordic Bet",
+          "avg_price": 1.27,
+          "prob": 0.747,
+          "edge": -0.0438
+        },
+        {
+          "market": "totals",
+          "side": "under",
+          "label": "ТМ 2.5",
+          "price": 3.75,
+          "book": "Nordic Bet",
+          "avg_price": 3.75,
+          "prob": 0.253,
+          "edge": -0.0513
+        }
+      ],
+      "ai_error": "Gemini API 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.goog",
+      "verdict": "skip",
+      "priority": true
+    },
+    {
+      "id": "ba719e378ac366262013bdb51a06aa6f",
+      "league_name": "Ліга чемпіонів",
+      "commence_time": "2026-11-24T20:00:00Z",
+      "home": "Como",
+      "away": "AEK Athens",
+      "odds": {
+        "h2h": {
+          "home": {
+            "best": 1.3,
+            "book": "1xBet",
+            "avg": 1.257,
+            "n": 23
+          },
+          "draw": {
+            "best": 7.0,
+            "book": "Betfair",
+            "avg": 6.355,
+            "n": 23
+          },
+          "away": {
+            "best": 11.2,
+            "book": "1xBet",
+            "avg": 9.862,
+            "n": 23
+          }
+        },
+        "totals": {
+          "line": 2.5,
+          "over": {
+            "best": 1.33,
+            "book": "Nordic Bet",
+            "avg": 1.32,
+            "n": 3
+          },
+          "under": {
+            "best": 3.4,
+            "book": "William Hill",
+            "avg": 3.373,
+            "n": 3
+          }
+        }
+      },
+      "news": [
+        {
+          "title": "Training hard and biding his time, Dele Alli has not given up on football yet",
+          "summary": "The 30-year-old former England star combines Twitch streaming with working to return to the top as a player Consider the training regime Dele Alli has followed since he left Como 18 months ago and it becomes clear why he takes exception to suggestions he has given up on football in favour of becoming an internet personality. He trains five or six days a week with Connor Peters, an elite performanc",
+          "link": "https://www.theguardian.com/football/2026/nov/20/dele-alli-tottenham-mk-dons-england",
+          "published": "2026-11-20T19:00:37+00:00",
+          "source": "Football | The Guardian"
+        }
+      ],
+      "model_probs": {},
+      "market_probs": {
+        "home": 0.7546,
+        "draw": 0.1493,
+        "away": 0.0962,
+        "over": 0.7187,
+        "under": 0.2813
+      },
+      "base_probs": {
+        "home": 0.7546,
+        "draw": 0.1493,
+        "away": 0.0962,
+        "over": 0.7187,
+        "under": 0.2813
+      },
+      "final_probs": {
+        "home": 0.7546,
+        "draw": 0.1493,
+        "away": 0.0962,
+        "over": 0.7187,
+        "under": 0.2813
+      },
+      "final_candidates": [
+        {
+          "market": "h2h",
+          "side": "away",
+          "label": "П2",
+          "price": 11.2,
+          "book": "1xBet",
+          "avg_price": 9.862,
+          "prob": 0.0962,
+          "edge": 0.0774
+        },
+        {
+          "market": "h2h",
+          "side": "draw",
+          "label": "Нічия",
+          "price": 7.0,
+          "book": "Betfair",
+          "avg_price": 6.355,
+          "prob": 0.1493,
+          "edge": 0.0451
+        },
+        {
+          "market": "h2h",
+          "side": "home",
+          "label": "П1",
+          "price": 1.3,
+          "book": "1xBet",
+          "avg_price": 1.257,
+          "prob": 0.7546,
+          "edge": -0.019
+        },
+        {
+          "market": "totals",
+          "side": "under",
+          "label": "ТМ 2.5",
+          "price": 3.4,
+          "book": "William Hill",
+          "avg_price": 3.373,
+          "prob": 0.2813,
+          "edge": -0.0436
+        },
+        {
+          "market": "totals",
+          "side": "over",
+          "label": "ТБ 2.5",
+          "price": 1.33,
+          "book": "Nordic Bet",
+          "avg_price": 1.32,
+          "prob": 0.7187,
+          "edge": -0.0441
+        }
+      ],
+      "ai_error": "Gemini API 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.goog",
+      "verdict": "skip",
+      "priority": true
+    },
+    {
+      "id": "aee4e3c225603397ab52de3d066b566b",
+      "league_name": "Ліга чемпіонів",
+      "commence_time": "2026-11-24T20:00:00Z",
+      "home": "Arsenal",
+      "away": "Borussia Dortmund",
+      "odds": {
+        "h2h": {
+          "home": {
+            "best": 1.45,
+            "book": "1xBet",
+            "avg": 1.387,
+            "n": 23
+          },
+          "draw": {
+            "best": 5.2,
+            "book": "Betfair",
+            "avg": 4.91,
+            "n": 23
+          },
+          "away": {
+            "best": 8.5,
+            "book": "Unibet (SE)",
+            "avg": 7.709,
+            "n": 23
+          }
+        },
+        "totals": {
+          "line": 2.5,
+          "over": {
+            "best": 1.7,
+            "book": "1xBet",
+            "avg": 1.63,
+            "n": 12
+          },
+          "under": {
+            "best": 2.35,
+            "book": "1xBet",
+            "avg": 2.242,
+            "n": 12
+          }
+        }
+      },
+      "news": [
+        {
+          "title": "Raya to miss Dortmund game but injury 'not serious'",
+          "summary": "Arsenal goalkeeper David Raya will miss Tuesday's Champions League game against Borussia Dortmund but his shoulder injury will not require an operation.",
+          "link": "https://www.bbc.co.uk/sport/football/articles/cjx2rqpr7l9lo?at_medium=RSS&at_campaign=rss",
+          "published": "2026-11-23T15:23:09+00:00",
+          "source": "BBC Sport"
+        },
+        {
+          "title": "David Raya’s shoulder injury ‘not too serious’ and no surgery needed for Arsenal goalkeeper",
+          "summary": "No 1 to miss Dortmund game but could return for City clash ‘We were worried … he’s better than expected,’ says manager Mikel Arteta is hopeful the ­shoulder injury David Raya sustained at Newcastle is not too serious, but confirmed the goalkeeper would miss Tuesday’s Champions League game against Borussia Dortmund. Raya was forced off in the ­second half of Saturday’s 2-2 draw with a ­suspected di",
+          "link": "https://www.theguardian.com/football/2026/nov/23/david-raya-shoulder-injury-arsenal-surgery-mikel-arteta",
+          "published": "2026-11-23T15:13:56+00:00",
+          "source": "Football | The Guardian"
+        },
+        {
+          "title": "Raya injury 'not too serious' says relieved Arteta",
+          "summary": "Mikel Arteta has revealed that David Raya's shoulder injury is not as bad as first feared, but is unsure when the Arsenal goalkeeper will return to action.",
+          "link": "https://www.skysports.com/football/news/12040/13615438/david-raya-injury-arsenal-goalkeeper-avoids-surgery-and-blow-is-not-as-bad-as-first-feared-says-mikel-arteta",
+          "published": "2026-11-23T14:00:00+00:00",
+          "source": "SkySports | News"
+        },
+        {
+          "title": "Arsenal's struggles explained - and why they should have signed Putellas",
+          "summary": "Sky Sports columnist Laura Hunter analyses the big talking points from the sixth round of Women's Super League matches, bringing you closer to the key stories at the heart of the women's game.",
+          "link": "https://www.skysports.com/football/news/12040/13615572/arsenals-shocking-wsl-season-analysed-no-home-win-a-lack-of-goals-and-a-disenfranchised-fanbase",
+          "published": "2026-11-23T13:46:00+00:00",
+          "source": "SkySports | News"
+        },
+        {
+          "title": "Arsenal frustrations grow as winless home run continues",
+          "summary": "Arsenal remain without a home win in the WSL as they play out a goalless draw with West Ham, increasing the pressure on Renee Slegers.",
+          "link": "https://www.bbc.co.uk/sport/football/videos/cm8e0pdw70d8o?at_medium=RSS&at_campaign=rss",
+          "published": "2026-11-22T17:30:45+00:00",
+          "source": "BBC Sport"
+        }
+      ],
+      "model_probs": {},
+      "market_probs": {
+        "home": 0.6838,
+        "draw": 0.1932,
+        "away": 0.123,
+        "over": 0.579,
+        "under": 0.421
+      },
+      "base_probs": {
+        "home": 0.6838,
+        "draw": 0.1932,
+        "away": 0.123,
+        "over": 0.579,
+        "under": 0.421
+      },
+      "final_probs": {
+        "home": 0.6838,
+        "draw": 0.1932,
+        "away": 0.123,
+        "over": 0.579,
+        "under": 0.421
+      },
+      "final_candidates": [
+        {
+          "market": "h2h",
+          "side": "away",
+          "label": "П2",
+          "price": 8.5,
+          "book": "Unibet (SE)",
+          "avg_price": 7.709,
+          "prob": 0.123,
+          "edge": 0.0455
+        },
+        {
+          "market": "h2h",
+          "side": "draw",
+          "label": "Нічия",
+          "price": 5.2,
+          "book": "Betfair",
+          "avg_price": 4.91,
+          "prob": 0.1932,
+          "edge": 0.0046
+        },
+        {
+          "market": "h2h",
+          "side": "home",
+          "label": "П1",
+          "price": 1.45,
+          "book": "1xBet",
+          "avg_price": 1.387,
+          "prob": 0.6838,
+          "edge": -0.0085
+        },
+        {
+          "market": "totals",
+          "side": "under",
+          "label": "ТМ 2.5",
+          "price": 2.35,
+          "book": "1xBet",
+          "avg_price": 2.242,
+          "prob": 0.421,
+          "edge": -0.0107
+        },
+        {
+          "market": "totals",
+          "side": "over",
+          "label": "ТБ 2.5",
+          "price": 1.7,
+          "book": "1xBet",
+          "avg_price": 1.63,
+          "prob": 0.579,
+          "edge": -0.0157
+        }
+      ],
+      "ai_error": "Gemini API 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.goog",
+      "verdict": "skip",
+      "priority": true
+    },
+    {
+      "id": "9a2ebad454db4ab3d53b89e96c79847a",
+      "league_name": "Ліга чемпіонів",
+      "commence_time": "2026-11-24T20:00:00Z",
+      "home": "Feyenoord",
+      "away": "Porto",
+      "odds": {
+        "h2h": {
+          "home": {
+            "best": 3.05,
+            "book": "Betfair",
+            "avg": 2.831,
+            "n": 23
+          },
+          "draw": {
+            "best": 3.8,
+            "book": "1xBet",
+            "avg": 3.637,
+            "n": 23
+          },
+          "away": {
+            "best": 2.44,
+            "book": "1xBet",
+            "avg": 2.333,
+            "n": 23
+          }
+        },
+        "totals": {
+          "line": 2.5,
+          "over": {
+            "best": 1.67,
+            "book": "LeoVegas (SE)",
+            "avg": 1.608,
+            "n": 11
+          },
+          "under": {
+            "best": 2.4,
+            "book": "1xBet",
+            "avg": 2.272,
+            "n": 11
+          }
+        }
+      },
+      "news": [],
+      "model_probs": {},
+      "market_probs": {
+        "home": 0.3342,
+        "draw": 0.2602,
+        "away": 0.4056,
+        "over": 0.5856,
+        "under": 0.4144
+      },
+      "base_probs": {
+        "home": 0.3342,
+        "draw": 0.2602,
+        "away": 0.4056,
+        "over": 0.5856,
+        "under": 0.4144
+      },
+      "final_probs": {
+        "home": 0.3342,
+        "draw": 0.2602,
+        "away": 0.4056,
+        "over": 0.5856,
+        "under": 0.4144
+      },
+      "final_candidates": [
+        {
+          "market": "h2h",
+          "side": "home",
+          "label": "П1",
+          "price": 3.05,
+          "book": "Betfair",
+          "avg_price": 2.831,
+          "prob": 0.3342,
+          "edge": 0.0193
+        },
+        {
+          "market": "totals",
+          "side": "under",
+          "label": "ТМ 2.5",
+          "price": 2.4,
+          "book": "1xBet",
+          "avg_price": 2.272,
+          "prob": 0.4144,
+          "edge": -0.0054
+        },
+        {
+          "market": "h2h",
+          "side": "away",
+          "label": "П2",
+          "price": 2.44,
+          "book": "1xBet",
+          "avg_price": 2.333,
+          "prob": 0.4056,
+          "edge": -0.0103
+        },
+        {
+          "market": "h2h",
+          "side": "draw",
+          "label": "Нічия",
+          "price": 3.8,
+          "book": "1xBet",
+          "avg_price": 3.637,
+          "prob": 0.2602,
+          "edge": -0.0112
+        },
+        {
+          "market": "totals",
+          "side": "over",
+          "label": "ТБ 2.5",
+          "price": 1.67,
+          "book": "LeoVegas (SE)",
+          "avg_price": 1.608,
+          "prob": 0.5856,
+          "edge": -0.022
+        }
+      ],
+      "ai_error": "Gemini API 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.goog",
+      "verdict": "skip",
+      "priority": true
+    },
+    {
+      "id": "b9f00a4d399ec661e733857c9d5fb2dc",
+      "league_name": "Ліга чемпіонів",
+      "commence_time": "2026-11-24T20:00:00Z",
+      "home": "Manchester City",
+      "away": "Napoli",
+      "odds": {
+        "h2h": {
+          "home": {
+            "best": 1.33,
+            "book": "Betfair",
+            "avg": 1.274,
+            "n": 23
+          },
+          "draw": {
+            "best": 6.75,
+            "book": "Unibet (NL)",
+            "avg": 6.259,
+            "n": 23
+          },
+          "away": {
+            "best": 10.5,
+            "book": "Unibet (NL)",
+            "avg": 9.108,
+            "n": 23
+          }
+        },
+        "totals": {
+          "line": 2.5,
+          "over": {
+            "best": 1.32,
+            "book": "Nordic Bet",
+            "avg": 1.313,
+            "n": 3
+          },
+          "under": {
+            "best": 3.43,
+            "book": "Betsson",
+            "avg": 3.41,
+            "n": 3
+          }
+        }
+      },
+      "news": [
+        {
+          "title": "'No-one's coming to save us' - but how can Man Utd save themselves?",
+          "summary": "How does Mauricio Pochettino halt Manchester United's desperate slide towards the foot of the Premier League",
+          "link": "https://www.bbc.co.uk/sport/football/articles/ck9d7qxxl7w8o?at_medium=RSS&at_campaign=rss",
+          "published": "2026-11-23T16:30:59+00:00",
+          "source": "BBC Sport"
+        },
+        {
+          "title": "Mauricio Pochettino can now see just how desperate Manchester United are | Jonathan Wilson",
+          "summary": "The manager’s first game in charge was a disaster and he needs to lift the mood within a sunken squad if a relegation battle is to be avoided Sign up for our free newsletter here In as much as any derby can ever be a free hit, there was always a sense that Mauricio Pochettino’s first game as Manchester United manager wouldn’t matter too much; nobody expected them to win away to Liverpool. This was",
+          "link": "https://www.theguardian.com/football/2026/nov/23/mauricio-pochettino-can-now-see-just-how-desperate-manchester-united-are",
+          "published": "2026-11-23T15:45:50+00:00",
+          "source": "Football | The Guardian"
+        },
+        {
+          "title": "Football Daily | Neville, Keane and Manchester United meltdowns at world’s funniest comedy club",
+          "summary": "Sign up now! Sign up now! Sign up now? Sign up now! Hoo-boy. Short of forgetting to put on his washable virgin wool navy trousers before striding towards the visitors’ dugout at Anfield, it’s difficult to imagine how Mauricio Pochettino’s spell in charge of Manchester United could have got off to a more humiliating start. Having witnessed his new team go a man and two goals down in less time than ",
+          "link": "https://www.theguardian.com/football/2026/nov/23/gary-neville-roy-keane-manchester-united-meltdown-comedy-club-football-daily-newsletter",
+          "published": "2026-11-23T15:45:30+00:00",
+          "source": "Football | The Guardian"
+        },
+        {
+          "title": "Welcome to Manchester United, Mauricio | Football Weekly – video",
+          "summary": "Max Rushden is joined by Barry Glendenning , Jordan Jarrett-Bryan and Lars Sivertsen as Mauricio Pochettino’s first game in charge at Manchester United sees them thrashed by Liverpool Continue reading...",
+          "link": "https://www.theguardian.com/football/video/2026/nov/23/welcome-to-manchester-united-mauricio-football-weekly-video",
+          "published": "2026-11-23T13:36:29+00:00",
+          "source": "Football | The Guardian"
+        },
+        {
+          "title": "Man Utd to appeal Yoro red card",
+          "summary": "Manchester United have notified the FA of their intention to appeal Leny Yoro's red card against Liverpool.",
+          "link": "https://www.skysports.com/football/news/12040/13615539/manchester-united-to-appeal-leny-yoros-red-card-as-ex-pl-referee-dermot-gallagehr-casts-his-verdict",
+          "published": "2026-11-23T12:30:00+00:00",
+          "source": "SkySports | News"
+        },
+        {
+          "title": "WSL talking points: Captain Spence inspires Spurs shock win at City and Lionesses impress",
+          "summary": "We may have a proper title race on our hands as City and Chelsea drop points and LCL strengthen their grip on third place Drew Spence rolled back the years with a vintage performance as her Tottenham side produced a shock 3-1 victory away against the defending champions, Manchester City. The 34-year-old marshalled the midfield and then had the vision to thread an outstanding through ball that spli",
+          "link": "https://www.theguardian.com/football/2026/nov/23/wsl-talking-points-tottenham-london-city-lionesses-chelsea-arsenal",
+          "published": "2026-11-23T11:19:05+00:00",
+          "source": "Football | The Guardian"
+        },
+        {
+          "title": "Premier League: 10 talking points from the weekend’s action",
+          "summary": "Leeds offer Chelsea a lesson, Newcastle’s summer recruits struggle and Jules Ahoka makes a name for himself What to make of Manchester United’s utterly torrid start under Mauricio Pochettino? To go glass half full as the new head coach had only three days to prepare the side for the trip to Anfield, the hope will be that time will cast the 4-0 humbling from Liverpool as the falsest of false starts",
+          "link": "https://www.theguardian.com/football/2026/nov/23/premier-league-10-talking-points-from-the-weekends-action",
+          "published": "2026-11-23T08:00:50+00:00",
+          "source": "Football | The Guardian"
+        },
+        {
+          "title": "One of football's most-hyped 16-year-olds - what next for JJ Gabriel?",
+          "summary": "BBC Sport looks at why JJ Gabriel's move from Manchester United to Real Madrid has caused such a stir.",
+          "link": "https://www.bbc.co.uk/sport/football/articles/c6p9dym309nxo?at_medium=RSS&at_campaign=rss",
+          "published": "2026-11-23T06:17:59+00:00",
+          "source": "BBC Sport"
+        }
+      ],
+      "model_probs": {},
+      "market_probs": {
+        "home": 0.7444,
+        "draw": 0.1515,
+        "away": 0.1041,
+        "over": 0.722,
+        "under": 0.278
+      },
+      "base_probs": {
+        "home": 0.7444,
+        "draw": 0.1515,
+        "away": 0.1041,
+        "over": 0.722,
+        "under": 0.278
+      },
+      "final_probs": {
+        "home": 0.7444,
+        "draw": 0.1515,
+        "away": 0.1041,
+        "over": 0.722,
+        "under": 0.278
+      },
+      "final_candidates": [
+        {
+          "market": "h2h",
+          "side": "away",
+          "label": "П2",
+          "price": 10.5,
+          "book": "Unibet (NL)",
+          "avg_price": 9.108,
+          "prob": 0.1041,
+          "edge": 0.0931
+        },
+        {
+          "market": "h2h",
+          "side": "draw",
+          "label": "Нічия",
+          "price": 6.75,
+          "book": "Unibet (NL)",
+          "avg_price": 6.259,
+          "prob": 0.1515,
+          "edge": 0.0226
+        },
+        {
+          "market": "h2h",
+          "side": "home",
+          "label": "П1",
+          "price": 1.33,
+          "book": "Betfair",
+          "avg_price": 1.274,
+          "prob": 0.7444,
+          "edge": -0.0099
+        },
+        {
+          "market": "totals",
+          "side": "under",
+          "label": "ТМ 2.5",
+          "price": 3.43,
+          "book": "Betsson",
+          "avg_price": 3.41,
+          "prob": 0.278,
+          "edge": -0.0465
+        },
+        {
+          "market": "totals",
+          "side": "over",
+          "label": "ТБ 2.5",
+          "price": 1.32,
+          "book": "Nordic Bet",
+          "avg_price": 1.313,
+          "prob": 0.722,
+          "edge": -0.047
+        }
+      ],
+      "ai_error": "Gemini API 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.goog",
+      "verdict": "skip",
+      "priority": true
+    },
+    {
+      "id": "3fb5e4a792cf34a0459efcb79a11a785",
+      "league_name": "Ліга чемпіонів",
+      "commence_time": "2026-11-24T20:00:00Z",
+      "home": "Real Madrid",
+      "away": "PSV Eindhoven",
+      "odds": {
+        "h2h": {
+          "home": {
+            "best": 1.21,
+            "book": "1xBet",
+            "avg": 1.169,
+            "n": 23
+          },
+          "draw": {
+            "best": 10.0,
+            "book": "Betfair",
+            "avg": 8.762,
+            "n": 23
+          },
+          "away": {
+            "best": 16.0,
+            "book": "Betfair",
+            "avg": 12.474,
+            "n": 23
+          }
+        },
+        "totals": {
+          "line": 2.5,
+          "over": {
+            "best": 1.15,
+            "book": "Nordic Bet",
+            "avg": 1.147,
+            "n": 3
+          },
+          "under": {
+            "best": 5.54,
+            "book": "Betsson",
+            "avg": 5.347,
+            "n": 3
+          }
+        }
+      },
+      "news": [
+        {
+          "title": "One of football's most-hyped 16-year-olds - what next for JJ Gabriel?",
+          "summary": "BBC Sport looks at why JJ Gabriel's move from Manchester United to Real Madrid has caused such a stir.",
+          "link": "https://www.bbc.co.uk/sport/football/articles/c6p9dym309nxo?at_medium=RSS&at_campaign=rss",
+          "published": "2026-11-23T06:17:59+00:00",
+          "source": "BBC Sport"
+        },
+        {
+          "title": "Chaotic week, nightmare start and huge reality check for Pochettino",
+          "summary": "Mauricio Pochettino's reign as Manchester United boss could barely have got off to a more chastening start, writes Simon Stone.",
+          "link": "https://www.bbc.co.uk/sport/football/articles/cwd012903kvgo?at_medium=RSS&at_campaign=rss",
+          "published": "2026-11-22T21:22:10+00:00",
+          "source": "BBC Sport"
+        },
+        {
+          "title": "Pepe did not injure eyes staring at sun, say Villarreal",
+          "summary": "Villarreal say reports striker Nicolas Pepe needed eye surgery because he stared directly at the solar eclipse are \"completely false\".",
+          "link": "https://www.bbc.co.uk/sport/football/articles/c8zx9y6d29vyo?at_medium=RSS&at_campaign=rss",
+          "published": "2026-11-22T21:04:55+00:00",
+          "source": "BBC Sport"
+        }
+      ],
+      "model_probs": {},
+      "market_probs": {
+        "home": 0.8149,
+        "draw": 0.1087,
+        "away": 0.0764,
+        "over": 0.8234,
+        "under": 0.1766
+      },
+      "base_probs": {
+        "home": 0.8149,
+        "draw": 0.1087,
+        "away": 0.0764,
+        "over": 0.8234,
+        "under": 0.1766
+      },
+      "final_probs": {
+        "home": 0.8149,
+        "draw": 0.1087,
+        "away": 0.0764,
+        "over": 0.8234,
+        "under": 0.1766
+      },
+      "final_candidates": [
+        {
+          "market": "h2h",
+          "side": "away",
+          "label": "П2",
+          "price": 16.0,
+          "book": "Betfair",
+          "avg_price": 12.474,
+          "prob": 0.0764,
+          "edge": 0.2224
+        },
+        {
+          "market": "h2h",
+          "side": "draw",
+          "label": "Нічия",
+          "price": 10.0,
+          "book": "Betfair",
+          "avg_price": 8.762,
+          "prob": 0.1087,
+          "edge": 0.087
+        },
+        {
+          "market": "h2h",
+          "side": "home",
+          "label": "П1",
+          "price": 1.21,
+          "book": "1xBet",
+          "avg_price": 1.169,
+          "prob": 0.8149,
+          "edge": -0.014
+        },
+        {
+          "market": "totals",
+          "side": "under",
+          "label": "ТМ 2.5",
+          "price": 5.54,
+          "book": "Betsson",
+          "avg_price": 5.347,
+          "prob": 0.1766,
+          "edge": -0.0216
+        },
+        {
+          "market": "totals",
+          "side": "over",
+          "label": "ТБ 2.5",
+          "price": 1.15,
+          "book": "Nordic Bet",
+          "avg_price": 1.147,
+          "prob": 0.8234,
+          "edge": -0.0531
+        }
+      ],
+      "ai_error": "Gemini API 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.goog",
+      "verdict": "skip",
+      "priority": true
+    },
+    {
+      "id": "aea973c122c91837c15e066c757c747f",
+      "league_name": "Ліга чемпіонів",
+      "commence_time": "2026-11-24T20:00:00Z",
+      "home": "RB Leipzig",
+      "away": "RC Lens",
+      "odds": {
+        "h2h": {
+          "home": {
+            "best": 1.46,
+            "book": "GTbets",
+            "avg": 1.382,
+            "n": 23
+          },
+          "draw": {
+            "best": 6.06,
+            "book": "BetOnline.ag",
+            "avg": 5.578,
+            "n": 23
+          },
+          "away": {
+            "best": 7.8,
+            "book": "Matchbook",
+            "avg": 6.65,
+            "n": 23
+          }
+        },
+        "totals": {
+          "line": 2.5,
+          "over": {
+            "best": 1.3,
+            "book": "Nordic Bet",
+            "avg": 1.297,
+            "n": 3
+          },
+          "under": {
+            "best": 3.57,
+            "book": "Betsson",
+            "avg": 3.54,
+            "n": 3
+          }
+        }
+      },
+      "news": [],
+      "model_probs": {},
+      "market_probs": {
+        "home": 0.687,
+        "draw": 0.1702,
+        "away": 0.1428,
+        "over": 0.7319,
+        "under": 0.2681
+      },
+      "base_probs": {
+        "home": 0.687,
+        "draw": 0.1702,
+        "away": 0.1428,
+        "over": 0.7319,
+        "under": 0.2681
+      },
+      "final_probs": {
+        "home": 0.687,
+        "draw": 0.1702,
+        "away": 0.1428,
+        "over": 0.7319,
+        "under": 0.2681
+      },
+      "final_candidates": [
+        {
+          "market": "h2h",
+          "side": "away",
+          "label": "П2",
+          "price": 7.8,
+          "book": "Matchbook",
+          "avg_price": 6.65,
+          "prob": 0.1428,
+          "edge": 0.1138
+        },
+        {
+          "market": "h2h",
+          "side": "draw",
+          "label": "Нічия",
+          "price": 6.06,
+          "book": "BetOnline.ag",
+          "avg_price": 5.578,
+          "prob": 0.1702,
+          "edge": 0.0314
+        },
+        {
+          "market": "h2h",
+          "side": "home",
+          "label": "П1",
+          "price": 1.46,
+          "book": "GTbets",
+          "avg_price": 1.382,
+          "prob": 0.687,
+          "edge": 0.003
+        },
+        {
+          "market": "totals",
+          "side": "under",
+          "label": "ТМ 2.5",
+          "price": 3.57,
+          "book": "Betsson",
+          "avg_price": 3.54,
+          "prob": 0.2681,
+          "edge": -0.0429
+        },
+        {
+          "market": "totals",
+          "side": "over",
+          "label": "ТБ 2.5",
+          "price": 1.3,
+          "book": "Nordic Bet",
+          "avg_price": 1.297,
+          "prob": 0.7319,
+          "edge": -0.0485
+        }
+      ],
+      "ai_error": "Gemini API 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.goog",
+      "verdict": "skip",
+      "priority": true
+    },
+    {
+      "id": "8e93849b4c1ccbf1c207836d5c470150",
+      "league_name": "Ліга чемпіонів",
+      "commence_time": "2026-11-24T20:00:00Z",
+      "home": "ŠK Slovan Bratislava",
+      "away": "Real Betis",
+      "odds": {
+        "h2h": {
+          "home": {
+            "best": 12.0,
+            "book": "Unibet (NL)",
+            "avg": 10.672,
+            "n": 23
+          },
+          "draw": {
+            "best": 7.25,
+            "book": "Winamax (DE)",
+            "avg": 6.699,
+            "n": 23
+          },
+          "away": {
+            "best": 1.29,
+            "book": "Betfair",
+            "avg": 1.232,
+            "n": 23
+          }
+        },
+        "totals": {
+          "line": 2.5,
+          "over": {
+            "best": 1.36,
+            "book": "Betsson",
+            "avg": 1.337,
+            "n": 3
+          },
+          "under": {
+            "best": 3.4,
+            "book": "William Hill",
+            "avg": 3.27,
+            "n": 3
+          }
+        }
+      },
+      "news": [
+        {
+          "title": "Madness erupts as Sevilla deny Betis in wild end to Spain’s ‘derby of derbies’",
+          "summary": "Rivals have been heading in opposite directions in recent years but latest clash showed some things never change “If we didn’t celebrate a goal, especially in this game, that would be madness,” Kike Salas said. Instead, this was madness, the kind of moment a derby is meant to have, even if it has nothing else. It was late, it was lucky, and there wasn’t even a winner but right there, right then, a",
+          "link": "https://www.theguardian.com/football/2026/nov/23/sevilla-real-betis-seville-derby-la-liga-kike-salas",
+          "published": "2026-11-23T17:49:56+00:00",
+          "source": "Football | The Guardian"
+        },
+        {
+          "title": "One of football's most-hyped 16-year-olds - what next for JJ Gabriel?",
+          "summary": "BBC Sport looks at why JJ Gabriel's move from Manchester United to Real Madrid has caused such a stir.",
+          "link": "https://www.bbc.co.uk/sport/football/articles/c6p9dym309nxo?at_medium=RSS&at_campaign=rss",
+          "published": "2026-11-23T06:17:59+00:00",
+          "source": "BBC Sport"
+        },
+        {
+          "title": "Chaotic week, nightmare start and huge reality check for Pochettino",
+          "summary": "Mauricio Pochettino's reign as Manchester United boss could barely have got off to a more chastening start, writes Simon Stone.",
+          "link": "https://www.bbc.co.uk/sport/football/articles/cwd012903kvgo?at_medium=RSS&at_campaign=rss",
+          "published": "2026-11-22T21:22:10+00:00",
+          "source": "BBC Sport"
+        },
+        {
+          "title": "Pepe did not injure eyes staring at sun, say Villarreal",
+          "summary": "Villarreal say reports striker Nicolas Pepe needed eye surgery because he stared directly at the solar eclipse are \"completely false\".",
+          "link": "https://www.bbc.co.uk/sport/football/articles/c8zx9y6d29vyo?at_medium=RSS&at_campaign=rss",
+          "published": "2026-11-22T21:04:55+00:00",
+          "source": "BBC Sport"
+        }
+      ],
+      "model_probs": {},
+      "market_probs": {
+        "home": 0.0888,
+        "draw": 0.1415,
+        "away": 0.7696,
+        "over": 0.7098,
+        "under": 0.2902
+      },
+      "base_probs": {
+        "home": 0.0888,
+        "draw": 0.1415,
+        "away": 0.7696,
+        "over": 0.7098,
+        "under": 0.2902
+      },
+      "final_probs": {
+        "home": 0.0888,
+        "draw": 0.1415,
+        "away": 0.7696,
+        "over": 0.7098,
+        "under": 0.2902
+      },
+      "final_candidates": [
+        {
+          "market": "h2h",
+          "side": "home",
+          "label": "П1",
+          "price": 12.0,
+          "book": "Unibet (NL)",
+          "avg_price": 10.672,
+          "prob": 0.0888,
+          "edge": 0.0656
+        },
+        {
+          "market": "h2h",
+          "side": "draw",
+          "label": "Нічия",
+          "price": 7.25,
+          "book": "Winamax (DE)",
+          "avg_price": 6.699,
+          "prob": 0.1415,
+          "edge": 0.0259
+        },
+        {
+          "market": "h2h",
+          "side": "away",
+          "label": "П2",
+          "price": 1.29,
+          "book": "Betfair",
+          "avg_price": 1.232,
+          "prob": 0.7696,
+          "edge": -0.0072
+        },
+        {
+          "market": "totals",
+          "side": "under",
+          "label": "ТМ 2.5",
+          "price": 3.4,
+          "book": "William Hill",
+          "avg_price": 3.27,
+          "prob": 0.2902,
+          "edge": -0.0133
+        },
+        {
+          "market": "totals",
+          "side": "over",
+          "label": "ТБ 2.5",
+          "price": 1.36,
+          "book": "Betsson",
+          "avg_price": 1.337,
+          "prob": 0.7098,
+          "edge": -0.0347
+        }
+      ],
+      "ai_error": "Gemini API 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.goog",
+      "verdict": "skip",
+      "priority": true
+    },
+    {
+      "id": "e6fa007f93e0cef004be920f96ee95ba",
+      "league_name": "Ліга чемпіонів",
+      "commence_time": "2026-11-25T17:45:00Z",
+      "home": "Sabah FK",
+      "away": "Barcelona",
+      "odds": {
+        "h2h": {
+          "home": {
+            "best": 26.0,
+            "book": "Unibet (SE)",
+            "avg": 20.202,
+            "n": 23
+          },
+          "draw": {
+            "best": 15.5,
+            "book": "1xBet",
+            "avg": 12.867,
+            "n": 23
+          },
+          "away": {
+            "best": 1.12,
+            "book": "Betfair",
+            "avg": 1.082,
+            "n": 23
+          }
+        },
+        "totals": {
+          "line": 2.5,
+          "over": {
+            "best": 1.1,
+            "book": "Betsson",
+            "avg": 1.1,
+            "n": 3
+          },
+          "under": {
+            "best": 7.09,
+            "book": "Betsson",
+            "avg": 6.863,
+            "n": 3
+          }
+        }
+      },
+      "news": [],
+      "model_probs": {},
+      "market_probs": {
+        "home": 0.0471,
+        "draw": 0.0739,
+        "away": 0.879,
+        "over": 0.8619,
+        "under": 0.1381
+      },
+      "base_probs": {
+        "home": 0.0471,
+        "draw": 0.0739,
+        "away": 0.879,
+        "over": 0.8619,
+        "under": 0.1381
+      },
+      "final_probs": {
+        "home": 0.0471,
+        "draw": 0.0739,
+        "away": 0.879,
+        "over": 0.8619,
+        "under": 0.1381
+      },
+      "final_candidates": [
+        {
+          "market": "h2h",
+          "side": "home",
+          "label": "П1",
+          "price": 26.0,
+          "book": "Unibet (SE)",
+          "avg_price": 20.202,
+          "prob": 0.0471,
+          "edge": 0.2246
+        },
+        {
+          "market": "h2h",
+          "side": "draw",
+          "label": "Нічия",
+          "price": 15.5,
+          "book": "1xBet",
+          "avg_price": 12.867,
+          "prob": 0.0739,
+          "edge": 0.1454
+        },
+        {
+          "market": "h2h",
+          "side": "away",
+          "label": "П2",
+          "price": 1.12,
+          "book": "Betfair",
+          "avg_price": 1.082,
+          "prob": 0.879,
+          "edge": -0.0155
+        },
+        {
+          "market": "totals",
+          "side": "under",
+          "label": "ТМ 2.5",
+          "price": 7.09,
+          "book": "Betsson",
+          "avg_price": 6.863,
+          "prob": 0.1381,
+          "edge": -0.0209
+        },
+        {
+          "market": "totals",
+          "side": "over",
+          "label": "ТБ 2.5",
+          "price": 1.1,
+          "book": "Betsson",
+          "avg_price": 1.1,
+          "prob": 0.8619,
+          "edge": -0.0519
+        }
+      ],
+      "ai_error": "Gemini API 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.goog",
+      "verdict": "skip",
+      "priority": true
+    },
+    {
+      "id": "a7c87fac9e9cbcfc02ad0e0b29ca89e2",
+      "league_name": "Ліга чемпіонів",
+      "commence_time": "2026-11-25T17:45:00Z",
+      "home": "Slavia Praha",
+      "away": "Villarreal",
+      "odds": {
+        "h2h": {
+          "home": {
+            "best": 3.3,
+            "book": "Betfair",
+            "avg": 3.087,
+            "n": 23
+          },
+          "draw": {
+            "best": 4.1,
+            "book": "Betfair",
+            "avg": 3.82,
+            "n": 23
+          },
+          "away": {
+            "best": 2.2,
+            "book": "Unibet (NL)",
+            "avg": 2.127,
+            "n": 23
+          }
+        },
+        "totals": {
+          "line": 2.5,
+          "over": {
+            "best": 1.56,
+            "book": "LeoVegas (SE)",
+            "avg": 1.52,
+            "n": 7
+          },
+          "under": {
+            "best": 2.57,
+            "book": "Betsson",
+            "avg": 2.48,
+            "n": 7
+          }
+        }
+      },
+      "news": [
+        {
+          "title": "Pepe did not injure eyes staring at sun, say Villarreal",
+          "summary": "Villarreal say reports striker Nicolas Pepe needed eye surgery because he stared directly at the solar eclipse are \"completely false\".",
+          "link": "https://www.bbc.co.uk/sport/football/articles/c8zx9y6d29vyo?at_medium=RSS&at_campaign=rss",
+          "published": "2026-11-22T21:04:55+00:00",
+          "source": "BBC Sport"
+        }
+      ],
+      "model_probs": {},
+      "market_probs": {
+        "home": 0.3068,
+        "draw": 0.2479,
+        "away": 0.4453,
+        "over": 0.62,
+        "under": 0.38
+      },
+      "base_probs": {
+        "home": 0.3068,
+        "draw": 0.2479,
+        "away": 0.4453,
+        "over": 0.62,
+        "under": 0.38
+      },
+      "final_probs": {
+        "home": 0.3068,
+        "draw": 0.2479,
+        "away": 0.4453,
+        "over": 0.62,
+        "under": 0.38
+      },
+      "final_candidates": [
+        {
+          "market": "h2h",
+          "side": "draw",
+          "label": "Нічия",
+          "price": 4.1,
+          "book": "Betfair",
+          "avg_price": 3.82,
+          "prob": 0.2479,
+          "edge": 0.0164
+        },
+        {
+          "market": "h2h",
+          "side": "home",
+          "label": "П1",
+          "price": 3.3,
+          "book": "Betfair",
+          "avg_price": 3.087,
+          "prob": 0.3068,
+          "edge": 0.0124
+        },
+        {
+          "market": "h2h",
+          "side": "away",
+          "label": "П2",
+          "price": 2.2,
+          "book": "Unibet (NL)",
+          "avg_price": 2.127,
+          "prob": 0.4453,
+          "edge": -0.0203
+        },
+        {
+          "market": "totals",
+          "side": "under",
+          "label": "ТМ 2.5",
+          "price": 2.57,
+          "book": "Betsson",
+          "avg_price": 2.48,
+          "prob": 0.38,
+          "edge": -0.0234
+        },
+        {
+          "market": "totals",
+          "side": "over",
+          "label": "ТБ 2.5",
+          "price": 1.56,
+          "book": "LeoVegas (SE)",
+          "avg_price": 1.52,
+          "prob": 0.62,
+          "edge": -0.0328
+        }
+      ],
+      "ai_error": "Gemini API 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.goog",
+      "verdict": "skip",
+      "priority": true
     }
   ]
 }
